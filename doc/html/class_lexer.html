@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Parser: Класс Lexer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Parser
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_lexer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_lexer-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Lexer<div class="ingroups"><a class="el" href="group__lexer.html">Лексический анализатор</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Лексический анализатор.  
+ <a href="class_lexer.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_lexer_8h_source.html">Lexer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a63fa5ee65ff46597a78519d0bb5fec02"><td class="memItemLeft" align="right" valign="top"><a id="a63fa5ee65ff46597a78519d0bb5fec02"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Lexer</b> (std::istream &amp;in)</td></tr>
+<tr class="separator:a63fa5ee65ff46597a78519d0bb5fec02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f2eccbe05c324c89c98000280e8960"><td class="memItemLeft" align="right" valign="top"><a id="a49f2eccbe05c324c89c98000280e8960"></a>
+ptrToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a49f2eccbe05c324c89c98000280e8960">token</a> ()</td></tr>
+<tr class="memdesc:a49f2eccbe05c324c89c98000280e8960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает очередной токен их потока <br /></td></tr>
+<tr class="separator:a49f2eccbe05c324c89c98000280e8960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6af4a796db9302364de37c0e69e8c09"><td class="memItemLeft" align="right" valign="top"><a id="ac6af4a796db9302364de37c0e69e8c09"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#ac6af4a796db9302364de37c0e69e8c09">eof</a> () const</td></tr>
+<tr class="memdesc:ac6af4a796db9302364de37c0e69e8c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет конец файла <br /></td></tr>
+<tr class="separator:ac6af4a796db9302364de37c0e69e8c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b284a56f68bb527648fc7d8a4835b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#ad1b284a56f68bb527648fc7d8a4835b0">match</a> (<a class="el" href="group__lexer.html#ga305263dd89ad9fde1863aece00907351">Tag</a> t)</td></tr>
+<tr class="memdesc:ad1b284a56f68bb527648fc7d8a4835b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет тип следующего токена  <a href="#ad1b284a56f68bb527648fc7d8a4835b0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad1b284a56f68bb527648fc7d8a4835b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a09db872a372d3aa3dd57ba51efd22f6a"><td class="memItemLeft" align="right" valign="top">Position&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a09db872a372d3aa3dd57ba51efd22f6a">position</a></td></tr>
+<tr class="memdesc:a09db872a372d3aa3dd57ba51efd22f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хранит относительную позицию в потоке  <a href="#a09db872a372d3aa3dd57ba51efd22f6a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a09db872a372d3aa3dd57ba51efd22f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:af08abd2f498f4bb1781207168919f903"><td class="memItemLeft" align="right" valign="top"><a id="af08abd2f498f4bb1781207168919f903"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#af08abd2f498f4bb1781207168919f903">reserve</a> (ptrWord w)</td></tr>
+<tr class="memdesc:af08abd2f498f4bb1781207168919f903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Резервирует ключевые слова <br /></td></tr>
+<tr class="separator:af08abd2f498f4bb1781207168919f903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c91a26ad6b4294bf7bb8d4c46ea529b"><td class="memItemLeft" align="right" valign="top"><a id="a5c91a26ad6b4294bf7bb8d4c46ea529b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a5c91a26ad6b4294bf7bb8d4c46ea529b">readch</a> ()</td></tr>
+<tr class="memdesc:a5c91a26ad6b4294bf7bb8d4c46ea529b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Считывает очередной символ <br /></td></tr>
+<tr class="separator:a5c91a26ad6b4294bf7bb8d4c46ea529b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2585d70adce01584a505a25c3e179d"><td class="memItemLeft" align="right" valign="top"><a id="a8d2585d70adce01584a505a25c3e179d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a8d2585d70adce01584a505a25c3e179d">skip</a> ()</td></tr>
+<tr class="memdesc:a8d2585d70adce01584a505a25c3e179d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пропуск пробелов <br /></td></tr>
+<tr class="separator:a8d2585d70adce01584a505a25c3e179d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96f9ebb144a6afb1483828c05c6dd452"><td class="memItemLeft" align="right" valign="top">ptrToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a96f9ebb144a6afb1483828c05c6dd452">doubleToken</a> (int i)</td></tr>
+<tr class="memdesc:a96f9ebb144a6afb1483828c05c6dd452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирует токен вещественного числа  <a href="#a96f9ebb144a6afb1483828c05c6dd452">Подробнее...</a><br /></td></tr>
+<tr class="separator:a96f9ebb144a6afb1483828c05c6dd452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f554199371d841da1516ab2cafe0ab3"><td class="memItemLeft" align="right" valign="top"><a id="a6f554199371d841da1516ab2cafe0ab3"></a>
+ptrToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a6f554199371d841da1516ab2cafe0ab3">tok</a> ()</td></tr>
+<tr class="memdesc:a6f554199371d841da1516ab2cafe0ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирует токен <br /></td></tr>
+<tr class="separator:a6f554199371d841da1516ab2cafe0ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a548ef54cff3b60ae7e8235a977eacb3a"><td class="memItemLeft" align="right" valign="top"><a id="a548ef54cff3b60ae7e8235a977eacb3a"></a>
+std::istreambuf_iterator&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a548ef54cff3b60ae7e8235a977eacb3a">pos</a></td></tr>
+<tr class="memdesc:a548ef54cff3b60ae7e8235a977eacb3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указывает на абсолютную позицию в потоке <br /></td></tr>
+<tr class="separator:a548ef54cff3b60ae7e8235a977eacb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a991785e82bae3f2f64585a33c06ebe1e"><td class="memItemLeft" align="right" valign="top"><a id="a991785e82bae3f2f64585a33c06ebe1e"></a>
+std::istreambuf_iterator&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a991785e82bae3f2f64585a33c06ebe1e">end</a></td></tr>
+<tr class="memdesc:a991785e82bae3f2f64585a33c06ebe1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак конца файла <br /></td></tr>
+<tr class="separator:a991785e82bae3f2f64585a33c06ebe1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7bae0f1db610391772305e8ff05aebe"><td class="memItemLeft" align="right" valign="top"><a id="ae7bae0f1db610391772305e8ff05aebe"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#ae7bae0f1db610391772305e8ff05aebe">c</a></td></tr>
+<tr class="memdesc:ae7bae0f1db610391772305e8ff05aebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хранит очередной символ <br /></td></tr>
+<tr class="separator:ae7bae0f1db610391772305e8ff05aebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19c367ea1a90bfa201dfa2a16f5e3a4b"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, ptrWord &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a19c367ea1a90bfa201dfa2a16f5e3a4b">keyWords</a></td></tr>
+<tr class="memdesc:a19c367ea1a90bfa201dfa2a16f5e3a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хранит строковое представление и указатель на лексему  <a href="#a19c367ea1a90bfa201dfa2a16f5e3a4b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a19c367ea1a90bfa201dfa2a16f5e3a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563105db169126ce8ee78bdc018d908a"><td class="memItemLeft" align="right" valign="top"><a id="a563105db169126ce8ee78bdc018d908a"></a>
+std::queue&lt; ptrToken &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a563105db169126ce8ee78bdc018d908a">queue</a></td></tr>
+<tr class="memdesc:a563105db169126ce8ee78bdc018d908a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет результаты <a class="el" href="class_lexer.html#ad1b284a56f68bb527648fc7d8a4835b0">match</a>. <br /></td></tr>
+<tr class="separator:a563105db169126ce8ee78bdc018d908a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Лексический анализатор. </p>
+<p>Формирует лексемы. Выбрасывает исключение std::invalid_argument, когда проваливается попытка зарегистрировать ключевое слово в <a class="el" href="class_lexer.html#a19c367ea1a90bfa201dfa2a16f5e3a4b">keyWords</a> </p><dl class="section author"><dt>Автор</dt><dd>Namat </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>19 нояб. 2016 г. </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a96f9ebb144a6afb1483828c05c6dd452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96f9ebb144a6afb1483828c05c6dd452">&sect;&nbsp;</a></span>doubleToken()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ptrToken Lexer::doubleToken </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Формирует токен вещественного числа </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Целая часть числа </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad1b284a56f68bb527648fc7d8a4835b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b284a56f68bb527648fc7d8a4835b0">&sect;&nbsp;</a></span>match()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Lexer::match </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__lexer.html#ga305263dd89ad9fde1863aece00907351">Tag</a>&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверяет тип следующего токена </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Тип токена</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Проверяет следуюший токен с переданным типом и возвращает результат.<br />
+Сохраняет токен в <a class="el" href="class_lexer.html#a563105db169126ce8ee78bdc018d908a">queue</a>, впоследствии токен выбирается с помощью <a class="el" href="class_lexer.html#a49f2eccbe05c324c89c98000280e8960">token</a> и удаляется из <a class="el" href="class_lexer.html#a563105db169126ce8ee78bdc018d908a">queue</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a19c367ea1a90bfa201dfa2a16f5e3a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c367ea1a90bfa201dfa2a16f5e3a4b">&sect;&nbsp;</a></span>keyWords</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;std::string,ptrWord&gt; Lexer::keyWords</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Хранит строковое представление и указатель на лексему </p>
+<p>Используется для резервирования и сопоставления ключевых слов и переменных </p>
+
+</div>
+</div>
+<a id="a09db872a372d3aa3dd57ba51efd22f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09db872a372d3aa3dd57ba51efd22f6a">&sect;&nbsp;</a></span>position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Position Lexer::position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Хранит относительную позицию в потоке </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">first</td><td>Номер строки. Начинается с 0 </td></tr>
+    <tr><td class="paramname">second</td><td>Номер символа в строке. Начинается с 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>lexer/<a class="el" href="_lexer_8h_source.html">Lexer.h</a></li>
+<li>lexer/Lexer.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_lexer.html">Lexer</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
+</body>
+</html>

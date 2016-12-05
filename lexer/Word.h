@@ -18,10 +18,11 @@
 class Word : public Token{
 public:
     const std::string lexeme;   ///< Хранит строковое представление лексемы.
-    Word(std::string str, Tag tag) : Token(tag), lexeme(str){}
+    Word(const std::string& str,const Tag tag = Tag::VARIABLE)
+        : Token(tag), lexeme(str){}
     virtual ~Word(){}
-    ///Выводит строку по шаблону: [Тип лексемы ; Значение]
-    std::string toString() override {
+    ///Формирует строку по шаблону: [Тип лексемы ; Значение]
+    std::string toString() const override {
         std::string str("[");
         switch (tag) {
             case Tag::VARIABLE:

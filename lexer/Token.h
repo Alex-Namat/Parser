@@ -18,12 +18,13 @@
 class Token{
 public:
     const int tag;  ///<Содержит тип лексемы @ref Tag
-    Token(int t) : tag(t) {}
-    virtual ~Token(){}
-    ///Выводит строку по шаблону: [Тип лексемы]
-    virtual std::string toString(){
+    Token(const int& t) : tag(t) {}
+    virtual ~Token() = default;
+    ///Формирует строку по шаблону: [Тип лексемы]
+    virtual std::string toString() const{
         std::string str("[");
-        str += (char)tag + "]";
+        str += (char)tag;
+        str += "]";
         return str;
     }
 };

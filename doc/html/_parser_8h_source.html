@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Parser: Исходный файл parser/Parser.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Parser
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_parser_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Parser.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_parser_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef PARSER_H_</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define PARSER_H_</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_lexer_8h.html">Lexer.h</a>&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">typedef</span> std::unordered_map&lt;ptrWord,double&gt; hashTable;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_parser.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_parser.html">Parser</a> {</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_parser.html#aad05518621c5340d31f2b986a6467584">   25</a></span>&#160;    <a class="code" href="class_lexer.html">Lexer</a> <a class="code" href="class_parser.html#aad05518621c5340d31f2b986a6467584">lexer</a>;                            </div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_parser.html#a8a73994adf7229dfd06ec20205e77c6b">   26</a></span>&#160;    ptrToken <a class="code" href="class_parser.html#a8a73994adf7229dfd06ec20205e77c6b">token</a>;                         </div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_parser.html#aaa105af4fc2ae9448e7969ea9dfc21df">   27</a></span>&#160;    hashTable <a class="code" href="class_parser.html#aaa105af4fc2ae9448e7969ea9dfc21df">table</a>;                        </div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_parser.html">Parser</a>(std::istream&amp; in);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_parser.html">Parser</a>() = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_parser.html#ad941a297e9f6abb39271090806a6be33">parse</a>();                           </div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    hashTable <a class="code" href="class_parser.html#a28dd873234659052a53ab2a67bee4508">variables</a>() <span class="keyword">const</span>;            </div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_parser.html#ad9f20e86e0d6e9a69eae5a3eb2e007bf">language</a>();                        </div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_parser.html#a09b51fc60b71c7ffa1aa2c9e50f768f7">definition</a>();                      </div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_parser.html#a247a969512edd0f2b3953f1e77864f2b">operation</a>();                       </div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_parser.html#aaf91985b44e2c1cdf51e690e037991b3">additive</a>(<span class="keywordtype">double</span>&amp; result);          </div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_parser.html#a054c60397172f6f10d52bbbaac7b65a1">multiplicative</a>(<span class="keywordtype">double</span>&amp; result);    </div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_parser.html#a91eccffe59bda3999e630a4f262345c2">exponential</a>(<span class="keywordtype">double</span>&amp; result);       </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_parser.html#ad8d2a5775322226fb1d26726b3160354">unarySign</a>(<span class="keywordtype">double</span>&amp; result);         </div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_parser.html#a33eecd357a342c6320944395493efa72">expression</a>(<span class="keywordtype">double</span>&amp; result);        </div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_parser.html#a324a5bb61c9dfc645300a92aecd6fe69">nextToken</a>();                       </div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PARSER_H_ */</span><span class="preprocessor"></span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="ttc" id="class_parser_html_ad8d2a5775322226fb1d26726b3160354"><div class="ttname"><a href="class_parser.html#ad8d2a5775322226fb1d26726b3160354">Parser::unarySign</a></div><div class="ttdeci">void unarySign(double &amp;result)</div><div class="ttdoc">Разбор унарных знаков </div><div class="ttdef"><b>Definition:</b> Parser.cpp:128</div></div>
+<div class="ttc" id="class_parser_html_a28dd873234659052a53ab2a67bee4508"><div class="ttname"><a href="class_parser.html#a28dd873234659052a53ab2a67bee4508">Parser::variables</a></div><div class="ttdeci">hashTable variables() const</div><div class="ttdoc">Возвращает table. </div><div class="ttdef"><b>Definition:</b> Parser.cpp:28</div></div>
+<div class="ttc" id="class_parser_html"><div class="ttname"><a href="class_parser.html">Parser</a></div><div class="ttdoc">Синтаксический анализатор </div><div class="ttdef"><b>Definition:</b> Parser.h:24</div></div>
+<div class="ttc" id="class_parser_html_a054c60397172f6f10d52bbbaac7b65a1"><div class="ttname"><a href="class_parser.html#a054c60397172f6f10d52bbbaac7b65a1">Parser::multiplicative</a></div><div class="ttdeci">void multiplicative(double &amp;result)</div><div class="ttdoc">Разбор мультипликативных операций </div><div class="ttdef"><b>Definition:</b> Parser.cpp:99</div></div>
+<div class="ttc" id="class_parser_html_ad941a297e9f6abb39271090806a6be33"><div class="ttname"><a href="class_parser.html#ad941a297e9f6abb39271090806a6be33">Parser::parse</a></div><div class="ttdeci">void parse()</div><div class="ttdoc">Анализ грамматики </div><div class="ttdef"><b>Definition:</b> Parser.cpp:19</div></div>
+<div class="ttc" id="class_parser_html_a33eecd357a342c6320944395493efa72"><div class="ttname"><a href="class_parser.html#a33eecd357a342c6320944395493efa72">Parser::expression</a></div><div class="ttdeci">void expression(double &amp;result)</div><div class="ttdoc">Разбор скобок </div><div class="ttdef"><b>Definition:</b> Parser.cpp:138</div></div>
+<div class="ttc" id="class_parser_html_aaa105af4fc2ae9448e7969ea9dfc21df"><div class="ttname"><a href="class_parser.html#aaa105af4fc2ae9448e7969ea9dfc21df">Parser::table</a></div><div class="ttdeci">hashTable table</div><div class="ttdoc">Хранит значения переменных </div><div class="ttdef"><b>Definition:</b> Parser.h:27</div></div>
+<div class="ttc" id="class_parser_html_a91eccffe59bda3999e630a4f262345c2"><div class="ttname"><a href="class_parser.html#a91eccffe59bda3999e630a4f262345c2">Parser::exponential</a></div><div class="ttdeci">void exponential(double &amp;result)</div><div class="ttdoc">Разбор степенных операций </div><div class="ttdef"><b>Definition:</b> Parser.cpp:118</div></div>
+<div class="ttc" id="class_lexer_html"><div class="ttname"><a href="class_lexer.html">Lexer</a></div><div class="ttdoc">Лексический анализатор. </div><div class="ttdef"><b>Definition:</b> Lexer.h:30</div></div>
+<div class="ttc" id="class_parser_html_aad05518621c5340d31f2b986a6467584"><div class="ttname"><a href="class_parser.html#aad05518621c5340d31f2b986a6467584">Parser::lexer</a></div><div class="ttdeci">Lexer lexer</div><div class="ttdoc">Лексический анализатор </div><div class="ttdef"><b>Definition:</b> Parser.h:25</div></div>
+<div class="ttc" id="_lexer_8h_html"><div class="ttname"><a href="_lexer_8h.html">Lexer.h</a></div></div>
+<div class="ttc" id="class_parser_html_ad9f20e86e0d6e9a69eae5a3eb2e007bf"><div class="ttname"><a href="class_parser.html#ad9f20e86e0d6e9a69eae5a3eb2e007bf">Parser::language</a></div><div class="ttdeci">void language()</div><div class="ttdoc">Разбор нетерминала &amp;#39;Язык&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Parser.cpp:32</div></div>
+<div class="ttc" id="class_parser_html_a8a73994adf7229dfd06ec20205e77c6b"><div class="ttname"><a href="class_parser.html#a8a73994adf7229dfd06ec20205e77c6b">Parser::token</a></div><div class="ttdeci">ptrToken token</div><div class="ttdoc">Очередной токен </div><div class="ttdef"><b>Definition:</b> Parser.h:26</div></div>
+<div class="ttc" id="class_parser_html_a247a969512edd0f2b3953f1e77864f2b"><div class="ttname"><a href="class_parser.html#a247a969512edd0f2b3953f1e77864f2b">Parser::operation</a></div><div class="ttdeci">void operation()</div><div class="ttdoc">Разбор нетерминала &amp;#39;Опер&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Parser.cpp:70</div></div>
+<div class="ttc" id="class_parser_html_aaf91985b44e2c1cdf51e690e037991b3"><div class="ttname"><a href="class_parser.html#aaf91985b44e2c1cdf51e690e037991b3">Parser::additive</a></div><div class="ttdeci">void additive(double &amp;result)</div><div class="ttdoc">Разбор аддитивных операций </div><div class="ttdef"><b>Definition:</b> Parser.cpp:81</div></div>
+<div class="ttc" id="class_parser_html_a324a5bb61c9dfc645300a92aecd6fe69"><div class="ttname"><a href="class_parser.html#a324a5bb61c9dfc645300a92aecd6fe69">Parser::nextToken</a></div><div class="ttdeci">void nextToken()</div><div class="ttdoc">Записывает в token очередной токен </div><div class="ttdef"><b>Definition:</b> Parser.cpp:167</div></div>
+<div class="ttc" id="class_parser_html_a09b51fc60b71c7ffa1aa2c9e50f768f7"><div class="ttname"><a href="class_parser.html#a09b51fc60b71c7ffa1aa2c9e50f768f7">Parser::definition</a></div><div class="ttdeci">void definition()</div><div class="ttdoc">Разбор нетерминала &amp;#39;Определение&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Parser.cpp:46</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_572890c148f68441e050f6560d78312b.html">parser</a></li><li class="navelem"><a class="el" href="_parser_8h.html">Parser.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
+</body>
+</html>

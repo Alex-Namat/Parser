@@ -17,10 +17,10 @@
 class Label : public Token{
 public:
     const int value;    ///< Хранит значение метки.
-    Label(int v) : Token(Tag::LABEL), value(v){}
-    virtual ~Label(){}
-    ///Выводит строку по шаблону: [LABEL ; Значение]
-    std::string toString() override {
+    Label(const int& v) : Token(Tag::LABEL), value(v){}
+    virtual ~Label() = default;
+    ///Формирует строку по шаблону: [LABEL ; Значение]
+    std::string toString() const override {
         std::string str("[LABEL ; ");
         str += std::to_string(value) + "]";
         return str;

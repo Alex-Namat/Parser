@@ -11,7 +11,7 @@
 
 #ifndef TAG_H_
 #define TAG_H_
-//unary minus
+
 enum Tag{
     VARIABLE = 1000,    ///< Переменная
     REAL_NUM,           ///< Вещественное число
@@ -21,7 +21,7 @@ enum Tag{
     END,                ///< Ключевое слово "End"
     REAL,               ///< Ключевое слово "Real"
     INTEGER,            ///< Ключевое слово "Integer"
-    ERROR               ///< Лексическая ошибка
+    EoF = 0             ///< Признак конца файла
 };
 
 

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Parser: Исходный файл lexer/Word.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Parser
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_word_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Word.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_word_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef WORD_H_</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define WORD_H_</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_token_8h.html">Token.h</a>&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_word.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_word.html">Word</a> : <span class="keyword">public</span> <a class="code" href="class_token.html">Token</a>{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_word.html#afbf33374183617ecf5ee9586c38db284">   20</a></span>&#160;    <span class="keyword">const</span> std::string <a class="code" href="class_word.html#afbf33374183617ecf5ee9586c38db284">lexeme</a>;   </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_word.html">Word</a>(<span class="keyword">const</span> std::string&amp; str,<span class="keyword">const</span> <a class="code" href="group__lexer.html#ga305263dd89ad9fde1863aece00907351">Tag</a> <a class="code" href="class_token.html#a262a821ed83337cff86d19195714307b">tag</a> = <a class="code" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a39031ce5df6f91d3778590d6d644b9ea">Tag::VARIABLE</a>)</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        : <a class="code" href="class_token.html">Token</a>(<a class="code" href="class_token.html#a262a821ed83337cff86d19195714307b">tag</a>), lexeme(str){}</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_word.html">Word</a>(){}</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_word.html#a8a764220569ed647beac1f6b86cf0379">   25</a></span>&#160;    std::string <a class="code" href="class_word.html#a8a764220569ed647beac1f6b86cf0379">toString</a>()<span class="keyword"> const override </span>{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::string str(<span class="stringliteral">&quot;[&quot;</span>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">switch</span> (<a class="code" href="class_token.html#a262a821ed83337cff86d19195714307b">tag</a>) {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a39031ce5df6f91d3778590d6d644b9ea">Tag::VARIABLE</a>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                str += <span class="stringliteral">&quot;VARIABLE&quot;</span>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a368db50032da622d4c456ef7eaf9cb67">Tag::BEGIN</a>:</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                str += <span class="stringliteral">&quot;BEGIN&quot;</span>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351adc6f24fd6915a3f2786a1b7045406924">Tag::END</a>:</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                str += <span class="stringliteral">&quot;END&quot;</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a5a063e265d2ac903b6808e9f6e73ec46">Tag::INTEGER</a>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                str += <span class="stringliteral">&quot;INTEGER&quot;</span>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a053cb139f4b2333482449705c529b1e9">Tag::REAL</a>:</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                str += <span class="stringliteral">&quot;REAL&quot;</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">default</span>:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                str += std::to_string(<a class="code" href="class_token.html#a262a821ed83337cff86d19195714307b">tag</a>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">break</span>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        str += <span class="stringliteral">&quot; ; &quot;</span> + lexeme + <span class="stringliteral">&quot;]&quot;</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span> str;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* WORD_H_ */</span><span class="preprocessor"></span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="ttc" id="group__lexer_html_ga305263dd89ad9fde1863aece00907351"><div class="ttname"><a href="group__lexer.html#ga305263dd89ad9fde1863aece00907351">Tag</a></div><div class="ttdeci">Tag</div><div class="ttdef"><b>Definition:</b> Tag.h:15</div></div>
+<div class="ttc" id="group__lexer_html_gga305263dd89ad9fde1863aece00907351a5a063e265d2ac903b6808e9f6e73ec46"><div class="ttname"><a href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a5a063e265d2ac903b6808e9f6e73ec46">INTEGER</a></div><div class="ttdoc">Ключевое слово &quot;Integer&quot;. </div><div class="ttdef"><b>Definition:</b> Tag.h:23</div></div>
+<div class="ttc" id="class_token_html"><div class="ttname"><a href="class_token.html">Token</a></div><div class="ttdoc">Класс для токенов. </div><div class="ttdef"><b>Definition:</b> Token.h:18</div></div>
+<div class="ttc" id="class_word_html_afbf33374183617ecf5ee9586c38db284"><div class="ttname"><a href="class_word.html#afbf33374183617ecf5ee9586c38db284">Word::lexeme</a></div><div class="ttdeci">const std::string lexeme</div><div class="ttdoc">Хранит строковое представление лексемы. </div><div class="ttdef"><b>Definition:</b> Word.h:20</div></div>
+<div class="ttc" id="class_word_html_a8a764220569ed647beac1f6b86cf0379"><div class="ttname"><a href="class_word.html#a8a764220569ed647beac1f6b86cf0379">Word::toString</a></div><div class="ttdeci">std::string toString() const override</div><div class="ttdoc">Формирует строку по шаблону: [Тип лексемы ; Значение]. </div><div class="ttdef"><b>Definition:</b> Word.h:25</div></div>
+<div class="ttc" id="group__lexer_html_gga305263dd89ad9fde1863aece00907351a053cb139f4b2333482449705c529b1e9"><div class="ttname"><a href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a053cb139f4b2333482449705c529b1e9">REAL</a></div><div class="ttdoc">Ключевое слово &quot;Real&quot;. </div><div class="ttdef"><b>Definition:</b> Tag.h:22</div></div>
+<div class="ttc" id="group__lexer_html_gga305263dd89ad9fde1863aece00907351a368db50032da622d4c456ef7eaf9cb67"><div class="ttname"><a href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a368db50032da622d4c456ef7eaf9cb67">BEGIN</a></div><div class="ttdoc">Ключевое слово &quot;Begin&quot;. </div><div class="ttdef"><b>Definition:</b> Tag.h:20</div></div>
+<div class="ttc" id="class_token_html_a262a821ed83337cff86d19195714307b"><div class="ttname"><a href="class_token.html#a262a821ed83337cff86d19195714307b">Token::tag</a></div><div class="ttdeci">const int tag</div><div class="ttdoc">Содержит тип лексемы Tag. </div><div class="ttdef"><b>Definition:</b> Token.h:20</div></div>
+<div class="ttc" id="group__lexer_html_gga305263dd89ad9fde1863aece00907351adc6f24fd6915a3f2786a1b7045406924"><div class="ttname"><a href="group__lexer.html#gga305263dd89ad9fde1863aece00907351adc6f24fd6915a3f2786a1b7045406924">END</a></div><div class="ttdoc">Ключевое слово &quot;End&quot;. </div><div class="ttdef"><b>Definition:</b> Tag.h:21</div></div>
+<div class="ttc" id="_token_8h_html"><div class="ttname"><a href="_token_8h.html">Token.h</a></div></div>
+<div class="ttc" id="class_word_html"><div class="ttname"><a href="class_word.html">Word</a></div><div class="ttdoc">Класс для переменных и ключевых слов. </div><div class="ttdef"><b>Definition:</b> Word.h:18</div></div>
+<div class="ttc" id="group__lexer_html_gga305263dd89ad9fde1863aece00907351a39031ce5df6f91d3778590d6d644b9ea"><div class="ttname"><a href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a39031ce5df6f91d3778590d6d644b9ea">VARIABLE</a></div><div class="ttdoc">Переменная </div><div class="ttdef"><b>Definition:</b> Tag.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_cb836fcfc4cd05d6688b5407f9ff7db1.html">lexer</a></li><li class="navelem"><a class="el" href="_word_8h.html">Word.h</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
+</body>
+</html>

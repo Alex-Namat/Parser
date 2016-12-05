@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Parser: Лексический анализатор</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Parser
+   </div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.12 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group__lexer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Лексический анализатор</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Реализовывает лексический анализатор.  
+<a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_integer_number.html">IntegerNumber</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс для целых чисел.  <a href="class_integer_number.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_label.html">Label</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс для меток.  <a href="class_label.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html">Lexer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лексический анализатор.  <a href="class_lexer.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_real_number.html">RealNumber</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс для вещественных чисел.  <a href="class_real_number.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_token.html">Token</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс для токенов.  <a href="class_token.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_word.html">Word</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс для переменных и ключевых слов.  <a href="class_word.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:gace76f4ea37cbebcd154bb398a107269d"><td class="memItemLeft" align="right" valign="top"><a id="gace76f4ea37cbebcd154bb398a107269d"></a>
+typedef std::shared_ptr&lt; <a class="el" href="class_token.html">Token</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptrToken</b></td></tr>
+<tr class="separator:gace76f4ea37cbebcd154bb398a107269d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bb7d09712c96e7a47e97471f243d52d"><td class="memItemLeft" align="right" valign="top"><a id="ga9bb7d09712c96e7a47e97471f243d52d"></a>
+typedef std::shared_ptr&lt; <a class="el" href="class_word.html">Word</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptrWord</b></td></tr>
+<tr class="separator:ga9bb7d09712c96e7a47e97471f243d52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b9396b31dd9fb42e98cc027618132c8"><td class="memItemLeft" align="right" valign="top"><a id="ga2b9396b31dd9fb42e98cc027618132c8"></a>
+typedef std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Position</b></td></tr>
+<tr class="separator:ga2b9396b31dd9fb42e98cc027618132c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:ga305263dd89ad9fde1863aece00907351"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lexer.html#ga305263dd89ad9fde1863aece00907351">Tag</a> { <br />
+&#160;&#160;<a class="el" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a39031ce5df6f91d3778590d6d644b9ea">VARIABLE</a> = 1000, 
+<a class="el" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a6b7ebb5ddda453b7358d26aea5b9c23f">REAL_NUM</a>, 
+<a class="el" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351adf1291e3d2d5a0df31c8cedd3be79753">INT_NUM</a>, 
+<a class="el" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a0f90de4d94720fdd5156fd7e7c3b0c9b">LABEL</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a368db50032da622d4c456ef7eaf9cb67">BEGIN</a>, 
+<a class="el" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351adc6f24fd6915a3f2786a1b7045406924">END</a>, 
+<a class="el" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a053cb139f4b2333482449705c529b1e9">REAL</a>, 
+<a class="el" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a5a063e265d2ac903b6808e9f6e73ec46">INTEGER</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a80c7a2ea3645a1a3dbce6817d2b52d44">EoF</a> = 0
+<br />
+ }</td></tr>
+<tr class="separator:ga305263dd89ad9fde1863aece00907351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<p>Реализовывает лексический анализатор. </p>
+<h2 class="groupheader">Перечисления</h2>
+<a id="ga305263dd89ad9fde1863aece00907351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga305263dd89ad9fde1863aece00907351">&sect;&nbsp;</a></span>Tag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__lexer.html#ga305263dd89ad9fde1863aece00907351">Tag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a id="gga305263dd89ad9fde1863aece00907351a39031ce5df6f91d3778590d6d644b9ea"></a>VARIABLE&#160;</td><td class="fielddoc"><p>Переменная </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga305263dd89ad9fde1863aece00907351a6b7ebb5ddda453b7358d26aea5b9c23f"></a>REAL_NUM&#160;</td><td class="fielddoc"><p>Вещественное число </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga305263dd89ad9fde1863aece00907351adf1291e3d2d5a0df31c8cedd3be79753"></a>INT_NUM&#160;</td><td class="fielddoc"><p>Целое число </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga305263dd89ad9fde1863aece00907351a0f90de4d94720fdd5156fd7e7c3b0c9b"></a>LABEL&#160;</td><td class="fielddoc"><p>Метка </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga305263dd89ad9fde1863aece00907351a368db50032da622d4c456ef7eaf9cb67"></a>BEGIN&#160;</td><td class="fielddoc"><p>Ключевое слово "Begin". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga305263dd89ad9fde1863aece00907351adc6f24fd6915a3f2786a1b7045406924"></a>END&#160;</td><td class="fielddoc"><p>Ключевое слово "End". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga305263dd89ad9fde1863aece00907351a053cb139f4b2333482449705c529b1e9"></a>REAL&#160;</td><td class="fielddoc"><p>Ключевое слово "Real". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga305263dd89ad9fde1863aece00907351a5a063e265d2ac903b6808e9f6e73ec46"></a>INTEGER&#160;</td><td class="fielddoc"><p>Ключевое слово "Integer". </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga305263dd89ad9fde1863aece00907351a80c7a2ea3645a1a3dbce6817d2b52d44"></a>EoF&#160;</td><td class="fielddoc"><p>Признак конца файла </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
+  </ul>
+</div>
+</body>
+</html>
