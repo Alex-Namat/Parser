@@ -1,0 +1,4 @@
+<map id="Lexer::doubleToken" name="Lexer::doubleToken">
+<area shape="rect" id="node2" href="$class_lexer.html#a8a7d4556fce18882372ddc038ebd9102" title="Считывает очередной символ " alt="" coords="188,5,289,32"/>
+<area shape="rect" id="node3" href="$class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713" title="Проверяет конец файла " alt="" coords="337,5,416,32"/>
+</map>

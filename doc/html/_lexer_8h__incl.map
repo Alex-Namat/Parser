@@ -1,5 +1,8 @@
 <map id="lexer/Lexer.h" name="lexer/Lexer.h">
-<area shape="rect" id="node6" href="$_token_8h.html" title="Token.h" alt="" coords="385,155,453,181"/>
-<area shape="rect" id="node9" href="$_word_8h.html" title="Word.h" alt="" coords="456,80,520,107"/>
-<area shape="rect" id="node8" href="$_tag_8h.html" title="Типы лексем. " alt="" coords="385,229,439,256"/>
+<area shape="rect" id="node6" href="$_token_8h.html" title="Token.h" alt="" coords="643,156,711,183"/>
+<area shape="rect" id="node9" href="$_word_8h.html" title="Word.h" alt="" coords="827,81,891,108"/>
+<area shape="rect" id="node10" href="$_integer_number_8h.html" title="IntegerNumber.h" alt="" coords="469,81,587,108"/>
+<area shape="rect" id="node11" href="$_real_number_8h.html" title="RealNumber.h" alt="" coords="611,81,715,108"/>
+<area shape="rect" id="node12" href="$_label_8h.html" title="Label.h" alt="" coords="739,81,803,108"/>
+<area shape="rect" id="node8" href="$_tag_8h.html" title="Типы лексем. " alt="" coords="650,231,705,257"/>
 </map>

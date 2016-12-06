@@ -14,13 +14,19 @@
 
 #include "Token.h"
 
-class IntegerNumber : public Token{
+class IntegerNumber : public Token {
 public:
-    const int value;    ///< Хранит значение числа.
-    IntegerNumber(const int& v) : Token(Tag::INT_NUM), value(v){}
+    /// Хранит значение числа.
+    const int value;
+
+    IntegerNumber(const int& v)
+            : Token(Tag::INT_NUM), value(v) {
+    }
+
     virtual ~IntegerNumber() = default;
+
     ///Формирует строку по шаблону: [INT_NUM ; Значение]
-    std::string toString() const override{
+    std::string toString() const override {
         std::string str("[INT_NUM ; ");
         str += std::to_string(value) + "]";
         return str;

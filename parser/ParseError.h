@@ -16,25 +16,34 @@
 
 class ParseError : public std::exception {
 public:
-    std::pair<int,int> pos;                 ///<Относительная позиция синтаксического анализатора.
-    std::string tok;                        ///<Информация о лексеме.
-    std::string msg;                        ///<Сообщение ошибки
-    ParseError(std::pair<int,int>& p, std::string t, std::string m  = "")
-        :  pos(p), tok(t), msg(m){}
-    virtual ~ParseError(){}
+    ///Относительная позиция синтаксического анализатора
+    std::pair<int, int> pos;
+
+    ///Информация о лексеме
+    std::string tok;
+
+    ///Сообщение ошибки
+    std::string msg;
+
+    ParseError(std::pair<int, int>& p, std::string t, std::string m = "")
+            : pos(p), tok(t), msg(m) {
+    }
+
+    virtual ~ParseError() = default;
+
     /*!Формирует строку по шаблону:@n
-     * @ref pos.first : @ref pos.second : @ref tok '@ref msg' \\n
+     * @ref pos.first : @ref pos.second : @ref 'tok' @ref msg \\n
      */
-    const char* what() const throw() override{
+    const char* what() const throw () override {
         std::string str;
         str += std::to_string(pos.first);
         str += ":";
         str += std::to_string(pos.second);
-        str += ": ";
+        str += ": '";
         str += tok;
         str += " '";
         str += msg;
-        str += "'\n";
+        str += "\n";
         return str.c_str();
     }
 };

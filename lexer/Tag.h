@@ -12,7 +12,7 @@
 #ifndef TAG_H_
 #define TAG_H_
 
-enum Tag{
+enum Tag {
     VARIABLE = 1000,    ///< Переменная
     REAL_NUM,           ///< Вещественное число
     INT_NUM,            ///< Целое число
@@ -23,8 +23,6 @@ enum Tag{
     INTEGER,            ///< Ключевое слово "Integer"
     EoF = 0             ///< Признак конца файла
 };
-
-
 
 #endif /* TAG_H_ */
 /// @} /

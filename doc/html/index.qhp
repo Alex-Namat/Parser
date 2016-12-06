@@ -22,22 +22,21 @@
               <section title="value" ref="class_label.html#a2b1603b8ea68953ccb027a6a34db2c6a" />
             </section>
             <section title="Lexer" ref="class_lexer.html">
-              <section title="Lexer" ref="class_lexer.html#a63fa5ee65ff46597a78519d0bb5fec02" />
-              <section title="~Lexer" ref="class_lexer.html#afcf31368c10d5ffee35f36d4b964f578" />
-              <section title="doubleToken" ref="class_lexer.html#a96f9ebb144a6afb1483828c05c6dd452" />
-              <section title="eof" ref="class_lexer.html#ac6af4a796db9302364de37c0e69e8c09" />
-              <section title="match" ref="class_lexer.html#ad1b284a56f68bb527648fc7d8a4835b0" />
-              <section title="readch" ref="class_lexer.html#a5c91a26ad6b4294bf7bb8d4c46ea529b" />
-              <section title="reserve" ref="class_lexer.html#af08abd2f498f4bb1781207168919f903" />
-              <section title="skip" ref="class_lexer.html#a8d2585d70adce01584a505a25c3e179d" />
-              <section title="tok" ref="class_lexer.html#a6f554199371d841da1516ab2cafe0ab3" />
-              <section title="token" ref="class_lexer.html#a49f2eccbe05c324c89c98000280e8960" />
-              <section title="c" ref="class_lexer.html#ae7bae0f1db610391772305e8ff05aebe" />
-              <section title="end" ref="class_lexer.html#a991785e82bae3f2f64585a33c06ebe1e" />
-              <section title="keyWords" ref="class_lexer.html#a19c367ea1a90bfa201dfa2a16f5e3a4b" />
-              <section title="pos" ref="class_lexer.html#a548ef54cff3b60ae7e8235a977eacb3a" />
-              <section title="position" ref="class_lexer.html#a09db872a372d3aa3dd57ba51efd22f6a" />
-              <section title="queue" ref="class_lexer.html#a563105db169126ce8ee78bdc018d908a" />
+              <section title="Lexer" ref="class_lexer.html#a3831b45d50fbc9558dd0371d6da1b38d" />
+              <section title="~Lexer" ref="class_lexer.html#ae888441e2eef1e1bce5985761e41563f" />
+              <section title="doubleToken" ref="class_lexer.html#a15cba41ea16fd0f3efd148035094386c" />
+              <section title="eof" ref="class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713" />
+              <section title="match" ref="class_lexer.html#ae5c412e0b2a86f1f9d4528e0c2c2572f" />
+              <section title="readch" ref="class_lexer.html#a8a7d4556fce18882372ddc038ebd9102" />
+              <section title="reserve" ref="class_lexer.html#a6e43f6882f663d95a2518825a6ad3733" />
+              <section title="skip" ref="class_lexer.html#a9945b807d1fa587be69eaebdfe6ae5d9" />
+              <section title="token" ref="class_lexer.html#a62c8bc6078b6a28ac5b5dceec61b692f" />
+              <section title="c" ref="class_lexer.html#a09c78a9dad1828eec6baaacab96f7a69" />
+              <section title="end" ref="class_lexer.html#a124bf1960879c4dacd48e2ccd4238313" />
+              <section title="keyWords" ref="class_lexer.html#ac1f528bd6cbe6360cf75157946d83075" />
+              <section title="look" ref="class_lexer.html#ae067682cc940fffdb051f3fcc7983bc5" />
+              <section title="pos" ref="class_lexer.html#aa07af54632abc7a4b9907a0b9ee092c8" />
+              <section title="position" ref="class_lexer.html#a346fa1a5e19b8be8f2afc14c06cb6cb4" />
             </section>
             <section title="RealNumber" ref="class_real_number.html">
               <section title="RealNumber" ref="class_real_number.html#a29a09d65b8ae7572aba56a049ac3a32b" />
@@ -53,7 +52,7 @@
             </section>
             <section title="Word" ref="class_word.html">
               <section title="Word" ref="class_word.html#a00ff2a62a25705604151655f2ea83c9d" />
-              <section title="~Word" ref="class_word.html#ade6e103a4ad4c7a0cc8c68ccda48b737" />
+              <section title="~Word" ref="class_word.html#a916c9334725803b9071e7ccd9fe73da7" />
               <section title="toString" ref="class_word.html#a8a764220569ed647beac1f6b86cf0379" />
               <section title="lexeme" ref="class_word.html#afbf33374183617ecf5ee9586c38db284" />
             </section>
@@ -72,29 +71,30 @@
           <section title="Синтаксический анализатор" ref="group__parser.html">
             <section title="ParseError" ref="class_parse_error.html">
               <section title="ParseError" ref="class_parse_error.html#a9a577da74d41fac57de0bfa5170ba7d2" />
-              <section title="~ParseError" ref="class_parse_error.html#a3826ba6e1e351832c41ef3d32e030cb7" />
+              <section title="~ParseError" ref="class_parse_error.html#aa84f7c899a5bf7a141005aa2936c597a" />
               <section title="what" ref="class_parse_error.html#a960c7389e9c0cb976e9bef673c7881d9" />
               <section title="msg" ref="class_parse_error.html#a227713acbd1e08bfa58164bc5ff8f37c" />
-              <section title="pos" ref="class_parse_error.html#a5f4aa89fd9eb0e92749f0738de5f3fbb" />
+              <section title="pos" ref="class_parse_error.html#a0b7548ae640437c6af276c2a3b7cadc7" />
               <section title="tok" ref="class_parse_error.html#a74f9993b1017ad00cc42ad49b383583a" />
             </section>
             <section title="Parser" ref="class_parser.html">
-              <section title="Parser" ref="class_parser.html#af9d56b65576c354c37c2660baa027ade" />
-              <section title="~Parser" ref="class_parser.html#a7721e35e285126b8a0edbd8482af0f0f" />
-              <section title="additive" ref="class_parser.html#aaf91985b44e2c1cdf51e690e037991b3" />
-              <section title="definition" ref="class_parser.html#a09b51fc60b71c7ffa1aa2c9e50f768f7" />
-              <section title="exponential" ref="class_parser.html#a91eccffe59bda3999e630a4f262345c2" />
-              <section title="expression" ref="class_parser.html#a33eecd357a342c6320944395493efa72" />
-              <section title="language" ref="class_parser.html#ad9f20e86e0d6e9a69eae5a3eb2e007bf" />
-              <section title="multiplicative" ref="class_parser.html#a054c60397172f6f10d52bbbaac7b65a1" />
-              <section title="nextToken" ref="class_parser.html#a324a5bb61c9dfc645300a92aecd6fe69" />
-              <section title="operation" ref="class_parser.html#a247a969512edd0f2b3953f1e77864f2b" />
-              <section title="parse" ref="class_parser.html#ad941a297e9f6abb39271090806a6be33" />
-              <section title="unarySign" ref="class_parser.html#ad8d2a5775322226fb1d26726b3160354" />
-              <section title="variables" ref="class_parser.html#a28dd873234659052a53ab2a67bee4508" />
-              <section title="lexer" ref="class_parser.html#aad05518621c5340d31f2b986a6467584" />
-              <section title="table" ref="class_parser.html#aaa105af4fc2ae9448e7969ea9dfc21df" />
-              <section title="token" ref="class_parser.html#a8a73994adf7229dfd06ec20205e77c6b" />
+              <section title="Parser" ref="class_parser.html#a030bc8bb72444c1fc8e0c884b4c4bfec" />
+              <section title="~Parser" ref="class_parser.html#a29405e554f91fb768185eee014c3eee0" />
+              <section title="additive" ref="class_parser.html#a3bfa47e036c0fe29c7e519ef88b97e65" />
+              <section title="definition" ref="class_parser.html#a5cdfd6d20a24a2597eb58aa5e298cf9b" />
+              <section title="exponential" ref="class_parser.html#aa3a38e61eb77d1eb1c6c20a3f51c457d" />
+              <section title="expression" ref="class_parser.html#af69997ce7206f3655437cb370dc26daa" />
+              <section title="id" ref="class_parser.html#a4c80d227449f9933ba84512140638797" />
+              <section title="language" ref="class_parser.html#a8a5882ad3fb944f599b510f7d36cc880" />
+              <section title="multiplicative" ref="class_parser.html#aaaf1b3d2cc0a89e0e73942801d0b16ee" />
+              <section title="nextToken" ref="class_parser.html#a1acd7da781e3bcfd4cfd8133d6c731ab" />
+              <section title="operation" ref="class_parser.html#ad4867919d8dfad9c366bdb39dd9a10dc" />
+              <section title="parse" ref="class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6" />
+              <section title="unarySign" ref="class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49" />
+              <section title="variables" ref="class_parser.html#aee32ea4ea77be165f0ac2a41a9f29faf" />
+              <section title="lexer" ref="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a" />
+              <section title="table" ref="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d" />
+              <section title="token" ref="class_parser.html#af3c219d62a76aa56b76a8ff034c0d362" />
             </section>
           </section>
         </section>
@@ -113,48 +113,48 @@
               <section title="value" ref="class_label.html#a2b1603b8ea68953ccb027a6a34db2c6a" />
             </section>
             <section title="Lexer" ref="class_lexer.html">
-              <section title="Lexer" ref="class_lexer.html#a63fa5ee65ff46597a78519d0bb5fec02" />
-              <section title="~Lexer" ref="class_lexer.html#afcf31368c10d5ffee35f36d4b964f578" />
-              <section title="doubleToken" ref="class_lexer.html#a96f9ebb144a6afb1483828c05c6dd452" />
-              <section title="eof" ref="class_lexer.html#ac6af4a796db9302364de37c0e69e8c09" />
-              <section title="match" ref="class_lexer.html#ad1b284a56f68bb527648fc7d8a4835b0" />
-              <section title="readch" ref="class_lexer.html#a5c91a26ad6b4294bf7bb8d4c46ea529b" />
-              <section title="reserve" ref="class_lexer.html#af08abd2f498f4bb1781207168919f903" />
-              <section title="skip" ref="class_lexer.html#a8d2585d70adce01584a505a25c3e179d" />
-              <section title="tok" ref="class_lexer.html#a6f554199371d841da1516ab2cafe0ab3" />
-              <section title="token" ref="class_lexer.html#a49f2eccbe05c324c89c98000280e8960" />
-              <section title="c" ref="class_lexer.html#ae7bae0f1db610391772305e8ff05aebe" />
-              <section title="end" ref="class_lexer.html#a991785e82bae3f2f64585a33c06ebe1e" />
-              <section title="keyWords" ref="class_lexer.html#a19c367ea1a90bfa201dfa2a16f5e3a4b" />
-              <section title="pos" ref="class_lexer.html#a548ef54cff3b60ae7e8235a977eacb3a" />
-              <section title="position" ref="class_lexer.html#a09db872a372d3aa3dd57ba51efd22f6a" />
-              <section title="queue" ref="class_lexer.html#a563105db169126ce8ee78bdc018d908a" />
+              <section title="Lexer" ref="class_lexer.html#a3831b45d50fbc9558dd0371d6da1b38d" />
+              <section title="~Lexer" ref="class_lexer.html#ae888441e2eef1e1bce5985761e41563f" />
+              <section title="doubleToken" ref="class_lexer.html#a15cba41ea16fd0f3efd148035094386c" />
+              <section title="eof" ref="class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713" />
+              <section title="match" ref="class_lexer.html#ae5c412e0b2a86f1f9d4528e0c2c2572f" />
+              <section title="readch" ref="class_lexer.html#a8a7d4556fce18882372ddc038ebd9102" />
+              <section title="reserve" ref="class_lexer.html#a6e43f6882f663d95a2518825a6ad3733" />
+              <section title="skip" ref="class_lexer.html#a9945b807d1fa587be69eaebdfe6ae5d9" />
+              <section title="token" ref="class_lexer.html#a62c8bc6078b6a28ac5b5dceec61b692f" />
+              <section title="c" ref="class_lexer.html#a09c78a9dad1828eec6baaacab96f7a69" />
+              <section title="end" ref="class_lexer.html#a124bf1960879c4dacd48e2ccd4238313" />
+              <section title="keyWords" ref="class_lexer.html#ac1f528bd6cbe6360cf75157946d83075" />
+              <section title="look" ref="class_lexer.html#ae067682cc940fffdb051f3fcc7983bc5" />
+              <section title="pos" ref="class_lexer.html#aa07af54632abc7a4b9907a0b9ee092c8" />
+              <section title="position" ref="class_lexer.html#a346fa1a5e19b8be8f2afc14c06cb6cb4" />
             </section>
             <section title="ParseError" ref="class_parse_error.html">
               <section title="ParseError" ref="class_parse_error.html#a9a577da74d41fac57de0bfa5170ba7d2" />
-              <section title="~ParseError" ref="class_parse_error.html#a3826ba6e1e351832c41ef3d32e030cb7" />
+              <section title="~ParseError" ref="class_parse_error.html#aa84f7c899a5bf7a141005aa2936c597a" />
               <section title="what" ref="class_parse_error.html#a960c7389e9c0cb976e9bef673c7881d9" />
               <section title="msg" ref="class_parse_error.html#a227713acbd1e08bfa58164bc5ff8f37c" />
-              <section title="pos" ref="class_parse_error.html#a5f4aa89fd9eb0e92749f0738de5f3fbb" />
+              <section title="pos" ref="class_parse_error.html#a0b7548ae640437c6af276c2a3b7cadc7" />
               <section title="tok" ref="class_parse_error.html#a74f9993b1017ad00cc42ad49b383583a" />
             </section>
             <section title="Parser" ref="class_parser.html">
-              <section title="Parser" ref="class_parser.html#af9d56b65576c354c37c2660baa027ade" />
-              <section title="~Parser" ref="class_parser.html#a7721e35e285126b8a0edbd8482af0f0f" />
-              <section title="additive" ref="class_parser.html#aaf91985b44e2c1cdf51e690e037991b3" />
-              <section title="definition" ref="class_parser.html#a09b51fc60b71c7ffa1aa2c9e50f768f7" />
-              <section title="exponential" ref="class_parser.html#a91eccffe59bda3999e630a4f262345c2" />
-              <section title="expression" ref="class_parser.html#a33eecd357a342c6320944395493efa72" />
-              <section title="language" ref="class_parser.html#ad9f20e86e0d6e9a69eae5a3eb2e007bf" />
-              <section title="multiplicative" ref="class_parser.html#a054c60397172f6f10d52bbbaac7b65a1" />
-              <section title="nextToken" ref="class_parser.html#a324a5bb61c9dfc645300a92aecd6fe69" />
-              <section title="operation" ref="class_parser.html#a247a969512edd0f2b3953f1e77864f2b" />
-              <section title="parse" ref="class_parser.html#ad941a297e9f6abb39271090806a6be33" />
-              <section title="unarySign" ref="class_parser.html#ad8d2a5775322226fb1d26726b3160354" />
-              <section title="variables" ref="class_parser.html#a28dd873234659052a53ab2a67bee4508" />
-              <section title="lexer" ref="class_parser.html#aad05518621c5340d31f2b986a6467584" />
-              <section title="table" ref="class_parser.html#aaa105af4fc2ae9448e7969ea9dfc21df" />
-              <section title="token" ref="class_parser.html#a8a73994adf7229dfd06ec20205e77c6b" />
+              <section title="Parser" ref="class_parser.html#a030bc8bb72444c1fc8e0c884b4c4bfec" />
+              <section title="~Parser" ref="class_parser.html#a29405e554f91fb768185eee014c3eee0" />
+              <section title="additive" ref="class_parser.html#a3bfa47e036c0fe29c7e519ef88b97e65" />
+              <section title="definition" ref="class_parser.html#a5cdfd6d20a24a2597eb58aa5e298cf9b" />
+              <section title="exponential" ref="class_parser.html#aa3a38e61eb77d1eb1c6c20a3f51c457d" />
+              <section title="expression" ref="class_parser.html#af69997ce7206f3655437cb370dc26daa" />
+              <section title="id" ref="class_parser.html#a4c80d227449f9933ba84512140638797" />
+              <section title="language" ref="class_parser.html#a8a5882ad3fb944f599b510f7d36cc880" />
+              <section title="multiplicative" ref="class_parser.html#aaaf1b3d2cc0a89e0e73942801d0b16ee" />
+              <section title="nextToken" ref="class_parser.html#a1acd7da781e3bcfd4cfd8133d6c731ab" />
+              <section title="operation" ref="class_parser.html#ad4867919d8dfad9c366bdb39dd9a10dc" />
+              <section title="parse" ref="class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6" />
+              <section title="unarySign" ref="class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49" />
+              <section title="variables" ref="class_parser.html#aee32ea4ea77be165f0ac2a41a9f29faf" />
+              <section title="lexer" ref="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a" />
+              <section title="table" ref="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d" />
+              <section title="token" ref="class_parser.html#af3c219d62a76aa56b76a8ff034c0d362" />
             </section>
             <section title="RealNumber" ref="class_real_number.html">
               <section title="RealNumber" ref="class_real_number.html#a29a09d65b8ae7572aba56a049ac3a32b" />
@@ -170,7 +170,7 @@
             </section>
             <section title="Word" ref="class_word.html">
               <section title="Word" ref="class_word.html#a00ff2a62a25705604151655f2ea83c9d" />
-              <section title="~Word" ref="class_word.html#ade6e103a4ad4c7a0cc8c68ccda48b737" />
+              <section title="~Word" ref="class_word.html#a916c9334725803b9071e7ccd9fe73da7" />
               <section title="toString" ref="class_word.html#a8a764220569ed647beac1f6b86cf0379" />
               <section title="lexeme" ref="class_word.html#afbf33374183617ecf5ee9586c38db284" />
             </section>
@@ -180,8 +180,8 @@
             <section title="std::exception">
               <section title="ParseError" ref="class_parse_error.html" />
             </section>
-            <section title="Lexer" ref="class_lexer.html" />
-            <section title="Parser" ref="class_parser.html" />
+            <section title="Lexer&lt; InputIterator &gt;" ref="class_lexer.html" />
+            <section title="Parser&lt; InputIterator &gt;" ref="class_parser.html" />
             <section title="Token" ref="class_token.html">
               <section title="IntegerNumber" ref="class_integer_number.html" />
               <section title="Label" ref="class_label.html" />
@@ -201,7 +201,7 @@
               <section title="IntegerNumber.h" ref="_integer_number_8h.html" />
               <section title="Label.h" ref="_label_8h.html" />
               <section title="Lexer.h" ref="_lexer_8h.html">
-                <section title="Position" ref="group__lexer.html#ga2b9396b31dd9fb42e98cc027618132c8" />
+                <section title="Position" ref="group__lexer.html#ga01ef9402027bf03ab7b3f1bd73abae6b" />
                 <section title="ptrToken" ref="group__lexer.html#gace76f4ea37cbebcd154bb398a107269d" />
                 <section title="ptrWord" ref="group__lexer.html#ga9bb7d09712c96e7a47e97471f243d52d" />
               </section>
@@ -225,7 +225,7 @@
             <section title="parser" ref="dir_572890c148f68441e050f6560d78312b.html">
               <section title="ParseError.h" ref="_parse_error_8h.html" />
               <section title="Parser.h" ref="_parser_8h.html">
-                <section title="hashTable" ref="group__parser.html#ga576df238d0783676ce7e83874ab51ed1" />
+                <section title="hashTable" ref="group__parser.html#ga638f170ba2272578b7eaa177ca68265c" />
               </section>
             </section>
           </section>
@@ -240,12 +240,12 @@
     <keywords>
       <keyword name="ptrToken" id="Lexer.h::ptrToken" ref="_lexer_8h.html#gace76f4ea37cbebcd154bb398a107269d" />
       <keyword name="ptrWord" id="Lexer.h::ptrWord" ref="_lexer_8h.html#ga9bb7d09712c96e7a47e97471f243d52d" />
-      <keyword name="Position" id="Lexer.h::Position" ref="_lexer_8h.html#ga2b9396b31dd9fb42e98cc027618132c8" />
-      <keyword name="hashTable" id="Parser.h::hashTable" ref="_parser_8h.html#ga576df238d0783676ce7e83874ab51ed1" />
+      <keyword name="Position" id="Lexer.h::Position" ref="_lexer_8h.html#ga01ef9402027bf03ab7b3f1bd73abae6b" />
+      <keyword name="hashTable" id="Parser.h::hashTable" ref="_parser_8h.html#ga638f170ba2272578b7eaa177ca68265c" />
       <keyword name="Лексический анализатор" id="Лексический анализатор" ref="group__lexer.html" />
       <keyword name="ptrToken" id="Lexer.h::ptrToken" ref="_lexer_8h.html#gace76f4ea37cbebcd154bb398a107269d" />
       <keyword name="ptrWord" id="Lexer.h::ptrWord" ref="_lexer_8h.html#ga9bb7d09712c96e7a47e97471f243d52d" />
-      <keyword name="Position" id="Lexer.h::Position" ref="_lexer_8h.html#ga2b9396b31dd9fb42e98cc027618132c8" />
+      <keyword name="Position" id="Lexer.h::Position" ref="_lexer_8h.html#ga01ef9402027bf03ab7b3f1bd73abae6b" />
       <keyword name="VARIABLE" id="Tag.h::VARIABLE" ref="_tag_8h.html#gga305263dd89ad9fde1863aece00907351a39031ce5df6f91d3778590d6d644b9ea" />
       <keyword name="REAL_NUM" id="Tag.h::REAL_NUM" ref="_tag_8h.html#gga305263dd89ad9fde1863aece00907351a6b7ebb5ddda453b7358d26aea5b9c23f" />
       <keyword name="INT_NUM" id="Tag.h::INT_NUM" ref="_tag_8h.html#gga305263dd89ad9fde1863aece00907351adf1291e3d2d5a0df31c8cedd3be79753" />
@@ -256,7 +256,7 @@
       <keyword name="INTEGER" id="Tag.h::INTEGER" ref="_tag_8h.html#gga305263dd89ad9fde1863aece00907351a5a063e265d2ac903b6808e9f6e73ec46" />
       <keyword name="EoF" id="Tag.h::EoF" ref="_tag_8h.html#gga305263dd89ad9fde1863aece00907351a80c7a2ea3645a1a3dbce6817d2b52d44" />
       <keyword name="Синтаксический анализатор" id="Синтаксический анализатор" ref="group__parser.html" />
-      <keyword name="hashTable" id="Parser.h::hashTable" ref="_parser_8h.html#ga576df238d0783676ce7e83874ab51ed1" />
+      <keyword name="hashTable" id="Parser.h::hashTable" ref="_parser_8h.html#ga638f170ba2272578b7eaa177ca68265c" />
       <keyword name="IntegerNumber" id="IntegerNumber" ref="class_integer_number.html" />
       <keyword name="IntegerNumber" id="IntegerNumber::IntegerNumber" ref="class_integer_number.html#ac7bc4b8c49d364a9695a8d484853e010" />
       <keyword name="toString" id="IntegerNumber::toString" ref="class_integer_number.html#aaefe8d7d6419ebdde90a97d63001d71d" />
@@ -270,43 +270,43 @@
       <keyword name="value" id="Label::value" ref="class_label.html#a2b1603b8ea68953ccb027a6a34db2c6a" />
       <keyword name="tag" id="Token::tag" ref="class_token.html#a262a821ed83337cff86d19195714307b" />
       <keyword name="Lexer" id="Lexer" ref="class_lexer.html" />
-      <keyword name="Lexer" id="Lexer::Lexer" ref="class_lexer.html#a63fa5ee65ff46597a78519d0bb5fec02" />
-      <keyword name="token" id="Lexer::token" ref="class_lexer.html#a49f2eccbe05c324c89c98000280e8960" />
-      <keyword name="eof" id="Lexer::eof" ref="class_lexer.html#ac6af4a796db9302364de37c0e69e8c09" />
-      <keyword name="match" id="Lexer::match" ref="class_lexer.html#ad1b284a56f68bb527648fc7d8a4835b0" />
-      <keyword name="position" id="Lexer::position" ref="class_lexer.html#a09db872a372d3aa3dd57ba51efd22f6a" />
-      <keyword name="reserve" id="Lexer::reserve" ref="class_lexer.html#af08abd2f498f4bb1781207168919f903" />
-      <keyword name="readch" id="Lexer::readch" ref="class_lexer.html#a5c91a26ad6b4294bf7bb8d4c46ea529b" />
-      <keyword name="skip" id="Lexer::skip" ref="class_lexer.html#a8d2585d70adce01584a505a25c3e179d" />
-      <keyword name="doubleToken" id="Lexer::doubleToken" ref="class_lexer.html#a96f9ebb144a6afb1483828c05c6dd452" />
-      <keyword name="tok" id="Lexer::tok" ref="class_lexer.html#a6f554199371d841da1516ab2cafe0ab3" />
-      <keyword name="pos" id="Lexer::pos" ref="class_lexer.html#a548ef54cff3b60ae7e8235a977eacb3a" />
-      <keyword name="end" id="Lexer::end" ref="class_lexer.html#a991785e82bae3f2f64585a33c06ebe1e" />
-      <keyword name="c" id="Lexer::c" ref="class_lexer.html#ae7bae0f1db610391772305e8ff05aebe" />
-      <keyword name="keyWords" id="Lexer::keyWords" ref="class_lexer.html#a19c367ea1a90bfa201dfa2a16f5e3a4b" />
-      <keyword name="queue" id="Lexer::queue" ref="class_lexer.html#a563105db169126ce8ee78bdc018d908a" />
+      <keyword name="Lexer" id="Lexer::Lexer" ref="class_lexer.html#a3831b45d50fbc9558dd0371d6da1b38d" />
+      <keyword name="token" id="Lexer::token" ref="class_lexer.html#a62c8bc6078b6a28ac5b5dceec61b692f" />
+      <keyword name="eof" id="Lexer::eof" ref="class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713" />
+      <keyword name="match" id="Lexer::match" ref="class_lexer.html#ae5c412e0b2a86f1f9d4528e0c2c2572f" />
+      <keyword name="position" id="Lexer::position" ref="class_lexer.html#a346fa1a5e19b8be8f2afc14c06cb6cb4" />
+      <keyword name="reserve" id="Lexer::reserve" ref="class_lexer.html#a6e43f6882f663d95a2518825a6ad3733" />
+      <keyword name="readch" id="Lexer::readch" ref="class_lexer.html#a8a7d4556fce18882372ddc038ebd9102" />
+      <keyword name="skip" id="Lexer::skip" ref="class_lexer.html#a9945b807d1fa587be69eaebdfe6ae5d9" />
+      <keyword name="doubleToken" id="Lexer::doubleToken" ref="class_lexer.html#a15cba41ea16fd0f3efd148035094386c" />
+      <keyword name="pos" id="Lexer::pos" ref="class_lexer.html#aa07af54632abc7a4b9907a0b9ee092c8" />
+      <keyword name="end" id="Lexer::end" ref="class_lexer.html#a124bf1960879c4dacd48e2ccd4238313" />
+      <keyword name="c" id="Lexer::c" ref="class_lexer.html#a09c78a9dad1828eec6baaacab96f7a69" />
+      <keyword name="keyWords" id="Lexer::keyWords" ref="class_lexer.html#ac1f528bd6cbe6360cf75157946d83075" />
+      <keyword name="look" id="Lexer::look" ref="class_lexer.html#ae067682cc940fffdb051f3fcc7983bc5" />
       <keyword name="ParseError" id="ParseError" ref="class_parse_error.html" />
       <keyword name="ParseError" id="ParseError::ParseError" ref="class_parse_error.html#a9a577da74d41fac57de0bfa5170ba7d2" />
       <keyword name="what" id="ParseError::what" ref="class_parse_error.html#a960c7389e9c0cb976e9bef673c7881d9" />
-      <keyword name="pos" id="ParseError::pos" ref="class_parse_error.html#a5f4aa89fd9eb0e92749f0738de5f3fbb" />
+      <keyword name="pos" id="ParseError::pos" ref="class_parse_error.html#a0b7548ae640437c6af276c2a3b7cadc7" />
       <keyword name="tok" id="ParseError::tok" ref="class_parse_error.html#a74f9993b1017ad00cc42ad49b383583a" />
       <keyword name="msg" id="ParseError::msg" ref="class_parse_error.html#a227713acbd1e08bfa58164bc5ff8f37c" />
       <keyword name="Parser" id="Parser" ref="class_parser.html" />
-      <keyword name="Parser" id="Parser::Parser" ref="class_parser.html#af9d56b65576c354c37c2660baa027ade" />
-      <keyword name="parse" id="Parser::parse" ref="class_parser.html#ad941a297e9f6abb39271090806a6be33" />
-      <keyword name="variables" id="Parser::variables" ref="class_parser.html#a28dd873234659052a53ab2a67bee4508" />
-      <keyword name="language" id="Parser::language" ref="class_parser.html#ad9f20e86e0d6e9a69eae5a3eb2e007bf" />
-      <keyword name="definition" id="Parser::definition" ref="class_parser.html#a09b51fc60b71c7ffa1aa2c9e50f768f7" />
-      <keyword name="operation" id="Parser::operation" ref="class_parser.html#a247a969512edd0f2b3953f1e77864f2b" />
-      <keyword name="additive" id="Parser::additive" ref="class_parser.html#aaf91985b44e2c1cdf51e690e037991b3" />
-      <keyword name="multiplicative" id="Parser::multiplicative" ref="class_parser.html#a054c60397172f6f10d52bbbaac7b65a1" />
-      <keyword name="exponential" id="Parser::exponential" ref="class_parser.html#a91eccffe59bda3999e630a4f262345c2" />
-      <keyword name="unarySign" id="Parser::unarySign" ref="class_parser.html#ad8d2a5775322226fb1d26726b3160354" />
-      <keyword name="expression" id="Parser::expression" ref="class_parser.html#a33eecd357a342c6320944395493efa72" />
-      <keyword name="nextToken" id="Parser::nextToken" ref="class_parser.html#a324a5bb61c9dfc645300a92aecd6fe69" />
-      <keyword name="lexer" id="Parser::lexer" ref="class_parser.html#aad05518621c5340d31f2b986a6467584" />
-      <keyword name="token" id="Parser::token" ref="class_parser.html#a8a73994adf7229dfd06ec20205e77c6b" />
-      <keyword name="table" id="Parser::table" ref="class_parser.html#aaa105af4fc2ae9448e7969ea9dfc21df" />
+      <keyword name="Parser" id="Parser::Parser" ref="class_parser.html#a030bc8bb72444c1fc8e0c884b4c4bfec" />
+      <keyword name="parse" id="Parser::parse" ref="class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6" />
+      <keyword name="variables" id="Parser::variables" ref="class_parser.html#aee32ea4ea77be165f0ac2a41a9f29faf" />
+      <keyword name="language" id="Parser::language" ref="class_parser.html#a8a5882ad3fb944f599b510f7d36cc880" />
+      <keyword name="definition" id="Parser::definition" ref="class_parser.html#a5cdfd6d20a24a2597eb58aa5e298cf9b" />
+      <keyword name="operation" id="Parser::operation" ref="class_parser.html#ad4867919d8dfad9c366bdb39dd9a10dc" />
+      <keyword name="additive" id="Parser::additive" ref="class_parser.html#a3bfa47e036c0fe29c7e519ef88b97e65" />
+      <keyword name="multiplicative" id="Parser::multiplicative" ref="class_parser.html#aaaf1b3d2cc0a89e0e73942801d0b16ee" />
+      <keyword name="exponential" id="Parser::exponential" ref="class_parser.html#aa3a38e61eb77d1eb1c6c20a3f51c457d" />
+      <keyword name="unarySign" id="Parser::unarySign" ref="class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49" />
+      <keyword name="expression" id="Parser::expression" ref="class_parser.html#af69997ce7206f3655437cb370dc26daa" />
+      <keyword name="nextToken" id="Parser::nextToken" ref="class_parser.html#a1acd7da781e3bcfd4cfd8133d6c731ab" />
+      <keyword name="id" id="Parser::id" ref="class_parser.html#a4c80d227449f9933ba84512140638797" />
+      <keyword name="lexer" id="Parser::lexer" ref="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a" />
+      <keyword name="token" id="Parser::token" ref="class_parser.html#af3c219d62a76aa56b76a8ff034c0d362" />
+      <keyword name="table" id="Parser::table" ref="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d" />
       <keyword name="RealNumber" id="RealNumber" ref="class_real_number.html" />
       <keyword name="RealNumber" id="RealNumber::RealNumber" ref="class_real_number.html#a29a09d65b8ae7572aba56a049ac3a32b" />
       <keyword name="toString" id="RealNumber::toString" ref="class_real_number.html#a4906d5e32f847c004feeafdcf6881fbf" />
@@ -358,13 +358,16 @@
       <file>_parser_8h_source.html</file>
       <file>_integer_number_8h.html</file>
       <file>_integer_number_8h__incl.png</file>
+      <file>_integer_number_8h__dep__incl.png</file>
       <file>_label_8h.html</file>
       <file>_label_8h__incl.png</file>
+      <file>_label_8h__dep__incl.png</file>
       <file>_lexer_8h.html</file>
       <file>_lexer_8h__incl.png</file>
       <file>_lexer_8h__dep__incl.png</file>
       <file>_real_number_8h.html</file>
       <file>_real_number_8h__incl.png</file>
+      <file>_real_number_8h__dep__incl.png</file>
       <file>_tag_8h.html</file>
       <file>_tag_8h__dep__incl.png</file>
       <file>_token_8h.html</file>
@@ -375,6 +378,7 @@
       <file>_word_8h__dep__incl.png</file>
       <file>_parse_error_8h.html</file>
       <file>_parse_error_8h__incl.png</file>
+      <file>_parse_error_8h__dep__incl.png</file>
       <file>_parser_8h.html</file>
       <file>_parser_8h__incl.png</file>
       <file>group__lexer.html</file>
@@ -448,7 +452,7 @@
       <file>functions_func.html</file>
       <file>functions_func.html</file>
       <file>functions_func.html</file>
-      <file>functions_vars.html</file>
+      <file>functions_func.html</file>
       <file>functions_vars.html</file>
       <file>functions_vars.html</file>
       <file>functions_vars.html</file>

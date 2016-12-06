@@ -15,15 +15,21 @@
 #include <string>
 #include "Tag.h"
 
-class Token{
+class Token {
 public:
-    const int tag;  ///<Содержит тип лексемы @ref Tag
-    Token(const int& t) : tag(t) {}
+    ///Содержит тип лексемы @ref Tag
+    const int tag;
+
+    Token(const int& t)
+            : tag(t) {
+    }
+
     virtual ~Token() = default;
+
     ///Формирует строку по шаблону: [Тип лексемы]
-    virtual std::string toString() const{
+    virtual std::string toString() const {
         std::string str("[");
-        str += (char)tag;
+        str += (char) tag;
         str += "]";
         return str;
     }

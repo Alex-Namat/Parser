@@ -15,12 +15,17 @@
 #include "Token.h"
 #include <string>
 
-class Word : public Token{
+class Word : public Token {
 public:
-    const std::string lexeme;   ///< Хранит строковое представление лексемы.
-    Word(const std::string& str,const Tag tag = Tag::VARIABLE)
-        : Token(tag), lexeme(str){}
-    virtual ~Word(){}
+    /// Хранит строковое представление лексемы.
+    const std::string lexeme;
+
+    Word(const std::string& str, const Tag tag = Tag::VARIABLE)
+            : Token(tag), lexeme(str) {
+    }
+
+    virtual ~Word() = default;
+
     ///Формирует строку по шаблону: [Тип лексемы ; Значение]
     std::string toString() const override {
         std::string str("[");

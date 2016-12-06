@@ -1,0 +1,17 @@
+<map id="Parser::parse" name="Parser::parse">
+<area shape="rect" id="node2" href="$class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713" title="Проверяет конец файла " alt="" coords="2027,17,2105,44"/>
+<area shape="rect" id="node3" href="$class_parser.html#a8a5882ad3fb944f599b510f7d36cc880" title="Разбор нетерминала &#39;Язык&#39;. " alt="" coords="153,68,273,95"/>
+<area shape="rect" id="node4" href="$class_parser.html#a1acd7da781e3bcfd4cfd8133d6c731ab" title="&lt;Записывает в token очередной токен " alt="" coords="1376,195,1504,221"/>
+<area shape="rect" id="node9" href="$class_parser.html#a5cdfd6d20a24a2597eb58aa5e298cf9b" title="Разбор нетерминала &#39;Определение&#39;. " alt="" coords="1203,43,1322,69"/>
+<area shape="rect" id="node11" href="$class_parser.html#ad4867919d8dfad9c366bdb39dd9a10dc" title="Разбор нетерминала &#39;Опер&#39;. " alt="" coords="321,347,443,373"/>
+<area shape="rect" id="node5" href="$class_lexer.html#a62c8bc6078b6a28ac5b5dceec61b692f" title="Возвращает очередной токен их потока " alt="" coords="1552,93,1647,120"/>
+<area shape="rect" id="node6" href="$class_lexer.html#a9945b807d1fa587be69eaebdfe6ae5d9" title="Пропуск пробелов " alt="" coords="1719,93,1805,120"/>
+<area shape="rect" id="node7" href="$class_lexer.html#a8a7d4556fce18882372ddc038ebd9102" title="Считывает очередной символ " alt="" coords="1877,68,1979,95"/>
+<area shape="rect" id="node8" href="$class_lexer.html#a15cba41ea16fd0f3efd148035094386c" title="Формирует токен вещественного числа " alt="" coords="1695,144,1829,171"/>
+<area shape="rect" id="node10" href="$class_lexer.html#ae5c412e0b2a86f1f9d4528e0c2c2572f" title="Проверяет тип следующего токена " alt="" coords="1391,68,1489,95"/>
+<area shape="rect" id="node12" href="$class_parser.html#a3bfa47e036c0fe29c7e519ef88b97e65" title="Разбор аддитивных операций " alt="" coords="491,347,601,373"/>
+<area shape="rect" id="node13" href="$class_parser.html#aaaf1b3d2cc0a89e0e73942801d0b16ee" title="Разбор мультипликативных операций " alt="" coords="649,245,792,272"/>
+<area shape="rect" id="node14" href="$class_parser.html#aa3a38e61eb77d1eb1c6c20a3f51c457d" title="Разбор степенных операций " alt="" coords="840,245,975,272"/>
+<area shape="rect" id="node15" href="$class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49" title="Разбор унарных знаков " alt="" coords="1023,245,1149,272"/>
+<area shape="rect" id="node16" href="$class_parser.html#af69997ce7206f3655437cb370dc26daa" title="Разбор скобок " alt="" coords="1197,296,1328,323"/>
+</map>

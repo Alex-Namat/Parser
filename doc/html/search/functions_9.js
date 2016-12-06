@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['skip',['skip',['../class_lexer.html#a8d2585d70adce01584a505a25c3e179d',1,'Lexer']]]
+  ['readch',['readch',['../class_lexer.html#a8a7d4556fce18882372ddc038ebd9102',1,'Lexer']]],
+  ['reserve',['reserve',['../class_lexer.html#a6e43f6882f663d95a2518825a6ad3733',1,'Lexer']]]
 ];

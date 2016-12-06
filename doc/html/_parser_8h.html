@@ -95,18 +95,23 @@ $(document).ready(function(){initNavTree('_parser_8h.html','');});
 <div class="title">Файл Parser.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
+<div class="textblock"><code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
 <code>#include &quot;<a class="el" href="_lexer_8h_source.html">Lexer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_parse_error_8h_source.html">ParseError.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Граф включаемых заголовочных файлов для Parser.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="_parser_8h__incl.png" border="0" usemap="#parser_2_parser_8h" alt=""/></div>
 <map name="parser_2_parser_8h" id="parser_2_parser_8h">
-<area shape="rect" id="node4" href="_lexer_8h.html" title="Lexer.h" alt="" coords="235,80,300,107"/>
-<area shape="rect" id="node8" href="_token_8h.html" title="Token.h" alt="" coords="385,229,453,256"/>
-<area shape="rect" id="node11" href="_word_8h.html" title="Word.h" alt="" coords="457,155,521,181"/>
-<area shape="rect" id="node10" href="_tag_8h.html" title="Типы лексем. " alt="" coords="385,304,440,331"/>
+<area shape="rect" id="node4" href="_lexer_8h.html" title="Lexer.h" alt="" coords="373,80,439,107"/>
+<area shape="rect" id="node15" href="_parse_error_8h.html" title="ParseError.h" alt="" coords="193,80,288,107"/>
+<area shape="rect" id="node8" href="_token_8h.html" title="Token.h" alt="" coords="653,229,721,256"/>
+<area shape="rect" id="node11" href="_word_8h.html" title="Word.h" alt="" coords="827,155,891,181"/>
+<area shape="rect" id="node12" href="_integer_number_8h.html" title="IntegerNumber.h" alt="" coords="686,155,803,181"/>
+<area shape="rect" id="node13" href="_real_number_8h.html" title="RealNumber.h" alt="" coords="243,155,347,181"/>
+<area shape="rect" id="node14" href="_label_8h.html" title="Label.h" alt="" coords="598,155,662,181"/>
+<area shape="rect" id="node10" href="_tag_8h.html" title="Типы лексем. " alt="" coords="660,304,715,331"/>
 </map>
 </div>
 </div>
@@ -114,15 +119,15 @@ $(document).ready(function(){initNavTree('_parser_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html">Parser</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parser.html">Parser&lt; InputIterator &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Синтаксический анализатор  <a href="class_parser.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Определения типов</h2></td></tr>
-<tr class="memitem:ga576df238d0783676ce7e83874ab51ed1"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:ga638f170ba2272578b7eaa177ca68265c"><td class="memItemLeft" align="right" valign="top">
 typedef std::unordered_map&lt; ptrWord, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>hashTable</b></td></tr>
-<tr class="separator:ga576df238d0783676ce7e83874ab51ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga638f170ba2272578b7eaa177ca68265c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['variables',['variables',['../class_parser.html#a28dd873234659052a53ab2a67bee4508',1,'Parser']]]
+  ['unarysign',['unarySign',['../class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49',1,'Parser']]]
 ];

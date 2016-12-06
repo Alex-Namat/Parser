@@ -1,4 +1,3 @@
-
 /*!
  * @mainpage    Синтаксический анализатор
  * @details   @b Вариант 17 @n
@@ -29,29 +28,39 @@
 #include "Parser.h"
 #include "ParseError.h"
 #include <iostream>
+#include <iterator>
 #include <fstream>
+#include <string>
 
-int main(int argc, char *argv[]){
-    std::fstream file;
-    file.open("test.tmp");
-    Lexer lexer(file);
-    if(file.is_open())
-    while(!lexer.eof()){
-       std::cout << lexer.token()->toString() << " ";
+int main(int argc, char *argv[]) {
+    std::fstream file("test.tmp");
+    file >> std::noskipws;
+    using T = std::istream_iterator<char>;
+    using S = std::string::iterator;
+
+    T beg(file), end;
+    Lexer<T> lexer(beg,end);
+    while ( !lexer.eof()) {
+        std::cout << lexer.token()->toString() << " ";
     }
     std::cout << std::endl;
-    file.close();
 
-    file.open("test.tmp");
-    Parser parser(file);
-    if (file.is_open()) {
-        try {
+    std::fstream file1("test.tmp");
+    file1 >> std::noskipws;
+    std::string str;
+    std::copy(T(file1),T(),std::back_inserter(str));
+    Parser<S> parser(str.begin(), str.end());
+    try {
             parser.parse();
-        }
-        catch (ParseError& exception) {
-            std::cout << exception.what();
-        }
+            auto table = parser.variables();
+            for (auto& i : table) {
+                std::cout << i.first->lexeme << " = " << i.second << std::endl;
+            }
     }
-    //system("pause");
-    return 0;
+    catch (ParseError& exception) {
+        std::cout << exception.what();
+    }
+
+//system("pause");*/
+return 0;
 }

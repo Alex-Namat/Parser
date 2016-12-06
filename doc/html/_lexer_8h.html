@@ -96,19 +96,26 @@ $(document).ready(function(){initNavTree('_lexer_8h.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;istream&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;queue&gt;</code><br />
+<code>#include &lt;exception&gt;</code><br />
 <code>#include &quot;<a class="el" href="_token_8h_source.html">Token.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_word_8h_source.html">Word.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_lexer_8h_source.html">Lexer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_integer_number_8h_source.html">IntegerNumber.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_real_number_8h_source.html">RealNumber.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_label_8h_source.html">Label.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Граф включаемых заголовочных файлов для Lexer.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="_lexer_8h__incl.png" border="0" usemap="#lexer_2_lexer_8h" alt=""/></div>
 <map name="lexer_2_lexer_8h" id="lexer_2_lexer_8h">
-<area shape="rect" id="node6" href="_token_8h.html" title="Token.h" alt="" coords="385,155,453,181"/>
-<area shape="rect" id="node9" href="_word_8h.html" title="Word.h" alt="" coords="456,80,520,107"/>
-<area shape="rect" id="node8" href="_tag_8h.html" title="Типы лексем. " alt="" coords="385,229,439,256"/>
+<area shape="rect" id="node6" href="_token_8h.html" title="Token.h" alt="" coords="643,156,711,183"/>
+<area shape="rect" id="node9" href="_word_8h.html" title="Word.h" alt="" coords="827,81,891,108"/>
+<area shape="rect" id="node10" href="_integer_number_8h.html" title="IntegerNumber.h" alt="" coords="469,81,587,108"/>
+<area shape="rect" id="node11" href="_real_number_8h.html" title="RealNumber.h" alt="" coords="611,81,715,108"/>
+<area shape="rect" id="node12" href="_label_8h.html" title="Label.h" alt="" coords="739,81,803,108"/>
+<area shape="rect" id="node8" href="_tag_8h.html" title="Типы лексем. " alt="" coords="650,231,705,257"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -116,7 +123,7 @@ $(document).ready(function(){initNavTree('_lexer_8h.html','');});
 <div class="dyncontent">
 <div class="center"><img src="_lexer_8h__dep__incl.png" border="0" usemap="#lexer_2_lexer_8hdep" alt=""/></div>
 <map name="lexer_2_lexer_8hdep" id="lexer_2_lexer_8hdep">
-<area shape="rect" id="node2" href="_parser_8h.html" title="parser/Parser.h" alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node2" href="_parser_8h.html" title="parser/Parser.h" alt="" coords="5,81,116,107"/>
 </map>
 </div>
 </div>
@@ -124,7 +131,7 @@ $(document).ready(function(){initNavTree('_lexer_8h.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html">Lexer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html">Lexer&lt; InputIterator &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лексический анализатор.  <a href="class_lexer.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -136,9 +143,9 @@ typedef std::shared_ptr&lt; <a class="el" href="class_token.html">Token</a> &gt;
 <tr class="memitem:ga9bb7d09712c96e7a47e97471f243d52d"><td class="memItemLeft" align="right" valign="top">
 typedef std::shared_ptr&lt; <a class="el" href="class_word.html">Word</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ptrWord</b></td></tr>
 <tr class="separator:ga9bb7d09712c96e7a47e97471f243d52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b9396b31dd9fb42e98cc027618132c8"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:ga01ef9402027bf03ab7b3f1bd73abae6b"><td class="memItemLeft" align="right" valign="top">
 typedef std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Position</b></td></tr>
-<tr class="separator:ga2b9396b31dd9fb42e98cc027618132c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga01ef9402027bf03ab7b3f1bd73abae6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

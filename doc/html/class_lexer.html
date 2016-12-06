@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Parser: Класс Lexer</title>
+<title>Parser: Шаблон класса Lexer&lt; InputIterator &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('class_lexer.html','');});
 <a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="class_lexer-members.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс Lexer<div class="ingroups"><a class="el" href="group__lexer.html">Лексический анализатор</a></div></div>  </div>
+<div class="title">Шаблон класса Lexer&lt; InputIterator &gt;<div class="ingroups"><a class="el" href="group__lexer.html">Лексический анализатор</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -106,87 +106,89 @@ $(document).ready(function(){initNavTree('class_lexer.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a63fa5ee65ff46597a78519d0bb5fec02"><td class="memItemLeft" align="right" valign="top"><a id="a63fa5ee65ff46597a78519d0bb5fec02"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Lexer</b> (std::istream &amp;in)</td></tr>
-<tr class="separator:a63fa5ee65ff46597a78519d0bb5fec02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f2eccbe05c324c89c98000280e8960"><td class="memItemLeft" align="right" valign="top"><a id="a49f2eccbe05c324c89c98000280e8960"></a>
-ptrToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a49f2eccbe05c324c89c98000280e8960">token</a> ()</td></tr>
-<tr class="memdesc:a49f2eccbe05c324c89c98000280e8960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает очередной токен их потока <br /></td></tr>
-<tr class="separator:a49f2eccbe05c324c89c98000280e8960"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6af4a796db9302364de37c0e69e8c09"><td class="memItemLeft" align="right" valign="top"><a id="ac6af4a796db9302364de37c0e69e8c09"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#ac6af4a796db9302364de37c0e69e8c09">eof</a> () const</td></tr>
-<tr class="memdesc:ac6af4a796db9302364de37c0e69e8c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет конец файла <br /></td></tr>
-<tr class="separator:ac6af4a796db9302364de37c0e69e8c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1b284a56f68bb527648fc7d8a4835b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#ad1b284a56f68bb527648fc7d8a4835b0">match</a> (<a class="el" href="group__lexer.html#ga305263dd89ad9fde1863aece00907351">Tag</a> t)</td></tr>
-<tr class="memdesc:ad1b284a56f68bb527648fc7d8a4835b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет тип следующего токена  <a href="#ad1b284a56f68bb527648fc7d8a4835b0">Подробнее...</a><br /></td></tr>
-<tr class="separator:ad1b284a56f68bb527648fc7d8a4835b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3831b45d50fbc9558dd0371d6da1b38d"><td class="memItemLeft" align="right" valign="top"><a id="a3831b45d50fbc9558dd0371d6da1b38d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Lexer</b> (InputIterator beg, InputIterator <a class="el" href="class_lexer.html#a124bf1960879c4dacd48e2ccd4238313">end</a>)</td></tr>
+<tr class="separator:a3831b45d50fbc9558dd0371d6da1b38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c8bc6078b6a28ac5b5dceec61b692f"><td class="memItemLeft" align="right" valign="top"><a id="a62c8bc6078b6a28ac5b5dceec61b692f"></a>
+ptrToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a62c8bc6078b6a28ac5b5dceec61b692f">token</a> ()</td></tr>
+<tr class="memdesc:a62c8bc6078b6a28ac5b5dceec61b692f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает очередной токен их потока <br /></td></tr>
+<tr class="separator:a62c8bc6078b6a28ac5b5dceec61b692f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69c484d2b5ce1a82a4ab84ccb33b6713"><td class="memItemLeft" align="right" valign="top"><a id="a69c484d2b5ce1a82a4ab84ccb33b6713"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713">eof</a> () const</td></tr>
+<tr class="memdesc:a69c484d2b5ce1a82a4ab84ccb33b6713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет конец файла <br /></td></tr>
+<tr class="separator:a69c484d2b5ce1a82a4ab84ccb33b6713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c412e0b2a86f1f9d4528e0c2c2572f"><td class="memItemLeft" align="right" valign="top"><a id="ae5c412e0b2a86f1f9d4528e0c2c2572f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#ae5c412e0b2a86f1f9d4528e0c2c2572f">match</a> (<a class="el" href="group__lexer.html#ga305263dd89ad9fde1863aece00907351">Tag</a> t)</td></tr>
+<tr class="memdesc:ae5c412e0b2a86f1f9d4528e0c2c2572f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет тип следующего токена <br /></td></tr>
+<tr class="separator:ae5c412e0b2a86f1f9d4528e0c2c2572f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Открытые атрибуты</h2></td></tr>
-<tr class="memitem:a09db872a372d3aa3dd57ba51efd22f6a"><td class="memItemLeft" align="right" valign="top">Position&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a09db872a372d3aa3dd57ba51efd22f6a">position</a></td></tr>
-<tr class="memdesc:a09db872a372d3aa3dd57ba51efd22f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хранит относительную позицию в потоке  <a href="#a09db872a372d3aa3dd57ba51efd22f6a">Подробнее...</a><br /></td></tr>
-<tr class="separator:a09db872a372d3aa3dd57ba51efd22f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a346fa1a5e19b8be8f2afc14c06cb6cb4"><td class="memItemLeft" align="right" valign="top">Position&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a346fa1a5e19b8be8f2afc14c06cb6cb4">position</a></td></tr>
+<tr class="memdesc:a346fa1a5e19b8be8f2afc14c06cb6cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хранит относительную позицию в потоке  <a href="#a346fa1a5e19b8be8f2afc14c06cb6cb4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a346fa1a5e19b8be8f2afc14c06cb6cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Закрытые члены</h2></td></tr>
-<tr class="memitem:af08abd2f498f4bb1781207168919f903"><td class="memItemLeft" align="right" valign="top"><a id="af08abd2f498f4bb1781207168919f903"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#af08abd2f498f4bb1781207168919f903">reserve</a> (ptrWord w)</td></tr>
-<tr class="memdesc:af08abd2f498f4bb1781207168919f903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Резервирует ключевые слова <br /></td></tr>
-<tr class="separator:af08abd2f498f4bb1781207168919f903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c91a26ad6b4294bf7bb8d4c46ea529b"><td class="memItemLeft" align="right" valign="top"><a id="a5c91a26ad6b4294bf7bb8d4c46ea529b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a5c91a26ad6b4294bf7bb8d4c46ea529b">readch</a> ()</td></tr>
-<tr class="memdesc:a5c91a26ad6b4294bf7bb8d4c46ea529b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Считывает очередной символ <br /></td></tr>
-<tr class="separator:a5c91a26ad6b4294bf7bb8d4c46ea529b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d2585d70adce01584a505a25c3e179d"><td class="memItemLeft" align="right" valign="top"><a id="a8d2585d70adce01584a505a25c3e179d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a8d2585d70adce01584a505a25c3e179d">skip</a> ()</td></tr>
-<tr class="memdesc:a8d2585d70adce01584a505a25c3e179d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пропуск пробелов <br /></td></tr>
-<tr class="separator:a8d2585d70adce01584a505a25c3e179d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96f9ebb144a6afb1483828c05c6dd452"><td class="memItemLeft" align="right" valign="top">ptrToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a96f9ebb144a6afb1483828c05c6dd452">doubleToken</a> (int i)</td></tr>
-<tr class="memdesc:a96f9ebb144a6afb1483828c05c6dd452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирует токен вещественного числа  <a href="#a96f9ebb144a6afb1483828c05c6dd452">Подробнее...</a><br /></td></tr>
-<tr class="separator:a96f9ebb144a6afb1483828c05c6dd452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f554199371d841da1516ab2cafe0ab3"><td class="memItemLeft" align="right" valign="top"><a id="a6f554199371d841da1516ab2cafe0ab3"></a>
-ptrToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a6f554199371d841da1516ab2cafe0ab3">tok</a> ()</td></tr>
-<tr class="memdesc:a6f554199371d841da1516ab2cafe0ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирует токен <br /></td></tr>
-<tr class="separator:a6f554199371d841da1516ab2cafe0ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e43f6882f663d95a2518825a6ad3733"><td class="memItemLeft" align="right" valign="top"><a id="a6e43f6882f663d95a2518825a6ad3733"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a6e43f6882f663d95a2518825a6ad3733">reserve</a> (ptrWord w)</td></tr>
+<tr class="memdesc:a6e43f6882f663d95a2518825a6ad3733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Резервирует ключевые слова <br /></td></tr>
+<tr class="separator:a6e43f6882f663d95a2518825a6ad3733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7d4556fce18882372ddc038ebd9102"><td class="memItemLeft" align="right" valign="top"><a id="a8a7d4556fce18882372ddc038ebd9102"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a8a7d4556fce18882372ddc038ebd9102">readch</a> ()</td></tr>
+<tr class="memdesc:a8a7d4556fce18882372ddc038ebd9102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Считывает очередной символ <br /></td></tr>
+<tr class="separator:a8a7d4556fce18882372ddc038ebd9102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9945b807d1fa587be69eaebdfe6ae5d9"><td class="memItemLeft" align="right" valign="top"><a id="a9945b807d1fa587be69eaebdfe6ae5d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a9945b807d1fa587be69eaebdfe6ae5d9">skip</a> ()</td></tr>
+<tr class="memdesc:a9945b807d1fa587be69eaebdfe6ae5d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пропуск пробелов <br /></td></tr>
+<tr class="separator:a9945b807d1fa587be69eaebdfe6ae5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15cba41ea16fd0f3efd148035094386c"><td class="memItemLeft" align="right" valign="top">ptrToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a15cba41ea16fd0f3efd148035094386c">doubleToken</a> (int i)</td></tr>
+<tr class="memdesc:a15cba41ea16fd0f3efd148035094386c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирует токен вещественного числа  <a href="#a15cba41ea16fd0f3efd148035094386c">Подробнее...</a><br /></td></tr>
+<tr class="separator:a15cba41ea16fd0f3efd148035094386c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Закрытые данные</h2></td></tr>
-<tr class="memitem:a548ef54cff3b60ae7e8235a977eacb3a"><td class="memItemLeft" align="right" valign="top"><a id="a548ef54cff3b60ae7e8235a977eacb3a"></a>
-std::istreambuf_iterator&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a548ef54cff3b60ae7e8235a977eacb3a">pos</a></td></tr>
-<tr class="memdesc:a548ef54cff3b60ae7e8235a977eacb3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указывает на абсолютную позицию в потоке <br /></td></tr>
-<tr class="separator:a548ef54cff3b60ae7e8235a977eacb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a991785e82bae3f2f64585a33c06ebe1e"><td class="memItemLeft" align="right" valign="top"><a id="a991785e82bae3f2f64585a33c06ebe1e"></a>
-std::istreambuf_iterator&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a991785e82bae3f2f64585a33c06ebe1e">end</a></td></tr>
-<tr class="memdesc:a991785e82bae3f2f64585a33c06ebe1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак конца файла <br /></td></tr>
-<tr class="separator:a991785e82bae3f2f64585a33c06ebe1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7bae0f1db610391772305e8ff05aebe"><td class="memItemLeft" align="right" valign="top"><a id="ae7bae0f1db610391772305e8ff05aebe"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#ae7bae0f1db610391772305e8ff05aebe">c</a></td></tr>
-<tr class="memdesc:ae7bae0f1db610391772305e8ff05aebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хранит очередной символ <br /></td></tr>
-<tr class="separator:ae7bae0f1db610391772305e8ff05aebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19c367ea1a90bfa201dfa2a16f5e3a4b"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, ptrWord &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a19c367ea1a90bfa201dfa2a16f5e3a4b">keyWords</a></td></tr>
-<tr class="memdesc:a19c367ea1a90bfa201dfa2a16f5e3a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хранит строковое представление и указатель на лексему  <a href="#a19c367ea1a90bfa201dfa2a16f5e3a4b">Подробнее...</a><br /></td></tr>
-<tr class="separator:a19c367ea1a90bfa201dfa2a16f5e3a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a563105db169126ce8ee78bdc018d908a"><td class="memItemLeft" align="right" valign="top"><a id="a563105db169126ce8ee78bdc018d908a"></a>
-std::queue&lt; ptrToken &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a563105db169126ce8ee78bdc018d908a">queue</a></td></tr>
-<tr class="memdesc:a563105db169126ce8ee78bdc018d908a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет результаты <a class="el" href="class_lexer.html#ad1b284a56f68bb527648fc7d8a4835b0">match</a>. <br /></td></tr>
-<tr class="separator:a563105db169126ce8ee78bdc018d908a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07af54632abc7a4b9907a0b9ee092c8"><td class="memItemLeft" align="right" valign="top"><a id="aa07af54632abc7a4b9907a0b9ee092c8"></a>
+InputIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#aa07af54632abc7a4b9907a0b9ee092c8">pos</a></td></tr>
+<tr class="memdesc:aa07af54632abc7a4b9907a0b9ee092c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Указывает на абсолютную позицию в потоке <br /></td></tr>
+<tr class="separator:aa07af54632abc7a4b9907a0b9ee092c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a124bf1960879c4dacd48e2ccd4238313"><td class="memItemLeft" align="right" valign="top"><a id="a124bf1960879c4dacd48e2ccd4238313"></a>
+InputIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a124bf1960879c4dacd48e2ccd4238313">end</a></td></tr>
+<tr class="memdesc:a124bf1960879c4dacd48e2ccd4238313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак конца потока <br /></td></tr>
+<tr class="separator:a124bf1960879c4dacd48e2ccd4238313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09c78a9dad1828eec6baaacab96f7a69"><td class="memItemLeft" align="right" valign="top"><a id="a09c78a9dad1828eec6baaacab96f7a69"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a09c78a9dad1828eec6baaacab96f7a69">c</a></td></tr>
+<tr class="memdesc:a09c78a9dad1828eec6baaacab96f7a69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хранит очередной символ <br /></td></tr>
+<tr class="separator:a09c78a9dad1828eec6baaacab96f7a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1f528bd6cbe6360cf75157946d83075"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, ptrWord &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#ac1f528bd6cbe6360cf75157946d83075">keyWords</a></td></tr>
+<tr class="memdesc:ac1f528bd6cbe6360cf75157946d83075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Хранит строковое представление и указатель на лексему  <a href="#ac1f528bd6cbe6360cf75157946d83075">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac1f528bd6cbe6360cf75157946d83075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae067682cc940fffdb051f3fcc7983bc5"><td class="memItemLeft" align="right" valign="top"><a id="ae067682cc940fffdb051f3fcc7983bc5"></a>
+ptrToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#ae067682cc940fffdb051f3fcc7983bc5">look</a></td></tr>
+<tr class="memdesc:ae067682cc940fffdb051f3fcc7983bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет результат <a class="el" href="class_lexer.html#ae5c412e0b2a86f1f9d4528e0c2c2572f">match</a>. <br /></td></tr>
+<tr class="separator:ae067682cc940fffdb051f3fcc7983bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Лексический анализатор. </p>
-<p>Формирует лексемы. Выбрасывает исключение std::invalid_argument, когда проваливается попытка зарегистрировать ключевое слово в <a class="el" href="class_lexer.html#a19c367ea1a90bfa201dfa2a16f5e3a4b">keyWords</a> </p><dl class="section author"><dt>Автор</dt><dd>Namat </dd></dl>
+<div class="textblock"><h3>template&lt;class InputIterator&gt;<br />
+class Lexer&lt; InputIterator &gt;</h3>
+
+<p>Лексический анализатор. </p>
+<p>Формирует лексемы. Принимает интераторы отвечающие категории InputIterator, где char_type = char. Выбрасывает исключение std::invalid_argument, когда вставка элемента в <a class="el" href="class_lexer.html#ac1f528bd6cbe6360cf75157946d83075">keyWords</a>, заканчивается неудачно. </p><dl class="section author"><dt>Автор</dt><dd>Namat </dd></dl>
 <dl class="section date"><dt>Дата</dt><dd>19 нояб. 2016 г. </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a id="a96f9ebb144a6afb1483828c05c6dd452"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96f9ebb144a6afb1483828c05c6dd452">&sect;&nbsp;</a></span>doubleToken()</h2>
+<a id="a15cba41ea16fd0f3efd148035094386c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15cba41ea16fd0f3efd148035094386c">&sect;&nbsp;</a></span>doubleToken()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ptrToken Lexer::doubleToken </td>
+          <td class="memname">ptrToken <a class="el" href="class_lexer.html">Lexer</a>&lt; InputIterator &gt;::doubleToken </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
@@ -195,7 +197,7 @@ std::queue&lt; ptrToken &gt;&#160;</td><td class="memItemRight" valign="bottom">
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -210,46 +212,20 @@ std::queue&lt; ptrToken &gt;&#160;</td><td class="memItemRight" valign="bottom">
 
 </div>
 </div>
-<a id="ad1b284a56f68bb527648fc7d8a4835b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1b284a56f68bb527648fc7d8a4835b0">&sect;&nbsp;</a></span>match()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Lexer::match </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__lexer.html#ga305263dd89ad9fde1863aece00907351">Tag</a>&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Проверяет тип следующего токена </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>Тип токена</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Проверяет следуюший токен с переданным типом и возвращает результат.<br />
-Сохраняет токен в <a class="el" href="class_lexer.html#a563105db169126ce8ee78bdc018d908a">queue</a>, впоследствии токен выбирается с помощью <a class="el" href="class_lexer.html#a49f2eccbe05c324c89c98000280e8960">token</a> и удаляется из <a class="el" href="class_lexer.html#a563105db169126ce8ee78bdc018d908a">queue</a>. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Данные класса</h2>
-<a id="a19c367ea1a90bfa201dfa2a16f5e3a4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19c367ea1a90bfa201dfa2a16f5e3a4b">&sect;&nbsp;</a></span>keyWords</h2>
+<a id="ac1f528bd6cbe6360cf75157946d83075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1f528bd6cbe6360cf75157946d83075">&sect;&nbsp;</a></span>keyWords</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_map&lt;std::string,ptrWord&gt; Lexer::keyWords</td>
+          <td class="memname">std::unordered_map&lt;std::string, ptrWord&gt; <a class="el" href="class_lexer.html">Lexer</a>&lt; InputIterator &gt;::keyWords</td>
         </tr>
       </table>
   </td>
@@ -264,14 +240,16 @@ std::queue&lt; ptrToken &gt;&#160;</td><td class="memItemRight" valign="bottom">
 
 </div>
 </div>
-<a id="a09db872a372d3aa3dd57ba51efd22f6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09db872a372d3aa3dd57ba51efd22f6a">&sect;&nbsp;</a></span>position</h2>
+<a id="a346fa1a5e19b8be8f2afc14c06cb6cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a346fa1a5e19b8be8f2afc14c06cb6cb4">&sect;&nbsp;</a></span>position</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class InputIterator&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Position Lexer::position</td>
+          <td class="memname">Position <a class="el" href="class_lexer.html">Lexer</a>&lt; InputIterator &gt;::position</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -280,16 +258,15 @@ std::queue&lt; ptrToken &gt;&#160;</td><td class="memItemRight" valign="bottom">
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
     <tr><td class="paramname">first</td><td>Номер строки. Начинается с 0 </td></tr>
-    <tr><td class="paramname">second</td><td>Номер символа в строке. Начинается с 0 </td></tr>
+    <tr><td class="paramname">second</td><td>Номер символа в строке. Начинается с 1 </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
 <li>lexer/<a class="el" href="_lexer_8h_source.html">Lexer.h</a></li>
-<li>lexer/Lexer.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

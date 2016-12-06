@@ -16,9 +16,15 @@
 
 class RealNumber : public Token {
 public:
-    const double value; ///< Хранит значение числа.
-    RealNumber(const double& v) : Token(Tag::REAL_NUM), value(v) {}
+    /// Хранит значение числа.
+    const double value;
+
+    RealNumber(const double& v)
+            : Token(Tag::REAL_NUM), value(v) {
+    }
+
     virtual ~RealNumber() = default;
+
     ///Формирует строку по шаблону: [REAL_NUM ; Значение]
     std::string toString() const override {
         std::string str("[REAL_NUM ; ");

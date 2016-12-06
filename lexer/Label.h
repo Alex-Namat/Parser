@@ -14,11 +14,17 @@
 
 #include "Token.h"
 
-class Label : public Token{
+class Label : public Token {
 public:
-    const int value;    ///< Хранит значение метки.
-    Label(const int& v) : Token(Tag::LABEL), value(v){}
+    /// Хранит значение метки.
+    const int value;
+
+    Label(const int& v)
+            : Token(Tag::LABEL), value(v) {
+    }
+
     virtual ~Label() = default;
+
     ///Формирует строку по шаблону: [LABEL ; Значение]
     std::string toString() const override {
         std::string str("[LABEL ; ");
