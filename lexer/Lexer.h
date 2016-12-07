@@ -29,7 +29,18 @@
 
 typedef std::shared_ptr<Token> ptrToken;
 typedef std::shared_ptr<Word> ptrWord;
-typedef std::pair<int, int> Position;
+
+/*!
+ * @brief Хранит относительную и абсолютную позицию в потоке
+ * @param line Номер строки. Начинается с  1
+ * @param pos Номер символа в строке. Начинается с  1
+ * @param absPos Абсолютная позиция. Начинается с  0
+ */
+struct Position{
+    int line = 1;
+    int pos = 1;
+    int absPos = 0;
+};
 
 template<class InputIterator>
 class Lexer {
@@ -51,16 +62,12 @@ class Lexer {
     ///Сохраняет результат @ref match
     ptrToken look;
 
-public:
-    /*!
-     * @brief Хранит относительную позицию в потоке
-     * @param first Номер строки. Начинается с  0
-     * @param second Номер символа в строке. Начинается с  1
-     */
+    ///Позиция в потоке
     Position position;
+public:
 
     Lexer(InputIterator beg, InputIterator end)
-            : pos(beg), end(end), c( *pos), look(nullptr), position(0, 0) {
+            : pos(beg), end(end), c( *pos), look(nullptr) {
         reserve(std::make_shared<Word>("Begin", Tag::BEGIN));
         reserve(std::make_shared<Word>("End", Tag::END));
         reserve(std::make_shared<Word>("Real", Tag::REAL));
@@ -122,7 +129,7 @@ public:
         }
 
         ptrToken token = std::make_shared<Token>(c);
-        readch();
+        if(!eof()) readch();
         return token;
     }
 
@@ -133,10 +140,17 @@ public:
 
     ///Проверяет тип следующего токена
     bool match(Tag t) {
+        Position pos(position);
         bool f = false;
         look = token();
         if (t == look->tag) f = true;
+        position = pos;
         return f;
+    }
+
+    ///Возвращает @ref position
+    Position getPosition() const {
+        return position;
     }
 
 private:
@@ -155,15 +169,17 @@ private:
             return;
         }
         c = *pos;
-        ++position.second;
+        ++position.pos;
+        ++position.absPos;
     }
 
     ///Пропуск пробелов
     void skip() {
         do {
-            if ( !isblank(c)) if (isspace(c)) {
-                ++position.first;
-                position.second = 0;
+            if ( !isblank(c))
+                if (isspace(c)) {
+                ++position.line;
+                position.pos = 0;
             }
             readch();
         }
@@ -192,3 +208,4 @@ private:
 
 #endif /* LEXER_H_ */
 /*! @} */
+

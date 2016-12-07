@@ -49,7 +49,7 @@ public:
     }
 
     ///Возвращает @ref table
-    hashTable variables() const {
+    hashTable getTable() const {
         return table;
     }
 
@@ -59,17 +59,23 @@ protected:
         nextToken();
         if (token->tag == EoF) return;
         if (token->tag != BEGIN)
-            throw ParseError(lexer.position, token->toString(),
+            throw ParseError(lexer.getPosition(), token->toString(),
                 "Пропущено ключевое слово <Begin>");
         nextToken();
+        if (token->tag != REAL && token->tag != INTEGER)
+            throw ParseError(lexer.getPosition(), token->toString(),
+                "Пропущено ключевое слово <Real> или <Integer>");
         while (token->tag == REAL || token->tag == INTEGER) {
             definition();
         }
+        if (token->tag != LABEL && token->tag != VARIABLE)
+            throw ParseError(lexer.getPosition(), token->toString(),
+                "Пропущена метка или переменная");
         while (token->tag == LABEL || token->tag == VARIABLE) {
             operation();
         }
         if (token->tag != END)
-            throw ParseError(lexer.position, token->toString(),
+            throw ParseError(lexer.getPosition(), token->toString(),
                 "Пропущено ключевое слово <End>");
     }
 
@@ -80,7 +86,7 @@ protected:
                 nextToken();
                 do {
                     if (token->tag != VARIABLE)
-                        throw ParseError(lexer.position, token->toString(),
+                        throw ParseError(lexer.getPosition(), token->toString(),
                             "Пропущена переменная");
                     id();
                     nextToken();
@@ -92,7 +98,7 @@ protected:
                 nextToken();
                 do {
                     if (token->tag != INT_NUM)
-                        throw ParseError(lexer.position, token->toString(),
+                        throw ParseError(lexer.getPosition(), token->toString(),
                             "Пропущено целое число");
                     nextToken();
                 }
@@ -100,7 +106,7 @@ protected:
                 break;
             }
             default:
-                throw ParseError(lexer.position, token->toString(),
+                throw ParseError(lexer.getPosition(), token->toString(),
                     "Синтаксическая ошибка");
         }
     }
@@ -109,13 +115,13 @@ protected:
     void operation() {
         if (token->tag == LABEL) nextToken();
         if (token->tag != VARIABLE)
-            throw ParseError(lexer.position, token->toString(),
+            throw ParseError(lexer.getPosition(), token->toString(),
                 "Пропущена переменная");
         auto it = id();
         nextToken();
         if (token->tag != '=')
-            throw ParseError(lexer.position, token->toString(),
-                "Пропущено '='");
+            throw ParseError(lexer.getPosition(), token->toString(),
+                "Пропущено <=>");
         nextToken();
         additive(it->second);
     }
@@ -153,7 +159,7 @@ protected:
                     break;
                 case '/':
                     if ( !tmp)
-                        throw ParseError(lexer.position, token->toString(),
+                        throw ParseError(lexer.getPosition(), token->toString(),
                             "Деление на ноль");
                     result /= tmp;
                     break;
@@ -190,33 +196,33 @@ protected:
                 nextToken();
                 additive(result);
                 if (token->tag != ')')
-                    throw ParseError(lexer.position, token->toString(),
-                        "Пропущена ')'");
+                    throw ParseError(lexer.getPosition(), token->toString(),
+                        "Пропущена <)>");
                 break;
             case '[':
                 static int n = 0;
                 ++n;
                 if (n > 2)
-                    throw ParseError(lexer.position, token->toString(),
+                    throw ParseError(lexer.getPosition(), token->toString(),
                         "Глубина вложености квадратных скобок равна 2");
                 nextToken();
                 additive(result);
                 if (token->tag != ']')
-                    throw ParseError(lexer.position, token->toString(),
-                        "Пропущена ']'");
+                    throw ParseError(lexer.getPosition(), token->toString(),
+                        "Пропущена <]>");
                 --n;
                 break;
             case REAL_NUM:
-                result = std::dynamic_pointer_cast<RealNumber>(token)->value;
+                result = std::static_pointer_cast<RealNumber>(token)->value;
                 break;
             case INT_NUM:
-                result = std::dynamic_pointer_cast<IntegerNumber>(token)->value;
+                result = std::static_pointer_cast<IntegerNumber>(token)->value;
                 break;
             case VARIABLE:
                 result = id()->second;
                 break;
             default:
-                throw ParseError(lexer.position, token->toString(),
+                throw ParseError(lexer.getPosition(), token->toString(),
                     "Пропущено число, переменная  или скобка.");
         }
         nextToken();
@@ -230,9 +236,9 @@ private:
 
     ///Добавляет в @ref table новую переменную
     hashTable::iterator id() {
-        auto it = table.find(std::dynamic_pointer_cast<Word>(token));
+        auto it = table.find(std::static_pointer_cast<Word>(token));
         if (it == table.end()){
-            auto i = table.insert(std::make_pair(std::dynamic_pointer_cast<Word>(token), 0));
+            auto i = table.insert(std::make_pair(std::static_pointer_cast<Word>(token), 0));
             if(!i.second) throw std::invalid_argument("Parser::table.insert() fail");
             it = i.first;
         }

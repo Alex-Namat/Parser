@@ -26,11 +26,10 @@ public:
 
     virtual ~Token() = default;
 
-    ///Формирует строку по шаблону: [Тип лексемы]
+    ///Возвращает строковое значение типа лексемы.
     virtual std::string toString() const {
-        std::string str("[");
-        str += (char) tag;
-        str += "]";
+        std::string str;
+        str +=(char) tag;
         return str;
     }
 };

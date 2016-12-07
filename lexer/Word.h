@@ -26,31 +26,9 @@ public:
 
     virtual ~Word() = default;
 
-    ///Формирует строку по шаблону: [Тип лексемы ; Значение]
+    ///Возвращает строковое значение лексемы
     std::string toString() const override {
-        std::string str("[");
-        switch (tag) {
-            case Tag::VARIABLE:
-                str += "VARIABLE";
-                break;
-            case Tag::BEGIN:
-                str += "BEGIN";
-                break;
-            case Tag::END:
-                str += "END";
-                break;
-            case Tag::INTEGER:
-                str += "INTEGER";
-                break;
-            case Tag::REAL:
-                str += "REAL";
-                break;
-            default:
-                str += std::to_string(tag);
-                break;
-        }
-        str += " ; " + lexeme + "]";
-        return str;
+        return lexeme;
     }
 };
 

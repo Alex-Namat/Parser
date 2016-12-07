@@ -25,10 +25,10 @@ public:
 
     virtual ~Label() = default;
 
-    ///Формирует строку по шаблону: [LABEL ; Значение]
+    ///Возвращает строковое значение метки
     std::string toString() const override {
-        std::string str("[LABEL ; ");
-        str += std::to_string(value) + "]";
+        std::string str(std::to_string(value));
+        str +=  + ":";
         return str;
     }
 };

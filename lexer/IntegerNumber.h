@@ -25,11 +25,9 @@ public:
 
     virtual ~IntegerNumber() = default;
 
-    ///Формирует строку по шаблону: [INT_NUM ; Значение]
+    ///Возвращает строковое значение числа
     std::string toString() const override {
-        std::string str("[INT_NUM ; ");
-        str += std::to_string(value) + "]";
-        return str;
+        return std::to_string(value);
     }
 };
 

@@ -25,11 +25,9 @@ public:
 
     virtual ~RealNumber() = default;
 
-    ///Формирует строку по шаблону: [REAL_NUM ; Значение]
+    ///Возвращает строковое значение числа
     std::string toString() const override {
-        std::string str("[REAL_NUM ; ");
-        str += std::to_string(value) + "]";
-        return str;
+        return std::to_string(value);
     }
 };
 

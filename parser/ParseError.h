@@ -13,11 +13,12 @@
 #define PARSEERROR_H_
 
 #include <exception>
+#include "Lexer.h"
 
 class ParseError : public std::exception {
 public:
     ///Относительная позиция синтаксического анализатора
-    std::pair<int, int> pos;
+    Position pos;
 
     ///Информация о лексеме
     std::string tok;
@@ -25,7 +26,7 @@ public:
     ///Сообщение ошибки
     std::string msg;
 
-    ParseError(std::pair<int, int>& p, std::string t, std::string m = "")
+    ParseError(const Position& p, const std::string& t, const std::string& m = "")
             : pos(p), tok(t), msg(m) {
     }
 
@@ -36,14 +37,14 @@ public:
      */
     const char* what() const throw () override {
         std::string str;
-        str += std::to_string(pos.first);
+        str += std::to_string(pos.line);
         str += ":";
-        str += std::to_string(pos.second);
+        str += std::to_string(pos.pos);
         str += ": '";
         str += tok;
         str += " '";
         str += msg;
-        str += "\n";
+        str += "\n\0";
         return str.c_str();
     }
 };
