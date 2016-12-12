@@ -28,7 +28,7 @@ public:
     ///Возвращает строковое значение метки
     std::string toString() const override {
         std::string str(std::to_string(value));
-        str +=  + ":";
+        str += ":";
         return str;
     }
 };

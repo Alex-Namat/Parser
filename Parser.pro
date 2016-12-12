@@ -32,4 +32,5 @@ HEADERS  += dialog.h\
     lexer/Token.h \
     lexer/Word.h \
     parser/ParseError.h \
-    parser/Parser.h
+    parser/Parser.h \
+    lexer/Error.h

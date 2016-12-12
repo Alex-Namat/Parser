@@ -10,7 +10,6 @@
 #include <QSplitter>
 #include <string>
 #include "codeeditor.h"
-#include "parser.h"
 
 class Dialog : public QDialog
 {
@@ -20,7 +19,7 @@ public:
     Dialog(QWidget *parent = 0);
     ~Dialog();
 
-public slots:
+private slots:
     void clicked_pushButton();
 
 private:
@@ -34,7 +33,6 @@ private:
     QTextEdit* textEdit;
     QSplitter* splitter;
     CodeEditor* codeEditor;
-    Parser<std::string::iterator>* parser;
 };
 
 #endif // DIALOG_H

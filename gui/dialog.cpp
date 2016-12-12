@@ -1,5 +1,6 @@
 #include "dialog.h"
 #include <QFont>
+#include "parser.h"
 
 Dialog::Dialog(QWidget *parent)
     : QDialog(parent)
@@ -10,21 +11,27 @@ Dialog::Dialog(QWidget *parent)
 }
 
 Dialog::~Dialog()
-{
-
+{/*
+    delete  hbLayout;
+    delete  textEdit;
+    delete  codeEditor;
+    delete  splitter;
+    delete  pushButton;
+    delete  vbLayout;
+    delete  vSpacer;*/
 }
 
 void Dialog::clicked_pushButton()
 {
     std::string str(codeEditor->toPlainText().toStdString());
-    parser = new Parser<std::string::iterator>(str.begin(),str.end());
+    Parser<std::string::iterator> parser(str.begin(),str.end());
 
    clearSelection();
     try {
-        parser->parse();
-        auto table = parser->getTable();
+        parser.parse();
+        auto table = parser.getTable();
         QString tmp;
-        for (auto& i : table) {
+        for (const auto& i : table) {
             tmp += QString::fromStdString(i.first->lexeme);
             tmp += " = ";
             tmp += QString::number(i.second);
@@ -88,12 +95,11 @@ void Dialog::errorSelection(const int& pos)
     QTextCharFormat fmt;
     fmt.setBackground(Qt::red);
     tmp.setPosition(pos, QTextCursor::MoveAnchor);
-    tmp.movePosition(QTextCursor::EndOfLine,QTextCursor::KeepAnchor);
+    tmp.movePosition(QTextCursor::PreviousWord,QTextCursor::KeepAnchor);
     tmp.setCharFormat(fmt);
     tmp.select(QTextCursor::LineUnderCursor);
     codeEditor->setTextCursor(tmp);
     codeEditor->setTextCursor(cur);
-    codeEditor->setFocus();
 }
 
 void Dialog::clearSelection()
@@ -106,5 +112,4 @@ void Dialog::clearSelection()
     cur.setCharFormat(fmt);
     cur.select(QTextCursor::LineUnderCursor);
     codeEditor->setTextCursor(cur);
-    codeEditor->setFocus();
 }

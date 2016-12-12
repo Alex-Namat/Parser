@@ -223,7 +223,7 @@ protected:
                 break;
             default:
                 throw ParseError(lexer.getPosition(), token->toString(),
-                    "Пропущено число, переменная  или скобка.");
+                    "Пропущено число, переменная  или скобка");
         }
         nextToken();
     }
@@ -232,6 +232,8 @@ private:
     ///Записывает в @ref token очередной токен
     void nextToken() {
         token = lexer.token();
+        if(token->tag == Tag::ERROR) throw ParseError(lexer.getPosition(), token->toString(),
+                                                      "Лексическая ошибка");
     }
 
     ///Добавляет в @ref table новую переменную

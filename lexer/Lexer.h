@@ -18,7 +18,6 @@
 
 #include <memory>
 #include <unordered_map>
-#include <queue>
 #include <exception>
 #include "Token.h"
 #include "Word.h"
@@ -26,6 +25,7 @@
 #include "IntegerNumber.h"
 #include "RealNumber.h"
 #include "Label.h"
+#include "Error.h"
 
 typedef std::shared_ptr<Token> ptrToken;
 typedef std::shared_ptr<Word> ptrWord;
@@ -60,14 +60,15 @@ class Lexer {
     std::unordered_map<std::string, ptrWord> keyWords;
 
     ///Сохраняет результат @ref match
-    ptrToken look;
+    std::pair<ptrToken,Position> look;
 
     ///Позиция в потоке
     Position position;
 public:
 
     Lexer(InputIterator beg, InputIterator end)
-            : pos(beg), end(end), c( *pos), look(nullptr) {
+            : pos(beg), end(end), c( *pos) {
+        look.first = nullptr;
         reserve(std::make_shared<Word>("Begin", Tag::BEGIN));
         reserve(std::make_shared<Word>("End", Tag::END));
         reserve(std::make_shared<Word>("Real", Tag::REAL));
@@ -78,11 +79,13 @@ public:
 
     ///Возвращает очередной токен их потока
     ptrToken token() {
-        if (look != nullptr) {
-            ptrToken tmp = look;
-            look = nullptr;
+        if (look.first != nullptr) {
+            ptrToken tmp = look.first;
+            look.first = nullptr;
+            position = look.second;
             return tmp;
         }
+
         if (isspace(c)) skip();
 
         if (isdigit(c)) {
@@ -98,9 +101,11 @@ public:
                     readch();
                     return std::make_shared<Label>(i);
                 }
+                if(isalpha(c)) return errorToken(std::to_string(i));
                 return std::make_shared<IntegerNumber>(i);
             }
             readch();
+            if(isalpha(c)) return errorToken(std::to_string(i)+".");
             return doubleToken(i);
         }
 
@@ -124,8 +129,8 @@ public:
             readch();
             if (isdigit(c))
                 return doubleToken(0);
-            else
-                return std::make_shared<Token>('.');
+            if(isalpha(c)) return errorToken(std::string("."));
+            return std::make_shared<Token>('.');
         }
 
         ptrToken token = std::make_shared<Token>(c);
@@ -139,11 +144,12 @@ public:
     }
 
     ///Проверяет тип следующего токена
-    bool match(Tag t) {
+    bool match(const Tag& t) {
         Position pos(position);
         bool f = false;
-        look = token();
-        if (t == look->tag) f = true;
+        ptrToken tmp = token();
+        look = std::make_pair(tmp,position);
+        if (t == look.first->tag) f = true;
         position = pos;
         return f;
     }
@@ -155,7 +161,7 @@ public:
 
 private:
     ///Резервирует ключевые слова
-    void reserve(ptrWord w) {
+    void reserve(const ptrWord& w) {
         auto i = keyWords.insert(std::make_pair(w->lexeme, w));
         if ( !i.second)
             throw std::invalid_argument("Lexer::keyWords.insert() fail");
@@ -191,7 +197,7 @@ private:
      * @brief Формирует токен вещественного числа
      * @param i Целая часть числа
      */
-    ptrToken doubleToken(int i) {
+    ptrToken doubleToken(const int& i) {
         double d = i;
         double f = 10;
         if ( !isdigit(c)) return std::make_shared<RealNumber>(d);
@@ -204,6 +210,15 @@ private:
         return std::make_shared<RealNumber>(d);
     }
 
+    ///Формирует токен лексической ошибки
+    ptrToken errorToken(const std::string& str) {
+        std::string s(str);
+        do {
+            s += c;
+            readch();
+        } while (!(eof() || isspace(c)));
+        return std::make_shared<Error>(s);
+    }
 };
 
 #endif /* LEXER_H_ */
