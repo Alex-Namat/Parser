@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parse',['parse',['../class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6',1,'Parser']]]
+  ['operation',['operation',['../class_parser.html#ad4867919d8dfad9c366bdb39dd9a10dc',1,'Parser']]]
 ];

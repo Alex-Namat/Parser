@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['value',['value',['../class_integer_number.html#a3248419d092e827251c2dded58df299e',1,'IntegerNumber::value()'],['../class_label.html#a2b1603b8ea68953ccb027a6a34db2c6a',1,'Label::value()'],['../class_real_number.html#ae5a63304a8c8e8feb52cc604068dc822',1,'RealNumber::value()']]],
-  ['variable',['VARIABLE',['../group__lexer.html#gga305263dd89ad9fde1863aece00907351a39031ce5df6f91d3778590d6d644b9ea',1,'Tag.h']]],
-  ['variables',['variables',['../class_parser.html#aee32ea4ea77be165f0ac2a41a9f29faf',1,'Parser']]]
+  ['unarysign',['unarySign',['../class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49',1,'Parser']]]
 ];

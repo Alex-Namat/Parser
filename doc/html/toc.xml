@@ -2,6 +2,10 @@
   <topic label="Синтаксический анализатор" href="index.html"/>
   <topic label="Группы" href="modules.html">
     <topic label="Лексический анализатор" href="group__lexer.html">
+      <topic label="Error" href="class_error.html">
+        <topic label="Error" href="class_error.html#a6dd07ca4619690e1566b29f5ae9f3c5b"/>
+        <topic label="~Error" href="class_error.html#a020045df3dae14f27349e0bcb31025f3"/>
+      </topic>
       <topic label="IntegerNumber" href="class_integer_number.html">
         <topic label="IntegerNumber" href="class_integer_number.html#ac7bc4b8c49d364a9695a8d484853e010"/>
         <topic label="~IntegerNumber" href="class_integer_number.html#a3e2664b0500c564e2684b49efcec9548"/>
@@ -14,20 +18,27 @@
         <topic label="toString" href="class_label.html#ad3565cb66e331d9d47f9b139e80ae4ce"/>
         <topic label="value" href="class_label.html#a2b1603b8ea68953ccb027a6a34db2c6a"/>
       </topic>
+      <topic label="Position" href="struct_position.html">
+        <topic label="absPos" href="struct_position.html#a55088736c1d5a19afecd46dfe6fe0c3f"/>
+        <topic label="line" href="struct_position.html#aebc6c091df7bdab0b368daa52cad20e9"/>
+        <topic label="pos" href="struct_position.html#a628d9583f5e16c146130f796f673e566"/>
+      </topic>
       <topic label="Lexer" href="class_lexer.html">
         <topic label="Lexer" href="class_lexer.html#a3831b45d50fbc9558dd0371d6da1b38d"/>
         <topic label="~Lexer" href="class_lexer.html#ae888441e2eef1e1bce5985761e41563f"/>
-        <topic label="doubleToken" href="class_lexer.html#a15cba41ea16fd0f3efd148035094386c"/>
+        <topic label="doubleToken" href="class_lexer.html#a88347fb5a7c3e38c49f82ba97d2cdd26"/>
         <topic label="eof" href="class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713"/>
-        <topic label="match" href="class_lexer.html#ae5c412e0b2a86f1f9d4528e0c2c2572f"/>
+        <topic label="errorToken" href="class_lexer.html#abb43583a88f19086005c481a7253d2b4"/>
+        <topic label="getPosition" href="class_lexer.html#a6137bad811a82c7f45f78e8f0a9dcca7"/>
+        <topic label="match" href="class_lexer.html#a247339590074b6f0ac13be852a64ff5e"/>
         <topic label="readch" href="class_lexer.html#a8a7d4556fce18882372ddc038ebd9102"/>
-        <topic label="reserve" href="class_lexer.html#a6e43f6882f663d95a2518825a6ad3733"/>
+        <topic label="reserve" href="class_lexer.html#a76847d8e6f940744f2863600d21f7e80"/>
         <topic label="skip" href="class_lexer.html#a9945b807d1fa587be69eaebdfe6ae5d9"/>
         <topic label="token" href="class_lexer.html#a62c8bc6078b6a28ac5b5dceec61b692f"/>
         <topic label="c" href="class_lexer.html#a09c78a9dad1828eec6baaacab96f7a69"/>
         <topic label="end" href="class_lexer.html#a124bf1960879c4dacd48e2ccd4238313"/>
         <topic label="keyWords" href="class_lexer.html#ac1f528bd6cbe6360cf75157946d83075"/>
-        <topic label="look" href="class_lexer.html#ae067682cc940fffdb051f3fcc7983bc5"/>
+        <topic label="look" href="class_lexer.html#a72edfaa65aa0ab9c1f4b10ba06453c64"/>
         <topic label="pos" href="class_lexer.html#aa07af54632abc7a4b9907a0b9ee092c8"/>
         <topic label="position" href="class_lexer.html#a346fa1a5e19b8be8f2afc14c06cb6cb4"/>
       </topic>
@@ -44,7 +55,7 @@
         <topic label="tag" href="class_token.html#a262a821ed83337cff86d19195714307b"/>
       </topic>
       <topic label="Word" href="class_word.html">
-        <topic label="Word" href="class_word.html#a00ff2a62a25705604151655f2ea83c9d"/>
+        <topic label="Word" href="class_word.html#ae625df0e7b8bc3d1f654b31521e39c38"/>
         <topic label="~Word" href="class_word.html#a916c9334725803b9071e7ccd9fe73da7"/>
         <topic label="toString" href="class_word.html#a8a764220569ed647beac1f6b86cf0379"/>
         <topic label="lexeme" href="class_word.html#afbf33374183617ecf5ee9586c38db284"/>
@@ -58,16 +69,17 @@
         <topic label="END" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351adc6f24fd6915a3f2786a1b7045406924"/>
         <topic label="REAL" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a053cb139f4b2333482449705c529b1e9"/>
         <topic label="INTEGER" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a5a063e265d2ac903b6808e9f6e73ec46"/>
+        <topic label="ERROR" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a2fd6f336d08340583bd620a7f5694c90"/>
         <topic label="EoF" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a80c7a2ea3645a1a3dbce6817d2b52d44"/>
       </topic>
     </topic>
     <topic label="Синтаксический анализатор" href="group__parser.html">
       <topic label="ParseError" href="class_parse_error.html">
-        <topic label="ParseError" href="class_parse_error.html#a9a577da74d41fac57de0bfa5170ba7d2"/>
+        <topic label="ParseError" href="class_parse_error.html#abe7b39533728641920dccfb777ca603c"/>
         <topic label="~ParseError" href="class_parse_error.html#aa84f7c899a5bf7a141005aa2936c597a"/>
         <topic label="what" href="class_parse_error.html#a960c7389e9c0cb976e9bef673c7881d9"/>
         <topic label="msg" href="class_parse_error.html#a227713acbd1e08bfa58164bc5ff8f37c"/>
-        <topic label="pos" href="class_parse_error.html#a0b7548ae640437c6af276c2a3b7cadc7"/>
+        <topic label="pos" href="class_parse_error.html#a974128e68b098fc447ddb3b616c142d5"/>
         <topic label="tok" href="class_parse_error.html#a74f9993b1017ad00cc42ad49b383583a"/>
       </topic>
       <topic label="Parser" href="class_parser.html">
@@ -77,6 +89,7 @@
         <topic label="definition" href="class_parser.html#a5cdfd6d20a24a2597eb58aa5e298cf9b"/>
         <topic label="exponential" href="class_parser.html#aa3a38e61eb77d1eb1c6c20a3f51c457d"/>
         <topic label="expression" href="class_parser.html#af69997ce7206f3655437cb370dc26daa"/>
+        <topic label="getTable" href="class_parser.html#ac4c859ac16a157a028b2a46b40fcc3da"/>
         <topic label="id" href="class_parser.html#a4c80d227449f9933ba84512140638797"/>
         <topic label="language" href="class_parser.html#a8a5882ad3fb944f599b510f7d36cc880"/>
         <topic label="multiplicative" href="class_parser.html#aaaf1b3d2cc0a89e0e73942801d0b16ee"/>
@@ -84,7 +97,6 @@
         <topic label="operation" href="class_parser.html#ad4867919d8dfad9c366bdb39dd9a10dc"/>
         <topic label="parse" href="class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6"/>
         <topic label="unarySign" href="class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49"/>
-        <topic label="variables" href="class_parser.html#aee32ea4ea77be165f0ac2a41a9f29faf"/>
         <topic label="lexer" href="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a"/>
         <topic label="table" href="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d"/>
         <topic label="token" href="class_parser.html#af3c219d62a76aa56b76a8ff034c0d362"/>
@@ -93,6 +105,10 @@
   </topic>
   <topic label="Классы" href="annotated.html">
     <topic label="Классы" href="annotated.html">
+      <topic label="Error" href="class_error.html">
+        <topic label="Error" href="class_error.html#a6dd07ca4619690e1566b29f5ae9f3c5b"/>
+        <topic label="~Error" href="class_error.html#a020045df3dae14f27349e0bcb31025f3"/>
+      </topic>
       <topic label="IntegerNumber" href="class_integer_number.html">
         <topic label="IntegerNumber" href="class_integer_number.html#ac7bc4b8c49d364a9695a8d484853e010"/>
         <topic label="~IntegerNumber" href="class_integer_number.html#a3e2664b0500c564e2684b49efcec9548"/>
@@ -108,26 +124,28 @@
       <topic label="Lexer" href="class_lexer.html">
         <topic label="Lexer" href="class_lexer.html#a3831b45d50fbc9558dd0371d6da1b38d"/>
         <topic label="~Lexer" href="class_lexer.html#ae888441e2eef1e1bce5985761e41563f"/>
-        <topic label="doubleToken" href="class_lexer.html#a15cba41ea16fd0f3efd148035094386c"/>
+        <topic label="doubleToken" href="class_lexer.html#a88347fb5a7c3e38c49f82ba97d2cdd26"/>
         <topic label="eof" href="class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713"/>
-        <topic label="match" href="class_lexer.html#ae5c412e0b2a86f1f9d4528e0c2c2572f"/>
+        <topic label="errorToken" href="class_lexer.html#abb43583a88f19086005c481a7253d2b4"/>
+        <topic label="getPosition" href="class_lexer.html#a6137bad811a82c7f45f78e8f0a9dcca7"/>
+        <topic label="match" href="class_lexer.html#a247339590074b6f0ac13be852a64ff5e"/>
         <topic label="readch" href="class_lexer.html#a8a7d4556fce18882372ddc038ebd9102"/>
-        <topic label="reserve" href="class_lexer.html#a6e43f6882f663d95a2518825a6ad3733"/>
+        <topic label="reserve" href="class_lexer.html#a76847d8e6f940744f2863600d21f7e80"/>
         <topic label="skip" href="class_lexer.html#a9945b807d1fa587be69eaebdfe6ae5d9"/>
         <topic label="token" href="class_lexer.html#a62c8bc6078b6a28ac5b5dceec61b692f"/>
         <topic label="c" href="class_lexer.html#a09c78a9dad1828eec6baaacab96f7a69"/>
         <topic label="end" href="class_lexer.html#a124bf1960879c4dacd48e2ccd4238313"/>
         <topic label="keyWords" href="class_lexer.html#ac1f528bd6cbe6360cf75157946d83075"/>
-        <topic label="look" href="class_lexer.html#ae067682cc940fffdb051f3fcc7983bc5"/>
+        <topic label="look" href="class_lexer.html#a72edfaa65aa0ab9c1f4b10ba06453c64"/>
         <topic label="pos" href="class_lexer.html#aa07af54632abc7a4b9907a0b9ee092c8"/>
         <topic label="position" href="class_lexer.html#a346fa1a5e19b8be8f2afc14c06cb6cb4"/>
       </topic>
       <topic label="ParseError" href="class_parse_error.html">
-        <topic label="ParseError" href="class_parse_error.html#a9a577da74d41fac57de0bfa5170ba7d2"/>
+        <topic label="ParseError" href="class_parse_error.html#abe7b39533728641920dccfb777ca603c"/>
         <topic label="~ParseError" href="class_parse_error.html#aa84f7c899a5bf7a141005aa2936c597a"/>
         <topic label="what" href="class_parse_error.html#a960c7389e9c0cb976e9bef673c7881d9"/>
         <topic label="msg" href="class_parse_error.html#a227713acbd1e08bfa58164bc5ff8f37c"/>
-        <topic label="pos" href="class_parse_error.html#a0b7548ae640437c6af276c2a3b7cadc7"/>
+        <topic label="pos" href="class_parse_error.html#a974128e68b098fc447ddb3b616c142d5"/>
         <topic label="tok" href="class_parse_error.html#a74f9993b1017ad00cc42ad49b383583a"/>
       </topic>
       <topic label="Parser" href="class_parser.html">
@@ -137,6 +155,7 @@
         <topic label="definition" href="class_parser.html#a5cdfd6d20a24a2597eb58aa5e298cf9b"/>
         <topic label="exponential" href="class_parser.html#aa3a38e61eb77d1eb1c6c20a3f51c457d"/>
         <topic label="expression" href="class_parser.html#af69997ce7206f3655437cb370dc26daa"/>
+        <topic label="getTable" href="class_parser.html#ac4c859ac16a157a028b2a46b40fcc3da"/>
         <topic label="id" href="class_parser.html#a4c80d227449f9933ba84512140638797"/>
         <topic label="language" href="class_parser.html#a8a5882ad3fb944f599b510f7d36cc880"/>
         <topic label="multiplicative" href="class_parser.html#aaaf1b3d2cc0a89e0e73942801d0b16ee"/>
@@ -144,10 +163,14 @@
         <topic label="operation" href="class_parser.html#ad4867919d8dfad9c366bdb39dd9a10dc"/>
         <topic label="parse" href="class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6"/>
         <topic label="unarySign" href="class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49"/>
-        <topic label="variables" href="class_parser.html#aee32ea4ea77be165f0ac2a41a9f29faf"/>
         <topic label="lexer" href="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a"/>
         <topic label="table" href="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d"/>
         <topic label="token" href="class_parser.html#af3c219d62a76aa56b76a8ff034c0d362"/>
+      </topic>
+      <topic label="Position" href="struct_position.html">
+        <topic label="absPos" href="struct_position.html#a55088736c1d5a19afecd46dfe6fe0c3f"/>
+        <topic label="line" href="struct_position.html#aebc6c091df7bdab0b368daa52cad20e9"/>
+        <topic label="pos" href="struct_position.html#a628d9583f5e16c146130f796f673e566"/>
       </topic>
       <topic label="RealNumber" href="class_real_number.html">
         <topic label="RealNumber" href="class_real_number.html#a29a09d65b8ae7572aba56a049ac3a32b"/>
@@ -162,7 +185,7 @@
         <topic label="tag" href="class_token.html#a262a821ed83337cff86d19195714307b"/>
       </topic>
       <topic label="Word" href="class_word.html">
-        <topic label="Word" href="class_word.html#a00ff2a62a25705604151655f2ea83c9d"/>
+        <topic label="Word" href="class_word.html#ae625df0e7b8bc3d1f654b31521e39c38"/>
         <topic label="~Word" href="class_word.html#a916c9334725803b9071e7ccd9fe73da7"/>
         <topic label="toString" href="class_word.html#a8a764220569ed647beac1f6b86cf0379"/>
         <topic label="lexeme" href="class_word.html#afbf33374183617ecf5ee9586c38db284"/>
@@ -175,11 +198,14 @@
       </topic>
       <topic label="Lexer&lt; InputIterator &gt;" href="class_lexer.html"/>
       <topic label="Parser&lt; InputIterator &gt;" href="class_parser.html"/>
+      <topic label="Position" href="struct_position.html"/>
       <topic label="Token" href="class_token.html">
         <topic label="IntegerNumber" href="class_integer_number.html"/>
         <topic label="Label" href="class_label.html"/>
         <topic label="RealNumber" href="class_real_number.html"/>
-        <topic label="Word" href="class_word.html"/>
+        <topic label="Word" href="class_word.html">
+          <topic label="Error" href="class_error.html"/>
+        </topic>
       </topic>
     </topic>
     <topic label="Члены классов" href="functions.html">
@@ -191,12 +217,13 @@
   <topic label="Файлы">
     <topic label="Файлы" href="files.html">
       <topic label="lexer" href="dir_cb836fcfc4cd05d6688b5407f9ff7db1.html">
+        <topic label="Error.h" href="_error_8h.html">
+        </topic>
         <topic label="IntegerNumber.h" href="_integer_number_8h.html">
         </topic>
         <topic label="Label.h" href="_label_8h.html">
         </topic>
         <topic label="Lexer.h" href="_lexer_8h.html">
-          <topic label="Position" href="group__lexer.html#ga01ef9402027bf03ab7b3f1bd73abae6b"/>
           <topic label="ptrToken" href="group__lexer.html#gace76f4ea37cbebcd154bb398a107269d"/>
           <topic label="ptrWord" href="group__lexer.html#ga9bb7d09712c96e7a47e97471f243d52d"/>
         </topic>
@@ -212,6 +239,7 @@
             <topic label="END" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351adc6f24fd6915a3f2786a1b7045406924"/>
             <topic label="REAL" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a053cb139f4b2333482449705c529b1e9"/>
             <topic label="INTEGER" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a5a063e265d2ac903b6808e9f6e73ec46"/>
+            <topic label="ERROR" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a2fd6f336d08340583bd620a7f5694c90"/>
             <topic label="EoF" href="group__lexer.html#gga305263dd89ad9fde1863aece00907351a80c7a2ea3645a1a3dbce6817d2b52d44"/>
           </topic>
         </topic>

@@ -112,18 +112,18 @@ $(document).ready(function(){initNavTree('class_parse_error.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a9a577da74d41fac57de0bfa5170ba7d2"><td class="memItemLeft" align="right" valign="top"><a id="a9a577da74d41fac57de0bfa5170ba7d2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ParseError</b> (std::pair&lt; int, int &gt; &amp;p, std::string t, std::string m=&quot;&quot;)</td></tr>
-<tr class="separator:a9a577da74d41fac57de0bfa5170ba7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7b39533728641920dccfb777ca603c"><td class="memItemLeft" align="right" valign="top"><a id="abe7b39533728641920dccfb777ca603c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ParseError</b> (const <a class="el" href="struct_position.html">Position</a> &amp;p, const std::string &amp;t, const std::string &amp;m=&quot;&quot;)</td></tr>
+<tr class="separator:abe7b39533728641920dccfb777ca603c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a960c7389e9c0cb976e9bef673c7881d9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parse_error.html#a960c7389e9c0cb976e9bef673c7881d9">what</a> () const override  throw ()</td></tr>
 <tr class="separator:a960c7389e9c0cb976e9bef673c7881d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Открытые атрибуты</h2></td></tr>
-<tr class="memitem:a0b7548ae640437c6af276c2a3b7cadc7"><td class="memItemLeft" align="right" valign="top"><a id="a0b7548ae640437c6af276c2a3b7cadc7"></a>
-std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parse_error.html#a0b7548ae640437c6af276c2a3b7cadc7">pos</a></td></tr>
-<tr class="memdesc:a0b7548ae640437c6af276c2a3b7cadc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Относительная позиция синтаксического анализатора <br /></td></tr>
-<tr class="separator:a0b7548ae640437c6af276c2a3b7cadc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974128e68b098fc447ddb3b616c142d5"><td class="memItemLeft" align="right" valign="top"><a id="a974128e68b098fc447ddb3b616c142d5"></a>
+<a class="el" href="struct_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parse_error.html#a974128e68b098fc447ddb3b616c142d5">pos</a></td></tr>
+<tr class="memdesc:a974128e68b098fc447ddb3b616c142d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Относительная позиция синтаксического анализатора <br /></td></tr>
+<tr class="separator:a974128e68b098fc447ddb3b616c142d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f9993b1017ad00cc42ad49b383583a"><td class="memItemLeft" align="right" valign="top"><a id="a74f9993b1017ad00cc42ad49b383583a"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_parse_error.html#a74f9993b1017ad00cc42ad49b383583a">tok</a></td></tr>
 <tr class="memdesc:a74f9993b1017ad00cc42ad49b383583a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Информация о лексеме <br /></td></tr>
@@ -167,7 +167,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 </div><div class="memdoc">
 <p>Формирует строку по шаблону:<br />
-pos.first : pos.second : 'tok' <a class="el" href="class_parse_error.html#a227713acbd1e08bfa58164bc5ff8f37c">msg</a> \n </p>
+<a class="el" href="struct_position.html">Position</a> ::line : <a class="el" href="struct_position.html">Position</a> ::pos : '<a class="el" href="class_parse_error.html#a74f9993b1017ad00cc42ad49b383583a">tok</a>' <a class="el" href="class_parse_error.html#a227713acbd1e08bfa58164bc5ff8f37c">msg</a> \n </p>
 
 </div>
 </div>

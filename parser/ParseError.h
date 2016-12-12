@@ -33,7 +33,7 @@ public:
     virtual ~ParseError() = default;
 
     /*!Формирует строку по шаблону:@n
-     * @ref pos.first : @ref pos.second : @ref 'tok' @ref msg \\n
+     * @ref Position ::line : @ref Position ::pos :  '@ref tok' @ref msg \\n
      */
     const char* what() const throw () override {
         std::string str;

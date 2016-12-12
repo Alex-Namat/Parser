@@ -21,7 +21,6 @@
 #include <exception>
 #include "Token.h"
 #include "Word.h"
-#include "Lexer.h"
 #include "IntegerNumber.h"
 #include "RealNumber.h"
 #include "Label.h"
@@ -32,9 +31,9 @@ typedef std::shared_ptr<Word> ptrWord;
 
 /*!
  * @brief Хранит относительную и абсолютную позицию в потоке
- * @param line Номер строки. Начинается с  1
- * @param pos Номер символа в строке. Начинается с  1
- * @param absPos Абсолютная позиция. Начинается с  0
+ * @param line Номер строки.
+ * @param pos Номер символа в строке.
+ * @param absPos Абсолютная позиция.
  */
 struct Position{
     int line = 1;

@@ -26,7 +26,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_integer_number_8h.html"
+"_error_8h.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

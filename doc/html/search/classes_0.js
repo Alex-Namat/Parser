@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['integernumber',['IntegerNumber',['../class_integer_number.html',1,'']]]
+  ['error',['Error',['../class_error.html',1,'']]]
 ];

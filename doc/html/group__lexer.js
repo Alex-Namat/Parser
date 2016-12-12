@@ -1,5 +1,9 @@
 var group__lexer =
 [
+    [ "Error", "class_error.html", [
+      [ "Error", "class_error.html#a6dd07ca4619690e1566b29f5ae9f3c5b", null ],
+      [ "~Error", "class_error.html#a020045df3dae14f27349e0bcb31025f3", null ]
+    ] ],
     [ "IntegerNumber", "class_integer_number.html", [
       [ "IntegerNumber", "class_integer_number.html#ac7bc4b8c49d364a9695a8d484853e010", null ],
       [ "~IntegerNumber", "class_integer_number.html#a3e2664b0500c564e2684b49efcec9548", null ],
@@ -12,20 +16,27 @@ var group__lexer =
       [ "toString", "class_label.html#ad3565cb66e331d9d47f9b139e80ae4ce", null ],
       [ "value", "class_label.html#a2b1603b8ea68953ccb027a6a34db2c6a", null ]
     ] ],
+    [ "Position", "struct_position.html", [
+      [ "absPos", "struct_position.html#a55088736c1d5a19afecd46dfe6fe0c3f", null ],
+      [ "line", "struct_position.html#aebc6c091df7bdab0b368daa52cad20e9", null ],
+      [ "pos", "struct_position.html#a628d9583f5e16c146130f796f673e566", null ]
+    ] ],
     [ "Lexer", "class_lexer.html", [
       [ "Lexer", "class_lexer.html#a3831b45d50fbc9558dd0371d6da1b38d", null ],
       [ "~Lexer", "class_lexer.html#ae888441e2eef1e1bce5985761e41563f", null ],
-      [ "doubleToken", "class_lexer.html#a15cba41ea16fd0f3efd148035094386c", null ],
+      [ "doubleToken", "class_lexer.html#a88347fb5a7c3e38c49f82ba97d2cdd26", null ],
       [ "eof", "class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713", null ],
-      [ "match", "class_lexer.html#ae5c412e0b2a86f1f9d4528e0c2c2572f", null ],
+      [ "errorToken", "class_lexer.html#abb43583a88f19086005c481a7253d2b4", null ],
+      [ "getPosition", "class_lexer.html#a6137bad811a82c7f45f78e8f0a9dcca7", null ],
+      [ "match", "class_lexer.html#a247339590074b6f0ac13be852a64ff5e", null ],
       [ "readch", "class_lexer.html#a8a7d4556fce18882372ddc038ebd9102", null ],
-      [ "reserve", "class_lexer.html#a6e43f6882f663d95a2518825a6ad3733", null ],
+      [ "reserve", "class_lexer.html#a76847d8e6f940744f2863600d21f7e80", null ],
       [ "skip", "class_lexer.html#a9945b807d1fa587be69eaebdfe6ae5d9", null ],
       [ "token", "class_lexer.html#a62c8bc6078b6a28ac5b5dceec61b692f", null ],
       [ "c", "class_lexer.html#a09c78a9dad1828eec6baaacab96f7a69", null ],
       [ "end", "class_lexer.html#a124bf1960879c4dacd48e2ccd4238313", null ],
       [ "keyWords", "class_lexer.html#ac1f528bd6cbe6360cf75157946d83075", null ],
-      [ "look", "class_lexer.html#ae067682cc940fffdb051f3fcc7983bc5", null ],
+      [ "look", "class_lexer.html#a72edfaa65aa0ab9c1f4b10ba06453c64", null ],
       [ "pos", "class_lexer.html#aa07af54632abc7a4b9907a0b9ee092c8", null ],
       [ "position", "class_lexer.html#a346fa1a5e19b8be8f2afc14c06cb6cb4", null ]
     ] ],
@@ -42,7 +53,7 @@ var group__lexer =
       [ "tag", "class_token.html#a262a821ed83337cff86d19195714307b", null ]
     ] ],
     [ "Word", "class_word.html", [
-      [ "Word", "class_word.html#a00ff2a62a25705604151655f2ea83c9d", null ],
+      [ "Word", "class_word.html#ae625df0e7b8bc3d1f654b31521e39c38", null ],
       [ "~Word", "class_word.html#a916c9334725803b9071e7ccd9fe73da7", null ],
       [ "toString", "class_word.html#a8a764220569ed647beac1f6b86cf0379", null ],
       [ "lexeme", "class_word.html#afbf33374183617ecf5ee9586c38db284", null ]
@@ -56,6 +67,7 @@ var group__lexer =
       [ "END", "group__lexer.html#gga305263dd89ad9fde1863aece00907351adc6f24fd6915a3f2786a1b7045406924", null ],
       [ "REAL", "group__lexer.html#gga305263dd89ad9fde1863aece00907351a053cb139f4b2333482449705c529b1e9", null ],
       [ "INTEGER", "group__lexer.html#gga305263dd89ad9fde1863aece00907351a5a063e265d2ac903b6808e9f6e73ec46", null ],
+      [ "ERROR", "group__lexer.html#gga305263dd89ad9fde1863aece00907351a2fd6f336d08340583bd620a7f5694c90", null ],
       [ "EoF", "group__lexer.html#gga305263dd89ad9fde1863aece00907351a80c7a2ea3645a1a3dbce6817d2b52d44", null ]
     ] ]
 ];

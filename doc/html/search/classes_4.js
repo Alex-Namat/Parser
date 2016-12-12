@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['token',['Token',['../class_token.html',1,'']]]
+  ['realnumber',['RealNumber',['../class_real_number.html',1,'']]]
 ];

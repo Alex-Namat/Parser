@@ -3,4 +3,5 @@
 <area shape="rect" id="node3" href="$class_label.html" title="Класс для меток. " alt="" coords="164,160,251,267"/>
 <area shape="rect" id="node4" href="$class_real_number.html" title="Класс для вещественных чисел. " alt="" coords="275,160,396,267"/>
 <area shape="rect" id="node5" href="$class_word.html" title="Класс для переменных и ключевых слов. " alt="" coords="420,160,507,267"/>
+<area shape="rect" id="node6" href="$class_error.html" title="Класс для лексических ошибок. " alt="" coords="424,315,503,407"/>
 </map>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['id',['id',['../class_parser.html#a4c80d227449f9933ba84512140638797',1,'Parser']]]
+  ['getposition',['getPosition',['../class_lexer.html#a6137bad811a82c7f45f78e8f0a9dcca7',1,'Lexer']]],
+  ['gettable',['getTable',['../class_parser.html#ac4c859ac16a157a028b2a46b40fcc3da',1,'Parser']]]
 ];

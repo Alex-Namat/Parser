@@ -1,4 +1,5 @@
 <map id="lexer/RealNumber.h" name="lexer/RealNumber.h">
-<area shape="rect" id="node2" href="$_lexer_8h.html" title="lexer/Lexer.h" alt="" coords="25,80,122,107"/>
-<area shape="rect" id="node3" href="$_parser_8h.html" title="parser/Parser.h" alt="" coords="18,155,129,181"/>
+<area shape="rect" id="node2" href="$_lexer_8h.html" title="lexer/Lexer.h" alt="" coords="76,80,173,107"/>
+<area shape="rect" id="node3" href="$_parse_error_8h.html" title="parser/ParseError.h" alt="" coords="5,155,140,181"/>
+<area shape="rect" id="node4" href="$_parser_8h.html" title="parser/Parser.h" alt="" coords="69,229,180,256"/>
 </map>
