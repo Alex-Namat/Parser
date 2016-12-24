@@ -26,7 +26,7 @@ var group__lexer =
       [ "~Lexer", "class_lexer.html#ae888441e2eef1e1bce5985761e41563f", null ],
       [ "doubleToken", "class_lexer.html#a88347fb5a7c3e38c49f82ba97d2cdd26", null ],
       [ "eof", "class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713", null ],
-      [ "errorToken", "class_lexer.html#abb43583a88f19086005c481a7253d2b4", null ],
+      [ "errorToken", "class_lexer.html#a0da58781011bb44e92f0350a4d5efddb", null ],
       [ "getPosition", "class_lexer.html#a6137bad811a82c7f45f78e8f0a9dcca7", null ],
       [ "match", "class_lexer.html#a247339590074b6f0ac13be852a64ff5e", null ],
       [ "readch", "class_lexer.html#a8a7d4556fce18882372ddc038ebd9102", null ],

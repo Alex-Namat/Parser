@@ -19,7 +19,7 @@ public:
     /// Хранит значение метки.
     const int value;
 
-    Label(const int& v)
+    explicit Label(const int& v)
             : Token(Tag::LABEL), value(v) {
     }
 

@@ -118,9 +118,9 @@ public:
             auto it = keyWords.find(str);
             if (it != keyWords.end()) return it->second;
             ptrWord w = std::make_shared<Word>(str);
-            auto i = keyWords.insert(std::make_pair(str, w));
+            auto i = keyWords.emplace(std::make_pair(str, w));
             if ( !i.second)
-                throw std::invalid_argument("Lexer::keyWords.insert() fail");
+                throw std::invalid_argument("Lexer::keyWords.emplace() fail");
             return i.first->second;
         }
 
@@ -161,9 +161,9 @@ public:
 private:
     ///Резервирует ключевые слова
     void reserve(const ptrWord& w) {
-        auto i = keyWords.insert(std::make_pair(w->lexeme, w));
+        auto i = keyWords.emplace(std::make_pair(w->lexeme, w));
         if ( !i.second)
-            throw std::invalid_argument("Lexer::keyWords.insert() fail");
+            throw std::invalid_argument("Lexer::keyWords.emplace() fail");
     }
 
     ///Считывает очередной символ
@@ -210,13 +210,12 @@ private:
     }
 
     ///Формирует токен лексической ошибки
-    ptrToken errorToken(const std::string& str) {
-        std::string s(str);
+    ptrToken errorToken(std::string str) {
         do {
-            s += c;
+            str += c;
             readch();
         } while (!(eof() || isspace(c)));
-        return std::make_shared<Error>(s);
+        return std::make_shared<Error>(str);
     }
 };
 

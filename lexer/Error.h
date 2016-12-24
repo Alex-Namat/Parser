@@ -16,7 +16,7 @@
 
 class Error : public Word{
 public:
-    Error(const std::string& str) : Word(str,Tag::ERROR){}
+    explicit Error(const std::string& str) : Word(str,Tag::ERROR){}
     virtual ~Error() = default;
 };
 

@@ -240,8 +240,8 @@ private:
     hashTable::iterator id() {
         auto it = table.find(std::static_pointer_cast<Word>(token));
         if (it == table.end()){
-            auto i = table.insert(std::make_pair(std::static_pointer_cast<Word>(token), 0));
-            if(!i.second) throw std::invalid_argument("Parser::table.insert() fail");
+            auto i = table.emplace(std::make_pair(std::static_pointer_cast<Word>(token), 0));
+            if(!i.second) throw std::invalid_argument("Parser::table.emplace() fail");
             it = i.first;
         }
         return it;

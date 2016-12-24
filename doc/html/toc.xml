@@ -28,7 +28,7 @@
         <topic label="~Lexer" href="class_lexer.html#ae888441e2eef1e1bce5985761e41563f"/>
         <topic label="doubleToken" href="class_lexer.html#a88347fb5a7c3e38c49f82ba97d2cdd26"/>
         <topic label="eof" href="class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713"/>
-        <topic label="errorToken" href="class_lexer.html#abb43583a88f19086005c481a7253d2b4"/>
+        <topic label="errorToken" href="class_lexer.html#a0da58781011bb44e92f0350a4d5efddb"/>
         <topic label="getPosition" href="class_lexer.html#a6137bad811a82c7f45f78e8f0a9dcca7"/>
         <topic label="match" href="class_lexer.html#a247339590074b6f0ac13be852a64ff5e"/>
         <topic label="readch" href="class_lexer.html#a8a7d4556fce18882372ddc038ebd9102"/>
@@ -126,7 +126,7 @@
         <topic label="~Lexer" href="class_lexer.html#ae888441e2eef1e1bce5985761e41563f"/>
         <topic label="doubleToken" href="class_lexer.html#a88347fb5a7c3e38c49f82ba97d2cdd26"/>
         <topic label="eof" href="class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713"/>
-        <topic label="errorToken" href="class_lexer.html#abb43583a88f19086005c481a7253d2b4"/>
+        <topic label="errorToken" href="class_lexer.html#a0da58781011bb44e92f0350a4d5efddb"/>
         <topic label="getPosition" href="class_lexer.html#a6137bad811a82c7f45f78e8f0a9dcca7"/>
         <topic label="match" href="class_lexer.html#a247339590074b6f0ac13be852a64ff5e"/>
         <topic label="readch" href="class_lexer.html#a8a7d4556fce18882372ddc038ebd9102"/>

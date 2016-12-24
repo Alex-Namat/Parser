@@ -19,7 +19,7 @@ public:
     /// Хранит значение числа.
     const double value;
 
-    RealNumber(const double& v)
+    explicit RealNumber(const double& v)
             : Token(Tag::REAL_NUM), value(v) {
     }
 

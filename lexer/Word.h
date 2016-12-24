@@ -20,7 +20,7 @@ public:
     /// Хранит строковое представление лексемы.
     const std::string lexeme;
 
-    Word(const std::string& str, const Tag& tag = Tag::VARIABLE)
+    explicit Word(const std::string& str, const Tag& tag = Tag::VARIABLE)
             : Token(tag), lexeme(str) {
     }
 

@@ -19,7 +19,7 @@ public:
     /// Хранит значение числа.
     const int value;
 
-    IntegerNumber(const int& v)
+    explicit IntegerNumber(const int& v)
             : Token(Tag::INT_NUM), value(v) {
     }
 

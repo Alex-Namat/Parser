@@ -20,7 +20,7 @@ public:
     ///Содержит тип лексемы @ref Tag
     const int tag;
 
-    Token(const int& t)
+    explicit Token(const int& t)
             : tag(t) {
     }
 
