@@ -24,43 +24,14 @@
  * @brief Реализовывает синтаксический анализатор.
  */
 
-#include "Lexer.h"
-#include "Parser.h"
-#include "ParseError.h"
-#include <iostream>
-#include <iterator>
-#include <fstream>
-#include <string>
+#include "dialog.h"
+#include <QApplication>
 
-int main(int argc, char *argv[]) {
-    std::fstream file("test.tmp");
-    file >> std::noskipws;
-    using T = std::istream_iterator<char>;
-    using S = std::string::iterator;
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    Dialog w;
+    w.show();
 
-    T beg(file), end;
-    Lexer<T> lexer(beg,end);
-    while ( !lexer.eof()) {
-        std::cout << lexer.token()->toString() << " ";
-    }
-    std::cout << std::endl;
-
-    std::fstream file1("test.tmp");
-    file1 >> std::noskipws;
-    std::string str;
-    std::copy(T(file1),T(),std::back_inserter(str));
-    Parser<S> parser(str.begin(), str.end());
-    try {
-            parser.parse();
-            auto table = parser.getTable();
-            for (auto& i : table) {
-                std::cout << i.first->lexeme << " = " << i.second << std::endl;
-            }
-    }
-    catch (ParseError& exception) {
-        std::cout << exception.what();
-    }
-
-//system("pause");
-return 0;
+    return a.exec();
 }
