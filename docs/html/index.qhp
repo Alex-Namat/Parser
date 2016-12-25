@@ -105,6 +105,7 @@
               <section title="parse" ref="class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6" />
               <section title="unarySign" ref="class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49" />
               <section title="lexer" ref="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a" />
+              <section title="n" ref="class_parser.html#adc222122009b9bb3cbc11098b1b32770" />
               <section title="table" ref="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d" />
               <section title="token" ref="class_parser.html#af3c219d62a76aa56b76a8ff034c0d362" />
             </section>
@@ -112,6 +113,31 @@
         </section>
         <section title="Классы" ref="annotated.html">
           <section title="Классы" ref="annotated.html">
+            <section title="CodeEditor" ref="class_code_editor.html">
+              <section title="CodeEditor" ref="class_code_editor.html#a93e50bcc9c34e0ba5a26a02a28b9794b" />
+              <section title="highlightCurrentLine" ref="class_code_editor.html#a8d0bbb48f1f7ad273dba6e31f0b5f28b" />
+              <section title="lineNumberAreaPaintEvent" ref="class_code_editor.html#a96e24088faa784a4ec419a647fcab5dd" />
+              <section title="lineNumberAreaWidth" ref="class_code_editor.html#af7c3fbf0af03c4ff136e0298a336dd88" />
+              <section title="resizeEvent" ref="class_code_editor.html#a7be349c943702e7dab9fdd6dd5687a07" />
+              <section title="updateLineNumberArea" ref="class_code_editor.html#a74597a5740a235410b56dfdd6f67314f" />
+              <section title="updateLineNumberAreaWidth" ref="class_code_editor.html#a28c8e8d686d9bacfb1bff04783b39924" />
+              <section title="lineNumberArea" ref="class_code_editor.html#a9132cd18e435117ad928b18d9903162d" />
+            </section>
+            <section title="Dialog" ref="class_dialog.html">
+              <section title="Dialog" ref="class_dialog.html#acfa2063f9f962d394c6a645b6e7e08d8" />
+              <section title="~Dialog" ref="class_dialog.html#a2a1fe6ef28513eed13bfcd3a4da83ccb" />
+              <section title="clearSelection" ref="class_dialog.html#a36b9f5ba12609ef57678cadf8c0d2b0a" />
+              <section title="clicked_pushButton" ref="class_dialog.html#a376fe1f78f790414872f86cc55ae53e8" />
+              <section title="draw" ref="class_dialog.html#a317f099d8df3ad1c0fd21989d7f2670d" />
+              <section title="errorSelection" ref="class_dialog.html#a5bfa23fc9a8aaa7917e62b8f5bada670" />
+              <section title="codeEditor" ref="class_dialog.html#a979375bb8a868d51e9b6685f202270c1" />
+              <section title="hbLayout" ref="class_dialog.html#a633e0b909ee717a05565a5a267e6f196" />
+              <section title="pushButton" ref="class_dialog.html#a43aaed19d04b871373fbb8c6e03fdbed" />
+              <section title="splitter" ref="class_dialog.html#a9d0f90a46bea75a29902e817bb5f237e" />
+              <section title="textEdit" ref="class_dialog.html#a02e112da2dbc7395a72d0834638072ab" />
+              <section title="vbLayout" ref="class_dialog.html#a41302383c0e52d167893d1e480728008" />
+              <section title="vSpacer" ref="class_dialog.html#aa72a76bc5c825d9fb7f6f2380fd80668" />
+            </section>
             <section title="Error" ref="class_error.html">
               <section title="Error" ref="class_error.html#a6dd07ca4619690e1566b29f5ae9f3c5b" />
               <section title="~Error" ref="class_error.html#a020045df3dae14f27349e0bcb31025f3" />
@@ -147,6 +173,12 @@
               <section title="pos" ref="class_lexer.html#aa07af54632abc7a4b9907a0b9ee092c8" />
               <section title="position" ref="class_lexer.html#a346fa1a5e19b8be8f2afc14c06cb6cb4" />
             </section>
+            <section title="LineNumberArea" ref="class_line_number_area.html">
+              <section title="LineNumberArea" ref="class_line_number_area.html#afc09bd40180955642bf5fc3ae2e41ecc" />
+              <section title="paintEvent" ref="class_line_number_area.html#abf89564879416b9b81d673f43641c7cb" />
+              <section title="sizeHint" ref="class_line_number_area.html#a0ea907509b262bea5922b11893d1ccc2" />
+              <section title="codeEditor" ref="class_line_number_area.html#ae1dcaf51cd365f6137d1beecc1e5af80" />
+            </section>
             <section title="ParseError" ref="class_parse_error.html">
               <section title="ParseError" ref="class_parse_error.html#abe7b39533728641920dccfb777ca603c" />
               <section title="~ParseError" ref="class_parse_error.html#aa84f7c899a5bf7a141005aa2936c597a" />
@@ -171,6 +203,7 @@
               <section title="parse" ref="class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6" />
               <section title="unarySign" ref="class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49" />
               <section title="lexer" ref="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a" />
+              <section title="n" ref="class_parser.html#adc222122009b9bb3cbc11098b1b32770" />
               <section title="table" ref="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d" />
               <section title="token" ref="class_parser.html#af3c219d62a76aa56b76a8ff034c0d362" />
             </section>
@@ -206,6 +239,15 @@
             <section title="Lexer&lt; InputIterator &gt;" ref="class_lexer.html" />
             <section title="Parser&lt; InputIterator &gt;" ref="class_parser.html" />
             <section title="Position" ref="struct_position.html" />
+            <section title="QDialog">
+              <section title="Dialog" ref="class_dialog.html" />
+            </section>
+            <section title="QPlainTextEdit">
+              <section title="CodeEditor" ref="class_code_editor.html" />
+            </section>
+            <section title="QWidget">
+              <section title="LineNumberArea" ref="class_line_number_area.html" />
+            </section>
             <section title="Token" ref="class_token.html">
               <section title="IntegerNumber" ref="class_integer_number.html" />
               <section title="Label" ref="class_label.html" />
@@ -223,6 +265,10 @@
         </section>
         <section title="Файлы">
           <section title="Файлы" ref="files.html">
+            <section title="gui" ref="dir_11bc0974ce736ce9a6fadebbeb7a8314.html">
+              <section title="codeeditor.h" ref="codeeditor_8h_source.html" />
+              <section title="dialog.h" ref="dialog_8h_source.html" />
+            </section>
             <section title="lexer" ref="dir_cb836fcfc4cd05d6688b5407f9ff7db1.html">
               <section title="Error.h" ref="_error_8h.html" />
               <section title="IntegerNumber.h" ref="_integer_number_8h.html" />
@@ -268,6 +314,7 @@
       <keyword name="ptrToken" id="Lexer.h::ptrToken" ref="_lexer_8h.html#gace76f4ea37cbebcd154bb398a107269d" />
       <keyword name="ptrWord" id="Lexer.h::ptrWord" ref="_lexer_8h.html#ga9bb7d09712c96e7a47e97471f243d52d" />
       <keyword name="hashTable" id="Parser.h::hashTable" ref="_parser_8h.html#ga638f170ba2272578b7eaa177ca68265c" />
+      <keyword name="Parser" id="Parser" ref="md__r_e_a_d_m_e.html" />
       <keyword name="Лексический анализатор" id="Лексический анализатор" ref="group__lexer.html" />
       <keyword name="ptrToken" id="Lexer.h::ptrToken" ref="_lexer_8h.html#gace76f4ea37cbebcd154bb398a107269d" />
       <keyword name="ptrWord" id="Lexer.h::ptrWord" ref="_lexer_8h.html#ga9bb7d09712c96e7a47e97471f243d52d" />
@@ -283,6 +330,28 @@
       <keyword name="EoF" id="Tag.h::EoF" ref="_tag_8h.html#gga305263dd89ad9fde1863aece00907351a80c7a2ea3645a1a3dbce6817d2b52d44" />
       <keyword name="Синтаксический анализатор" id="Синтаксический анализатор" ref="group__parser.html" />
       <keyword name="hashTable" id="Parser.h::hashTable" ref="_parser_8h.html#ga638f170ba2272578b7eaa177ca68265c" />
+      <keyword name="CodeEditor" id="CodeEditor" ref="class_code_editor.html" />
+      <keyword name="CodeEditor" id="CodeEditor::CodeEditor" ref="class_code_editor.html#a93e50bcc9c34e0ba5a26a02a28b9794b" />
+      <keyword name="lineNumberAreaPaintEvent" id="CodeEditor::lineNumberAreaPaintEvent" ref="class_code_editor.html#a96e24088faa784a4ec419a647fcab5dd" />
+      <keyword name="lineNumberAreaWidth" id="CodeEditor::lineNumberAreaWidth" ref="class_code_editor.html#af7c3fbf0af03c4ff136e0298a336dd88" />
+      <keyword name="resizeEvent" id="CodeEditor::resizeEvent" ref="class_code_editor.html#a7be349c943702e7dab9fdd6dd5687a07" />
+      <keyword name="updateLineNumberAreaWidth" id="CodeEditor::updateLineNumberAreaWidth" ref="class_code_editor.html#a28c8e8d686d9bacfb1bff04783b39924" />
+      <keyword name="highlightCurrentLine" id="CodeEditor::highlightCurrentLine" ref="class_code_editor.html#a8d0bbb48f1f7ad273dba6e31f0b5f28b" />
+      <keyword name="updateLineNumberArea" id="CodeEditor::updateLineNumberArea" ref="class_code_editor.html#a74597a5740a235410b56dfdd6f67314f" />
+      <keyword name="lineNumberArea" id="CodeEditor::lineNumberArea" ref="class_code_editor.html#a9132cd18e435117ad928b18d9903162d" />
+      <keyword name="Dialog" id="Dialog" ref="class_dialog.html" />
+      <keyword name="Dialog" id="Dialog::Dialog" ref="class_dialog.html#acfa2063f9f962d394c6a645b6e7e08d8" />
+      <keyword name="clicked_pushButton" id="Dialog::clicked_pushButton" ref="class_dialog.html#a376fe1f78f790414872f86cc55ae53e8" />
+      <keyword name="draw" id="Dialog::draw" ref="class_dialog.html#a317f099d8df3ad1c0fd21989d7f2670d" />
+      <keyword name="errorSelection" id="Dialog::errorSelection" ref="class_dialog.html#a5bfa23fc9a8aaa7917e62b8f5bada670" />
+      <keyword name="clearSelection" id="Dialog::clearSelection" ref="class_dialog.html#a36b9f5ba12609ef57678cadf8c0d2b0a" />
+      <keyword name="vSpacer" id="Dialog::vSpacer" ref="class_dialog.html#aa72a76bc5c825d9fb7f6f2380fd80668" />
+      <keyword name="vbLayout" id="Dialog::vbLayout" ref="class_dialog.html#a41302383c0e52d167893d1e480728008" />
+      <keyword name="hbLayout" id="Dialog::hbLayout" ref="class_dialog.html#a633e0b909ee717a05565a5a267e6f196" />
+      <keyword name="pushButton" id="Dialog::pushButton" ref="class_dialog.html#a43aaed19d04b871373fbb8c6e03fdbed" />
+      <keyword name="textEdit" id="Dialog::textEdit" ref="class_dialog.html#a02e112da2dbc7395a72d0834638072ab" />
+      <keyword name="splitter" id="Dialog::splitter" ref="class_dialog.html#a9d0f90a46bea75a29902e817bb5f237e" />
+      <keyword name="codeEditor" id="Dialog::codeEditor" ref="class_dialog.html#a979375bb8a868d51e9b6685f202270c1" />
       <keyword name="Error" id="Error" ref="class_error.html" />
       <keyword name="Error" id="Error::Error" ref="class_error.html#a6dd07ca4619690e1566b29f5ae9f3c5b" />
       <keyword name="Word" id="Word::Word" ref="class_word.html#ae625df0e7b8bc3d1f654b31521e39c38" />
@@ -319,6 +388,11 @@
       <keyword name="keyWords" id="Lexer::keyWords" ref="class_lexer.html#ac1f528bd6cbe6360cf75157946d83075" />
       <keyword name="look" id="Lexer::look" ref="class_lexer.html#a72edfaa65aa0ab9c1f4b10ba06453c64" />
       <keyword name="position" id="Lexer::position" ref="class_lexer.html#a346fa1a5e19b8be8f2afc14c06cb6cb4" />
+      <keyword name="LineNumberArea" id="LineNumberArea" ref="class_line_number_area.html" />
+      <keyword name="LineNumberArea" id="LineNumberArea::LineNumberArea" ref="class_line_number_area.html#afc09bd40180955642bf5fc3ae2e41ecc" />
+      <keyword name="sizeHint" id="LineNumberArea::sizeHint" ref="class_line_number_area.html#a0ea907509b262bea5922b11893d1ccc2" />
+      <keyword name="paintEvent" id="LineNumberArea::paintEvent" ref="class_line_number_area.html#abf89564879416b9b81d673f43641c7cb" />
+      <keyword name="codeEditor" id="LineNumberArea::codeEditor" ref="class_line_number_area.html#ae1dcaf51cd365f6137d1beecc1e5af80" />
       <keyword name="ParseError" id="ParseError" ref="class_parse_error.html" />
       <keyword name="ParseError" id="ParseError::ParseError" ref="class_parse_error.html#abe7b39533728641920dccfb777ca603c" />
       <keyword name="what" id="ParseError::what" ref="class_parse_error.html#a960c7389e9c0cb976e9bef673c7881d9" />
@@ -342,6 +416,7 @@
       <keyword name="lexer" id="Parser::lexer" ref="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a" />
       <keyword name="token" id="Parser::token" ref="class_parser.html#af3c219d62a76aa56b76a8ff034c0d362" />
       <keyword name="table" id="Parser::table" ref="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d" />
+      <keyword name="n" id="Parser::n" ref="class_parser.html#adc222122009b9bb3cbc11098b1b32770" />
       <keyword name="Position" id="Position" ref="struct_position.html" />
       <keyword name="line" id="Position::line" ref="struct_position.html#aebc6c091df7bdab0b368daa52cad20e9" />
       <keyword name="pos" id="Position::pos" ref="struct_position.html#a628d9583f5e16c146130f796f673e566" />
@@ -386,6 +461,8 @@
       <file>search/mag_sel.png</file>
       <file>search/search.css</file>
       <file>search/search.js</file>
+      <file>codeeditor_8h_source.html</file>
+      <file>dialog_8h_source.html</file>
       <file>_error_8h_source.html</file>
       <file>_integer_number_8h_source.html</file>
       <file>_label_8h_source.html</file>
@@ -424,8 +501,15 @@
       <file>_parse_error_8h__dep__incl.png</file>
       <file>_parser_8h.html</file>
       <file>_parser_8h__incl.png</file>
+      <file>md__r_e_a_d_m_e.html</file>
       <file>group__lexer.html</file>
       <file>group__parser.html</file>
+      <file>class_code_editor.html</file>
+      <file>class_code_editor__inherit__graph.png</file>
+      <file>class_code_editor-members.html</file>
+      <file>class_dialog.html</file>
+      <file>class_dialog__inherit__graph.png</file>
+      <file>class_dialog-members.html</file>
       <file>class_error.html</file>
       <file>class_error__inherit__graph.png</file>
       <file>class_error-members.html</file>
@@ -437,6 +521,9 @@
       <file>class_label-members.html</file>
       <file>class_lexer.html</file>
       <file>class_lexer-members.html</file>
+      <file>class_line_number_area.html</file>
+      <file>class_line_number_area__inherit__graph.png</file>
+      <file>class_line_number_area-members.html</file>
       <file>class_parse_error.html</file>
       <file>class_parse_error__inherit__graph.png</file>
       <file>class_parse_error-members.html</file>
@@ -455,11 +542,15 @@
       <file>class_word-members.html</file>
       <file>graph_legend.png</file>
       <file>graph_legend.html</file>
+      <file>dir_11bc0974ce736ce9a6fadebbeb7a8314.html</file>
+      <file>dir_11bc0974ce736ce9a6fadebbeb7a8314_dep.png</file>
       <file>dir_cb836fcfc4cd05d6688b5407f9ff7db1.html</file>
       <file>dir_572890c148f68441e050f6560d78312b.html</file>
       <file>dir_572890c148f68441e050f6560d78312b_dep.png</file>
-      <file>dir_000001_000000.html</file>
+      <file>dir_000000_000002.html</file>
+      <file>dir_000002_000001.html</file>
       <file>index.html</file>
+      <file>pages.html</file>
       <file>modules.html</file>
       <file>annotated.html</file>
       <file>classes.html</file>
@@ -470,6 +561,9 @@
       <file>inherit_graph_2.png</file>
       <file>inherit_graph_3.png</file>
       <file>inherit_graph_4.png</file>
+      <file>inherit_graph_5.png</file>
+      <file>inherit_graph_6.png</file>
+      <file>inherit_graph_7.png</file>
       <file>functions.html</file>
       <file>functions.html</file>
       <file>functions.html</file>
@@ -503,6 +597,7 @@
       <file>functions_func.html</file>
       <file>functions_func.html</file>
       <file>functions_func.html</file>
+      <file>functions_vars.html</file>
       <file>functions_vars.html</file>
       <file>functions_vars.html</file>
       <file>functions_vars.html</file>

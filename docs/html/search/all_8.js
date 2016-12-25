@@ -6,5 +6,6 @@ var searchData=
   ['lexeme',['lexeme',['../class_word.html#afbf33374183617ecf5ee9586c38db284',1,'Word']]],
   ['lexer',['Lexer',['../class_lexer.html',1,'Lexer&lt; InputIterator &gt;'],['../class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a',1,'Parser::lexer()']]],
   ['lexer_2eh',['Lexer.h',['../_lexer_8h.html',1,'']]],
+  ['linenumberarea',['LineNumberArea',['../class_line_number_area.html',1,'']]],
   ['look',['look',['../class_lexer.html#a72edfaa65aa0ab9c1f4b10ba06453c64',1,'Lexer']]]
 ];

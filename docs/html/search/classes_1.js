@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['integernumber',['IntegerNumber',['../class_integer_number.html',1,'']]]
+  ['dialog',['Dialog',['../class_dialog.html',1,'']]]
 ];

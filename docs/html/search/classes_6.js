@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['word',['Word',['../class_word.html',1,'']]]
+  ['realnumber',['RealNumber',['../class_real_number.html',1,'']]]
 ];

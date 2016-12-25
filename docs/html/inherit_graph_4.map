@@ -1,8 +1,4 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$class_token.html" title="Класс для токенов. " alt="" coords="5,81,63,108"/>
-<area shape="rect" id="node2" href="$class_integer_number.html" title="Класс для целых чисел. " alt="" coords="111,5,217,32"/>
-<area shape="rect" id="node3" href="$class_label.html" title="Класс для меток. " alt="" coords="137,56,191,83"/>
-<area shape="rect" id="node4" href="$class_real_number.html" title="Класс для вещественных чисел. " alt="" coords="117,107,211,133"/>
-<area shape="rect" id="node5" href="$class_word.html" title="Класс для переменных и ключевых слов. " alt="" coords="137,157,191,184"/>
-<area shape="rect" id="node6" href="$class_error.html" title="Класс для лексических ошибок. " alt="" coords="265,157,316,184"/>
+<area shape="rect" id="node1" title="STL class. " alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node2" href="$class_parse_error.html" title="Обрабатывает ошибки синтаксического анализатора. " alt="" coords="157,5,241,32"/>
 </map>

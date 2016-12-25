@@ -2,6 +2,7 @@ var NAVTREE =
 [
   [ "Parser", "index.html", [
     [ "Синтаксический анализатор", "index.html", null ],
+    [ "Parser", "md__r_e_a_d_m_e.html", null ],
     [ "Группы", "modules.html", "modules" ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],

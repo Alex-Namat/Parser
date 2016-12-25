@@ -1,5 +1,6 @@
 <toc label="Parser" topic="index.html">
   <topic label="Синтаксический анализатор" href="index.html"/>
+  <topic label="Parser" href="md__r_e_a_d_m_e.html"/>
   <topic label="Группы" href="modules.html">
     <topic label="Лексический анализатор" href="group__lexer.html">
       <topic label="Error" href="class_error.html">
@@ -98,6 +99,7 @@
         <topic label="parse" href="class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6"/>
         <topic label="unarySign" href="class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49"/>
         <topic label="lexer" href="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a"/>
+        <topic label="n" href="class_parser.html#adc222122009b9bb3cbc11098b1b32770"/>
         <topic label="table" href="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d"/>
         <topic label="token" href="class_parser.html#af3c219d62a76aa56b76a8ff034c0d362"/>
       </topic>
@@ -105,6 +107,31 @@
   </topic>
   <topic label="Классы" href="annotated.html">
     <topic label="Классы" href="annotated.html">
+      <topic label="CodeEditor" href="class_code_editor.html">
+        <topic label="CodeEditor" href="class_code_editor.html#a93e50bcc9c34e0ba5a26a02a28b9794b"/>
+        <topic label="highlightCurrentLine" href="class_code_editor.html#a8d0bbb48f1f7ad273dba6e31f0b5f28b"/>
+        <topic label="lineNumberAreaPaintEvent" href="class_code_editor.html#a96e24088faa784a4ec419a647fcab5dd"/>
+        <topic label="lineNumberAreaWidth" href="class_code_editor.html#af7c3fbf0af03c4ff136e0298a336dd88"/>
+        <topic label="resizeEvent" href="class_code_editor.html#a7be349c943702e7dab9fdd6dd5687a07"/>
+        <topic label="updateLineNumberArea" href="class_code_editor.html#a74597a5740a235410b56dfdd6f67314f"/>
+        <topic label="updateLineNumberAreaWidth" href="class_code_editor.html#a28c8e8d686d9bacfb1bff04783b39924"/>
+        <topic label="lineNumberArea" href="class_code_editor.html#a9132cd18e435117ad928b18d9903162d"/>
+      </topic>
+      <topic label="Dialog" href="class_dialog.html">
+        <topic label="Dialog" href="class_dialog.html#acfa2063f9f962d394c6a645b6e7e08d8"/>
+        <topic label="~Dialog" href="class_dialog.html#a2a1fe6ef28513eed13bfcd3a4da83ccb"/>
+        <topic label="clearSelection" href="class_dialog.html#a36b9f5ba12609ef57678cadf8c0d2b0a"/>
+        <topic label="clicked_pushButton" href="class_dialog.html#a376fe1f78f790414872f86cc55ae53e8"/>
+        <topic label="draw" href="class_dialog.html#a317f099d8df3ad1c0fd21989d7f2670d"/>
+        <topic label="errorSelection" href="class_dialog.html#a5bfa23fc9a8aaa7917e62b8f5bada670"/>
+        <topic label="codeEditor" href="class_dialog.html#a979375bb8a868d51e9b6685f202270c1"/>
+        <topic label="hbLayout" href="class_dialog.html#a633e0b909ee717a05565a5a267e6f196"/>
+        <topic label="pushButton" href="class_dialog.html#a43aaed19d04b871373fbb8c6e03fdbed"/>
+        <topic label="splitter" href="class_dialog.html#a9d0f90a46bea75a29902e817bb5f237e"/>
+        <topic label="textEdit" href="class_dialog.html#a02e112da2dbc7395a72d0834638072ab"/>
+        <topic label="vbLayout" href="class_dialog.html#a41302383c0e52d167893d1e480728008"/>
+        <topic label="vSpacer" href="class_dialog.html#aa72a76bc5c825d9fb7f6f2380fd80668"/>
+      </topic>
       <topic label="Error" href="class_error.html">
         <topic label="Error" href="class_error.html#a6dd07ca4619690e1566b29f5ae9f3c5b"/>
         <topic label="~Error" href="class_error.html#a020045df3dae14f27349e0bcb31025f3"/>
@@ -140,6 +167,12 @@
         <topic label="pos" href="class_lexer.html#aa07af54632abc7a4b9907a0b9ee092c8"/>
         <topic label="position" href="class_lexer.html#a346fa1a5e19b8be8f2afc14c06cb6cb4"/>
       </topic>
+      <topic label="LineNumberArea" href="class_line_number_area.html">
+        <topic label="LineNumberArea" href="class_line_number_area.html#afc09bd40180955642bf5fc3ae2e41ecc"/>
+        <topic label="paintEvent" href="class_line_number_area.html#abf89564879416b9b81d673f43641c7cb"/>
+        <topic label="sizeHint" href="class_line_number_area.html#a0ea907509b262bea5922b11893d1ccc2"/>
+        <topic label="codeEditor" href="class_line_number_area.html#ae1dcaf51cd365f6137d1beecc1e5af80"/>
+      </topic>
       <topic label="ParseError" href="class_parse_error.html">
         <topic label="ParseError" href="class_parse_error.html#abe7b39533728641920dccfb777ca603c"/>
         <topic label="~ParseError" href="class_parse_error.html#aa84f7c899a5bf7a141005aa2936c597a"/>
@@ -164,6 +197,7 @@
         <topic label="parse" href="class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6"/>
         <topic label="unarySign" href="class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49"/>
         <topic label="lexer" href="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a"/>
+        <topic label="n" href="class_parser.html#adc222122009b9bb3cbc11098b1b32770"/>
         <topic label="table" href="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d"/>
         <topic label="token" href="class_parser.html#af3c219d62a76aa56b76a8ff034c0d362"/>
       </topic>
@@ -199,6 +233,15 @@
       <topic label="Lexer&lt; InputIterator &gt;" href="class_lexer.html"/>
       <topic label="Parser&lt; InputIterator &gt;" href="class_parser.html"/>
       <topic label="Position" href="struct_position.html"/>
+      <topic label="QDialog">
+        <topic label="Dialog" href="class_dialog.html"/>
+      </topic>
+      <topic label="QPlainTextEdit">
+        <topic label="CodeEditor" href="class_code_editor.html"/>
+      </topic>
+      <topic label="QWidget">
+        <topic label="LineNumberArea" href="class_line_number_area.html"/>
+      </topic>
       <topic label="Token" href="class_token.html">
         <topic label="IntegerNumber" href="class_integer_number.html"/>
         <topic label="Label" href="class_label.html"/>
@@ -216,6 +259,10 @@
   </topic>
   <topic label="Файлы">
     <topic label="Файлы" href="files.html">
+      <topic label="gui" href="dir_11bc0974ce736ce9a6fadebbeb7a8314.html">
+        <topic label="codeeditor.h" href="codeeditor_8h_source.html"/>
+        <topic label="dialog.h" href="dialog_8h_source.html"/>
+      </topic>
       <topic label="lexer" href="dir_cb836fcfc4cd05d6688b5407f9ff7db1.html">
         <topic label="Error.h" href="_error_8h.html">
         </topic>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error',['Error',['../class_error.html',1,'']]]
+  ['codeeditor',['CodeEditor',['../class_code_editor.html',1,'']]]
 ];
