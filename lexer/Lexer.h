@@ -66,8 +66,11 @@ class Lexer {
 public:
 
     Lexer(InputIterator beg, InputIterator end)
-            : pos(beg), end(end), c( *pos) {
+        : pos(beg), end(end) {
+
+        if(!eof()) c = *pos;
         look.first = nullptr;
+
         reserve(std::make_shared<Word>("Begin", Tag::BEGIN));
         reserve(std::make_shared<Word>("End", Tag::END));
         reserve(std::make_shared<Word>("Real", Tag::REAL));
@@ -174,6 +177,12 @@ private:
             return;
         }
         c = *pos;
+
+#ifdef _MSC_VER
+    if (c < -1 || c > 255)
+        throw std::invalid_argument("Not ASCII-char.");
+#endif
+
         ++position.pos;
         ++position.absPos;
     }

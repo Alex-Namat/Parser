@@ -44,7 +44,7 @@ public:
         str += tok;
         str += " '";
         str += msg;
-        str += "\n\0";
+        str += "\n";
         return str.c_str();
     }
 };
