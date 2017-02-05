@@ -1,4 +1,5 @@
 var _parser_8h =
 [
-    [ "hashTable", "group__parser.html#ga638f170ba2272578b7eaa177ca68265c", null ]
+    [ "ComparePtrWord", "classdetails_1_1_compare_ptr_word.html", "classdetails_1_1_compare_ptr_word" ],
+    [ "hashTable", "group__parser.html#ga0ffcd5a5e2d5005e89a360f99a5ae4fc", null ]
 ];

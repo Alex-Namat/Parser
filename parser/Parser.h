@@ -16,12 +16,21 @@
 #ifndef PARSER_H_
 #define PARSER_H_
 
-#include <unordered_map>
+#include <map>
 #include <cmath>
 #include "Lexer.h"
 #include "ParseError.h"
 
-typedef std::unordered_map<ptrWord, double> hashTable;
+namespace details {
+class ComparePtrWord{
+public:
+    bool operator()(const ptrWord& left, const ptrWord& right) const{
+        return left->lexeme < right->lexeme;
+    }
+};
+}
+
+typedef std::map<ptrWord, double,details::ComparePtrWord> hashTable;
 
 template<class InputIterator>
 class Parser {
@@ -31,7 +40,7 @@ class Parser {
     ///Очередной токен
     ptrToken token;
 
-    ///Связывает значения переменных с токеном
+    ///Связывает значение переменной с идентификатором переменной
     hashTable table;
 
     ///Счетчик глубины вложенности
@@ -63,23 +72,23 @@ protected:
         if (token->tag == EoF) return;
         if (token->tag != BEGIN)
             throw ParseError(lexer.getPosition(), token->toString(),
-                "Пропущено ключевое слово \"Begin\"");
+                "Ожидается ключевое слово \"Begin\"");
         nextToken();
         if (token->tag != REAL && token->tag != INTEGER)
             throw ParseError(lexer.getPosition(), token->toString(),
-                "Пропущено ключевое слово \"Real\" или \"Integer\"");
+                "Ожидается ключевое слово \"Real\" или \"Integer\"");
         while (token->tag == REAL || token->tag == INTEGER) {
             definition();
         }
         if (token->tag != LABEL && token->tag != VARIABLE)
             throw ParseError(lexer.getPosition(), token->toString(),
-                "Пропущена метка или переменная");
+                "Ожидается метка или переменная");
         while (token->tag == LABEL || token->tag == VARIABLE) {
             operation();
         }
         if (token->tag != END)
             throw ParseError(lexer.getPosition(), token->toString(),
-                "Пропущено ключевое слово \"End\"");
+                "Ожидается ключевое слово \"End\"");
     }
 
     ///Разбор нетерминала 'Определение'
@@ -89,7 +98,7 @@ protected:
                 nextToken();
                 if (token->tag != VARIABLE)
                     throw ParseError(lexer.getPosition(), token->toString(),
-                        "Пропущена переменная");
+                        "Ожидается переменная");
                 do {
                     id();
                     nextToken();
@@ -101,7 +110,7 @@ protected:
                 nextToken();
                 if (token->tag != INT_NUM)
                     throw ParseError(lexer.getPosition(), token->toString(),
-                        "Пропущено целое число");
+                        "Ожидается целое число");
                 do {
                     nextToken();
                 }
@@ -119,12 +128,12 @@ protected:
         if (token->tag == LABEL) nextToken();
         if (token->tag != VARIABLE)
             throw ParseError(lexer.getPosition(), token->toString(),
-                "Пропущена переменная");
+                "Ожидается переменная");
         auto it = id();
         nextToken();
         if (token->tag != '=')
             throw ParseError(lexer.getPosition(), token->toString(),
-                "Пропущено '='");
+                "Ожидается '='");
         nextToken();
         additive(it->second);
     }
@@ -132,7 +141,14 @@ protected:
     ///Разбор аддитивных операций
     void additive(double& result) {
         double tmp = 0;
+        bool sign = false;
+        if(token->tag == '-'){
+            sign = true;
+            nextToken();
+        }
         multiplicative(result);
+        if(sign)
+            result = -result;
         while (token->tag == '+' || token->tag == '-') {
             int tag = token->tag;
             nextToken();
@@ -173,23 +189,12 @@ protected:
     ///Разбор степенных операций
     void exponential(double& result) {
         double tmp = 0;
-        unarySign(result);
+        expression(result);
         if (token->tag == '^') {
             nextToken();
             expression(tmp);
             result = std::pow(result, tmp);
         }
-    }
-
-    ///Разбор унарных знаков
-    void unarySign(double& result) {
-        int tag;
-        if (token->tag == '+' || token->tag == '-') {
-            tag = token->tag;
-            nextToken();
-        }
-        expression(result);
-        if (tag == '-') result = -result;
     }
 
     ///Разбор скобок
@@ -200,7 +205,7 @@ protected:
             additive(result);
             if (token->tag != ')')
                 throw ParseError(lexer.getPosition(), token->toString(),
-                                 "Пропущена ')'");
+                                 "Ожидается ')'");
             break;
         case '[': {
             ++n;
@@ -211,19 +216,26 @@ protected:
             additive(result);
             if (token->tag != ']')
                 throw ParseError(lexer.getPosition(), token->toString(),
-                                 "Пропущена ']'");
+                                 "Ожидается ']'");
             --n;
             break;
         }
         case REAL_NUM:
             result = std::static_pointer_cast<RealNumber>(token)->value;
             break;
-        case INT_NUM:
-            result = std::static_pointer_cast<IntegerNumber>(token)->value;
+        case VARIABLE:
+            result = id()->second;
             break;
+        case '-':
+        case '+':
+        case '*':
+        case '/':
+        case '^':
+            throw ParseError(lexer.getPosition(), token->toString(),
+                             "Два знака подряд");
         default:
             throw ParseError(lexer.getPosition(), token->toString(),
-                             "Пропущено число  или скобка");
+                             "Ожидается вещественное число, переменная  или скобка");
         }
         nextToken();
     }

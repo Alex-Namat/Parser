@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "details::ComparePtrWord", "classdetails_1_1_compare_ptr_word.html", null ],
     [ "std::exception", null, [
       [ "ParseError", "class_parse_error.html", null ]
     ] ],

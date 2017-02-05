@@ -13,7 +13,6 @@
 #define WORD_H_
 
 #include "Token.h"
-#include <string>
 
 class Word : public Token {
 public:

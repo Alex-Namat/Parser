@@ -139,9 +139,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a9945b807d1fa587be69eaebdfe6ae5d9">skip</a> ()</td></tr>
 <tr class="memdesc:a9945b807d1fa587be69eaebdfe6ae5d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пропуск пробелов <br /></td></tr>
 <tr class="separator:a9945b807d1fa587be69eaebdfe6ae5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88347fb5a7c3e38c49f82ba97d2cdd26"><td class="memItemLeft" align="right" valign="top">ptrToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a88347fb5a7c3e38c49f82ba97d2cdd26">doubleToken</a> (const int &amp;i)</td></tr>
-<tr class="memdesc:a88347fb5a7c3e38c49f82ba97d2cdd26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирует токен вещественного числа  <a href="#a88347fb5a7c3e38c49f82ba97d2cdd26">Подробнее...</a><br /></td></tr>
-<tr class="separator:a88347fb5a7c3e38c49f82ba97d2cdd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0da58781011bb44e92f0350a4d5efddb"><td class="memItemLeft" align="right" valign="top"><a id="a0da58781011bb44e92f0350a4d5efddb"></a>
 ptrToken&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_lexer.html#a0da58781011bb44e92f0350a4d5efddb">errorToken</a> (std::string str)</td></tr>
 <tr class="memdesc:a0da58781011bb44e92f0350a4d5efddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формирует токен лексической ошибки <br /></td></tr>
@@ -180,44 +177,7 @@ class Lexer&lt; InputIterator &gt;</h3>
 <p>Лексический анализатор. </p>
 <p>Формирует лексемы. Принимает интераторы отвечающие категории InputIterator, где char_type = char. Выбрасывает исключение std::invalid_argument, когда вставка элемента в <a class="el" href="class_lexer.html#ac1f528bd6cbe6360cf75157946d83075">keyWords</a>, заканчивается неудачно. </p><dl class="section author"><dt>Автор</dt><dd>Namat </dd></dl>
 <dl class="section date"><dt>Дата</dt><dd>19 нояб. 2016 г. </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a id="a88347fb5a7c3e38c49f82ba97d2cdd26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88347fb5a7c3e38c49f82ba97d2cdd26">&sect;&nbsp;</a></span>doubleToken()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputIterator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ptrToken <a class="el" href="class_lexer.html">Lexer</a>&lt; InputIterator &gt;::doubleToken </td>
-          <td>(</td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Формирует токен вещественного числа </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>Целая часть числа </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Данные класса</h2>
+</div><h2 class="groupheader">Данные класса</h2>
 <a id="ac1f528bd6cbe6360cf75157946d83075"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1f528bd6cbe6360cf75157946d83075">&sect;&nbsp;</a></span>keyWords</h2>
 

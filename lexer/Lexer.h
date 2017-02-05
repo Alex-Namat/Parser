@@ -20,7 +20,6 @@
 #include <unordered_map>
 #include <exception>
 #include "Token.h"
-#include "Word.h"
 #include "IntegerNumber.h"
 #include "RealNumber.h"
 #include "Label.h"
@@ -107,8 +106,17 @@ public:
                 return std::make_shared<IntegerNumber>(i);
             }
             readch();
-            if(isalpha(c)) return errorToken(std::to_string(i)+".");
-            return doubleToken(i);
+
+            if (!isdigit(c)) return errorToken(std::to_string(i) + ".");
+            double d = i;
+            double f = 10;
+            do {
+                d += int(c - '0') / f;
+                f *= 10;
+                readch();
+            }
+            while (isdigit(c));
+            return std::make_shared<RealNumber>(d);
         }
 
         if (isalpha(c)) {
@@ -125,14 +133,6 @@ public:
             if ( !i.second)
                 throw std::invalid_argument("Lexer::keyWords.emplace() fail");
             return i.first->second;
-        }
-
-        if (c == '.') {
-            readch();
-            if (isdigit(c))
-                return doubleToken(0);
-            if(isalpha(c)) return errorToken(std::string("."));
-            return std::make_shared<Token>('.');
         }
 
         ptrToken token = std::make_shared<Token>(c);
@@ -199,23 +199,6 @@ private:
         }
         while (isspace(c));
         return;
-    }
-
-    /*!
-     * @brief Формирует токен вещественного числа
-     * @param i Целая часть числа
-     */
-    ptrToken doubleToken(const int& i) {
-        double d = i;
-        double f = 10;
-        if ( !isdigit(c)) return std::make_shared<RealNumber>(d);
-        do {
-            d += int(c - '0') / f;
-            f *= 10;
-            readch();
-        }
-        while (isdigit(c));
-        return std::make_shared<RealNumber>(d);
     }
 
     ///Формирует токен лексической ошибки

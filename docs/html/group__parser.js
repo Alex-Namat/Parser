@@ -22,7 +22,6 @@ var group__parser =
       [ "nextToken", "class_parser.html#a1acd7da781e3bcfd4cfd8133d6c731ab", null ],
       [ "operation", "class_parser.html#ad4867919d8dfad9c366bdb39dd9a10dc", null ],
       [ "parse", "class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6", null ],
-      [ "unarySign", "class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49", null ],
       [ "lexer", "class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a", null ],
       [ "n", "class_parser.html#adc222122009b9bb3cbc11098b1b32770", null ],
       [ "table", "class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d", null ],

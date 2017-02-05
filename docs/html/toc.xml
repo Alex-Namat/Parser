@@ -27,7 +27,6 @@
       <topic label="Lexer" href="class_lexer.html">
         <topic label="Lexer" href="class_lexer.html#a3831b45d50fbc9558dd0371d6da1b38d"/>
         <topic label="~Lexer" href="class_lexer.html#ae888441e2eef1e1bce5985761e41563f"/>
-        <topic label="doubleToken" href="class_lexer.html#a88347fb5a7c3e38c49f82ba97d2cdd26"/>
         <topic label="eof" href="class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713"/>
         <topic label="errorToken" href="class_lexer.html#a0da58781011bb44e92f0350a4d5efddb"/>
         <topic label="getPosition" href="class_lexer.html#a6137bad811a82c7f45f78e8f0a9dcca7"/>
@@ -97,7 +96,6 @@
         <topic label="nextToken" href="class_parser.html#a1acd7da781e3bcfd4cfd8133d6c731ab"/>
         <topic label="operation" href="class_parser.html#ad4867919d8dfad9c366bdb39dd9a10dc"/>
         <topic label="parse" href="class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6"/>
-        <topic label="unarySign" href="class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49"/>
         <topic label="lexer" href="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a"/>
         <topic label="n" href="class_parser.html#adc222122009b9bb3cbc11098b1b32770"/>
         <topic label="table" href="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d"/>
@@ -107,6 +105,11 @@
   </topic>
   <topic label="Классы" href="annotated.html">
     <topic label="Классы" href="annotated.html">
+      <topic label="details">
+        <topic label="ComparePtrWord" href="classdetails_1_1_compare_ptr_word.html">
+          <topic label="operator()" href="classdetails_1_1_compare_ptr_word.html#ab17408707c87e0d8d57ed009df026c6f"/>
+        </topic>
+      </topic>
       <topic label="CodeEditor" href="class_code_editor.html">
         <topic label="CodeEditor" href="class_code_editor.html#a93e50bcc9c34e0ba5a26a02a28b9794b"/>
         <topic label="highlightCurrentLine" href="class_code_editor.html#a8d0bbb48f1f7ad273dba6e31f0b5f28b"/>
@@ -151,7 +154,6 @@
       <topic label="Lexer" href="class_lexer.html">
         <topic label="Lexer" href="class_lexer.html#a3831b45d50fbc9558dd0371d6da1b38d"/>
         <topic label="~Lexer" href="class_lexer.html#ae888441e2eef1e1bce5985761e41563f"/>
-        <topic label="doubleToken" href="class_lexer.html#a88347fb5a7c3e38c49f82ba97d2cdd26"/>
         <topic label="eof" href="class_lexer.html#a69c484d2b5ce1a82a4ab84ccb33b6713"/>
         <topic label="errorToken" href="class_lexer.html#a0da58781011bb44e92f0350a4d5efddb"/>
         <topic label="getPosition" href="class_lexer.html#a6137bad811a82c7f45f78e8f0a9dcca7"/>
@@ -195,7 +197,6 @@
         <topic label="nextToken" href="class_parser.html#a1acd7da781e3bcfd4cfd8133d6c731ab"/>
         <topic label="operation" href="class_parser.html#ad4867919d8dfad9c366bdb39dd9a10dc"/>
         <topic label="parse" href="class_parser.html#a98349e93f0f27bfdbf3c03f366191fa6"/>
-        <topic label="unarySign" href="class_parser.html#ad6a1e1950c9706f731a37d5d2b563f49"/>
         <topic label="lexer" href="class_parser.html#a3c6bd0d6afe0aedce26336f0de16bd5a"/>
         <topic label="n" href="class_parser.html#adc222122009b9bb3cbc11098b1b32770"/>
         <topic label="table" href="class_parser.html#ac7fd258d64c6d8b09f8ad2ca9f3a384d"/>
@@ -227,6 +228,7 @@
     </topic>
     <topic label="Алфавитный указатель классов" href="classes.html"/>
     <topic label="Иерархия классов" href="hierarchy.html">
+      <topic label="details::ComparePtrWord" href="classdetails_1_1_compare_ptr_word.html"/>
       <topic label="std::exception">
         <topic label="ParseError" href="class_parse_error.html"/>
       </topic>
@@ -299,7 +301,10 @@
         <topic label="ParseError.h" href="_parse_error_8h.html">
         </topic>
         <topic label="Parser.h" href="_parser_8h.html">
-          <topic label="hashTable" href="group__parser.html#ga638f170ba2272578b7eaa177ca68265c"/>
+          <topic label="ComparePtrWord" href="classdetails_1_1_compare_ptr_word.html">
+            <topic label="operator()" href="classdetails_1_1_compare_ptr_word.html#ab17408707c87e0d8d57ed009df026c6f"/>
+          </topic>
+          <topic label="hashTable" href="group__parser.html#ga0ffcd5a5e2d5005e89a360f99a5ae4fc"/>
         </topic>
       </topic>
     </topic>

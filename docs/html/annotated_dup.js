@@ -1,5 +1,8 @@
 var annotated_dup =
 [
+    [ "details", null, [
+      [ "ComparePtrWord", "classdetails_1_1_compare_ptr_word.html", "classdetails_1_1_compare_ptr_word" ]
+    ] ],
     [ "CodeEditor", "class_code_editor.html", "class_code_editor" ],
     [ "Dialog", "class_dialog.html", "class_dialog" ],
     [ "Error", "class_error.html", "class_error" ],

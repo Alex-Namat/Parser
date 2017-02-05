@@ -1,5 +1,9 @@
-#include "dialog.h"
 #include <QFont>
+#include <QTemporaryFile>
+#include <QTextStream>
+#include <fstream>
+#include <iterator>
+#include "dialog.h"
 #include "parser.h"
 
 Dialog::Dialog(QWidget *parent)
@@ -16,8 +20,17 @@ Dialog::~Dialog()
 
 void Dialog::clicked_pushButton()
 {
-    std::string str(codeEditor->toPlainText().toStdString());
-    Parser<std::string::iterator> parser(str.begin(),str.end());
+    QTemporaryFile file;
+    if(!file.open()){
+        textEdit->setText("Temporary file can`t be created.");
+        return;
+    };
+    QTextStream out(&file);
+    out << codeEditor->toPlainText();
+    file.close();
+    std::fstream f(file.fileName().toStdString());
+    using stream_iter = std::istreambuf_iterator<char>;
+    Parser<stream_iter> parser{stream_iter(f),stream_iter()};
 
    clearSelection();
     try {

@@ -12,7 +12,6 @@
 #ifndef PARSEERROR_H_
 #define PARSEERROR_H_
 
-#include <exception>
 #include "Lexer.h"
 
 class ParseError : public std::exception {
